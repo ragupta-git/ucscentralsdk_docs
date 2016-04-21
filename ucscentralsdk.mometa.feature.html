@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.feature package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.firmware package" href="ucscentralsdk.mometa.firmware.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.fcpool package" href="ucscentralsdk.mometa.fcpool.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.feature package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.feature.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-feature-package">
+<h1>ucscentralsdk.mometa.feature package<a class="headerlink" href="#ucscentralsdk-mometa-feature-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.feature.FeatureCatalogEp">
+<span id="ucscentralsdk-mometa-feature-featurecatalogep-module"></span><h2>ucscentralsdk.mometa.feature.FeatureCatalogEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.feature.FeatureCatalogEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FeatureCatalogEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureCatalogEp.</code><code class="descname">FeatureCatalogEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureCatalogEp.html#FeatureCatalogEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FeatureCatalogEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'fltAggr': 'flt_aggr', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c590&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c450&gt;, 'flt_aggr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c890&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c3d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e762810&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureCatalogEp.</code><code class="descname">FeatureCatalogEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureCatalogEp.html#FeatureCatalogEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureCatalogEp.FeatureCatalogEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.feature.FeatureEnvDef">
+<span id="ucscentralsdk-mometa-feature-featureenvdef-module"></span><h2>ucscentralsdk.mometa.feature.FeatureEnvDef module<a class="headerlink" href="#module-ucscentralsdk.mometa.feature.FeatureEnvDef" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FeatureEnvDef ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureEnvDef.</code><code class="descname">FeatureEnvDef</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureEnvDef.html#FeatureEnvDef"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FeatureEnvDef class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDefConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'featureMask': 'feature_mask', 'version': 'version', 'status': 'status', 'description': 'description', 'name': 'name', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bfd50&gt;, 'feature_mask': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bf3d0&gt;, 'version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bf490&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bf8d0&gt;, 'description': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bfb10&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bfb90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bf690&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bfc50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDef.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDefConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureEnvDef.</code><code class="descname">FeatureEnvDefConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureEnvDef.html#FeatureEnvDefConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureEnvDef.FeatureEnvDefConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.feature.FeatureNetworkDef">
+<span id="ucscentralsdk-mometa-feature-featurenetworkdef-module"></span><h2>ucscentralsdk.mometa.feature.FeatureNetworkDef module<a class="headerlink" href="#module-ucscentralsdk.mometa.feature.FeatureNetworkDef" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FeatureNetworkDef ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureNetworkDef.</code><code class="descname">FeatureNetworkDef</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureNetworkDef.html#FeatureNetworkDef"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FeatureNetworkDef class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDefConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'featureMask': 'feature_mask', 'version': 'version', 'status': 'status', 'description': 'description', 'name': 'name', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80250&gt;, 'feature_mask': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80c50&gt;, 'version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d802d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80510&gt;, 'description': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80450&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d803d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80490&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80d10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDef.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDefConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureNetworkDef.</code><code class="descname">FeatureNetworkDefConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureNetworkDef.html#FeatureNetworkDefConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureNetworkDef.FeatureNetworkDefConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.feature.FeatureServerDef">
+<span id="ucscentralsdk-mometa-feature-featureserverdef-module"></span><h2>ucscentralsdk.mometa.feature.FeatureServerDef module<a class="headerlink" href="#module-ucscentralsdk.mometa.feature.FeatureServerDef" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FeatureServerDef ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureServerDef.</code><code class="descname">FeatureServerDef</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureServerDef.html#FeatureServerDef"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FeatureServerDef class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDefConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'featureMask': 'feature_mask', 'version': 'version', 'status': 'status', 'description': 'description', 'name': 'name', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3efbfc90&gt;, 'feature_mask': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3efbf450&gt;, 'version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0cd710&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0cdd50&gt;, 'description': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3efbf8d0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3efbf510&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3efbf050&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3efbf9d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDef.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDefConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureServerDef.</code><code class="descname">FeatureServerDefConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureServerDef.html#FeatureServerDefConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureServerDef.FeatureServerDefConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.feature.FeatureStorageDef">
+<span id="ucscentralsdk-mometa-feature-featurestoragedef-module"></span><h2>ucscentralsdk.mometa.feature.FeatureStorageDef module<a class="headerlink" href="#module-ucscentralsdk.mometa.feature.FeatureStorageDef" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FeatureStorageDef ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureStorageDef.</code><code class="descname">FeatureStorageDef</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureStorageDef.html#FeatureStorageDef"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FeatureStorageDef class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDefConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'featureMask': 'feature_mask', 'version': 'version', 'status': 'status', 'description': 'description', 'name': 'name', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6c8b10&gt;, 'feature_mask': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d477f90&gt;, 'version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d477dd0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d4779d0&gt;, 'description': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6c8110&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d477890&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d477bd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6c8c50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDef.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDefConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.feature.FeatureStorageDef.</code><code class="descname">FeatureStorageDefConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/feature/FeatureStorageDef.html#FeatureStorageDefConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.feature.FeatureStorageDef.FeatureStorageDefConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.feature">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.feature" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.firmware.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.firmware package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.fcpool.html" class="btn btn-neutral" title="ucscentralsdk.mometa.fcpool package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

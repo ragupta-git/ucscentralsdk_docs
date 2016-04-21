@@ -1,0 +1,62 @@
+ucscentralsdk.mometa.macpool package
+====================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.macpool.MacpoolAddr module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.macpool.MacpoolAddr
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.macpool.MacpoolBlock module
+------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.macpool.MacpoolBlock
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.macpool.MacpoolFormat module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.macpool.MacpoolFormat
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.macpool.MacpoolPool module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.macpool.MacpoolPool
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.macpool.MacpoolPooled module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.macpool.MacpoolPooled
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.macpool.MacpoolUniverse module
+---------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.macpool.MacpoolUniverse
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.macpool
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,22 @@
+ucscentralsdk.mometa.nwctrl package
+===================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.nwctrl.NwctrlDefinition module
+---------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.nwctrl.NwctrlDefinition
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.nwctrl
+    :members:
+    :undoc-members:
+    :show-inheritance:

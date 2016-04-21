@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.nwctrl package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.observe package" href="ucscentralsdk.mometa.observe.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.nfs package" href="ucscentralsdk.mometa.nfs.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.nwctrl package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.nwctrl.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-nwctrl-package">
+<h1>ucscentralsdk.mometa.nwctrl package<a class="headerlink" href="#ucscentralsdk-mometa-nwctrl-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.nwctrl.NwctrlDefinition">
+<span id="ucscentralsdk-mometa-nwctrl-nwctrldefinition-module"></span><h2>ucscentralsdk.mometa.nwctrl.NwctrlDefinition module<a class="headerlink" href="#module-ucscentralsdk.mometa.nwctrl.NwctrlDefinition" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for NwctrlDefinition ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.nwctrl.NwctrlDefinition.</code><code class="descname">NwctrlDefinition</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/nwctrl/NwctrlDefinition.html#NwctrlDefinition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is NwctrlDefinition class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'policyLevel': 'policy_level', 'policyOwner': 'policy_owner', 'lldpReceive': 'lldp_receive', 'cdp': 'cdp', 'intId': 'int_id', 'childAction': 'child_action', 'macRegisterMode': 'mac_register_mode', 'name': 'name', 'descr': 'descr', 'uplinkFailAction': 'uplink_fail_action', 'lldpTransmit': 'lldp_transmit', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317e3e10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1e36c350&gt;, 'lldp_transmit': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317e3c50&gt;, 'lldp_receive': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317e3fd0&gt;, 'mac_register_mode': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1e36c7d0&gt;, 'cdp': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317e3f90&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317e3dd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317e3b10&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1e36c990&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317e33d0&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1e36c090&gt;, 'uplink_fail_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1e36ca10&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1e36cc10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1e36c510&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinition.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.nwctrl.NwctrlDefinition.</code><code class="descname">NwctrlDefinitionConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/nwctrl/NwctrlDefinition.html#NwctrlDefinitionConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.CDP_DISABLED">
+<code class="descname">CDP_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.CDP_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.CDP_ENABLED">
+<code class="descname">CDP_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.CDP_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.LLDP_RECEIVE_DISABLED">
+<code class="descname">LLDP_RECEIVE_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.LLDP_RECEIVE_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.LLDP_RECEIVE_ENABLED">
+<code class="descname">LLDP_RECEIVE_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.LLDP_RECEIVE_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.LLDP_TRANSMIT_DISABLED">
+<code class="descname">LLDP_TRANSMIT_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.LLDP_TRANSMIT_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.LLDP_TRANSMIT_ENABLED">
+<code class="descname">LLDP_TRANSMIT_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.LLDP_TRANSMIT_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.MAC_REGISTER_MODE_ALL_HOST_VLANS">
+<code class="descname">MAC_REGISTER_MODE_ALL_HOST_VLANS</code><em class="property"> = 'all-host-vlans'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.MAC_REGISTER_MODE_ALL_HOST_VLANS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.MAC_REGISTER_MODE_ONLY_NATIVE_VLAN">
+<code class="descname">MAC_REGISTER_MODE_ONLY_NATIVE_VLAN</code><em class="property"> = 'only-native-vlan'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.MAC_REGISTER_MODE_ONLY_NATIVE_VLAN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.UPLINK_FAIL_ACTION_LINK_DOWN">
+<code class="descname">UPLINK_FAIL_ACTION_LINK_DOWN</code><em class="property"> = 'link-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.UPLINK_FAIL_ACTION_LINK_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.UPLINK_FAIL_ACTION_WARNING">
+<code class="descname">UPLINK_FAIL_ACTION_WARNING</code><em class="property"> = 'warning'</em><a class="headerlink" href="#ucscentralsdk.mometa.nwctrl.NwctrlDefinition.NwctrlDefinitionConsts.UPLINK_FAIL_ACTION_WARNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.nwctrl">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.nwctrl" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.observe.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.observe package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.nfs.html" class="btn btn-neutral" title="ucscentralsdk.mometa.nfs package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

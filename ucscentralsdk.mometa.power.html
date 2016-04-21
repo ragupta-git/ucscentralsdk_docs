@@ -1,0 +1,1350 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.power package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.proc package" href="ucscentralsdk.mometa.proc.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.port package" href="ucscentralsdk.mometa.port.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.power package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.power.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-power-package">
+<h1>ucscentralsdk.mometa.power package<a class="headerlink" href="#ucscentralsdk-mometa-power-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerBudget">
+<span id="ucscentralsdk-mometa-power-powerbudget-module"></span><h2>ucscentralsdk.mometa.power.PowerBudget module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerBudget" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerBudget ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudget">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerBudget.</code><code class="descname">PowerBudget</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerBudget.html#PowerBudget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerBudget class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudget.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudget.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudget.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudget.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudget.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudget.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudget.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'operState': 'oper_state', 'profiling': 'profiling', 'psuLineMode': 'psu_line_mode', 'prio': 'prio', 'weight': 'weight', 'operProfMethod': 'oper_prof_method', 'dynRealloc': 'dyn_realloc', 'style': 'style', 'currentPower': 'current_power', 'operCommitted': 'oper_committed', 'powerOnDeploy': 'power_on_deploy', 'updateTime': 'update_time', 'scaledWt': 'scaled_wt', 'powerAvailState': 'power_avail_state', 'operMin': 'oper_min', 'profMethod': 'prof_method', 'adminCommitted': 'admin_committed', 'maxPower': 'max_power', 'capAction': 'cap_action', 'adminPeak': 'admin_peak', 'bootPower': 'boot_power', 'chRsrvdPower': 'ch_rsrvd_power', 'psuCapacity': 'psu_capacity', 'idlePower': 'idle_power', 'psuState': 'psu_state', 'adminPeakNew': 'admin_peak_new', 'groupName': 'group_name', 'operPeak': 'oper_peak', 'adminFPLockState': 'admin_fp_lock_state', 'rn': 'rn', 'childAction': 'child_action', 'catalogPower': 'catalog_power', 'operFPLockState': 'oper_fp_lock_state', 'minPower': 'min_power'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudget.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudget.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf761284d0&gt;, 'oper_committed': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf761281d0&gt;, 'update_time': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe76d0&gt;, 'oper_peak': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe72d0&gt;, 'oper_fp_lock_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7e50&gt;, 'prio': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7d50&gt;, 'psu_line_mode': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe73d0&gt;, 'admin_committed': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf761282d0&gt;, 'psu_capacity': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7c10&gt;, 'group_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf761283d0&gt;, 'prof_method': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7d10&gt;, 'profiling': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7890&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7690&gt;, 'oper_prof_method': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7f50&gt;, 'boot_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128dd0&gt;, 'oper_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe79d0&gt;, 'psu_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7210&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7a10&gt;, 'scaled_wt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7250&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128fd0&gt;, 'admin_peak_new': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128d10&gt;, 'style': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7410&gt;, 'weight': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7810&gt;, 'ch_rsrvd_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128c90&gt;, 'current_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128350&gt;, 'catalog_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128190&gt;, 'cap_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128850&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe71d0&gt;, 'idle_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128a90&gt;, 'admin_peak': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128490&gt;, 'power_avail_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7fd0&gt;, 'max_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128d90&gt;, 'min_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128210&gt;, 'dyn_realloc': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128990&gt;, 'power_on_deploy': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75fe7c90&gt;, 'admin_fp_lock_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76128690&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudget.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerBudget.</code><code class="descname">PowerBudgetConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerBudget.html#PowerBudgetConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_COMMITTED_UNBOUNDED">
+<code class="descname">ADMIN_COMMITTED_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_COMMITTED_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_FPLOCK_STATE_LOCKED">
+<code class="descname">ADMIN_FPLOCK_STATE_LOCKED</code><em class="property"> = 'locked'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_FPLOCK_STATE_LOCKED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_FPLOCK_STATE_UNKNOWN">
+<code class="descname">ADMIN_FPLOCK_STATE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_FPLOCK_STATE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_FPLOCK_STATE_UNLOCKED">
+<code class="descname">ADMIN_FPLOCK_STATE_UNLOCKED</code><em class="property"> = 'unlocked'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_FPLOCK_STATE_UNLOCKED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_PEAK_NEW_UNBOUNDED">
+<code class="descname">ADMIN_PEAK_NEW_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_PEAK_NEW_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_PEAK_UNBOUNDED">
+<code class="descname">ADMIN_PEAK_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.ADMIN_PEAK_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.BOOT_POWER_UNBOUNDED">
+<code class="descname">BOOT_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.BOOT_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CAP_ACTION_CLOCK_DOWN">
+<code class="descname">CAP_ACTION_CLOCK_DOWN</code><em class="property"> = 'clock-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CAP_ACTION_CLOCK_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CAP_ACTION_NOTHING">
+<code class="descname">CAP_ACTION_NOTHING</code><em class="property"> = 'nothing'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CAP_ACTION_NOTHING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CAP_ACTION_THROTTLED">
+<code class="descname">CAP_ACTION_THROTTLED</code><em class="property"> = 'throttled'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CAP_ACTION_THROTTLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CATALOG_POWER_UNBOUNDED">
+<code class="descname">CATALOG_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CATALOG_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CH_RSRVD_POWER_UNBOUNDED">
+<code class="descname">CH_RSRVD_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CH_RSRVD_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CURRENT_POWER_UNBOUNDED">
+<code class="descname">CURRENT_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.CURRENT_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.DYN_REALLOC_CHASSIS">
+<code class="descname">DYN_REALLOC_CHASSIS</code><em class="property"> = 'chassis'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.DYN_REALLOC_CHASSIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.DYN_REALLOC_NONE">
+<code class="descname">DYN_REALLOC_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.DYN_REALLOC_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.IDLE_POWER_UNBOUNDED">
+<code class="descname">IDLE_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.IDLE_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.MAX_POWER_UNBOUNDED">
+<code class="descname">MAX_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.MAX_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.MIN_POWER_UNBOUNDED">
+<code class="descname">MIN_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.MIN_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_COMMITTED_UNBOUNDED">
+<code class="descname">OPER_COMMITTED_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_COMMITTED_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_FPLOCK_STATE_LOCKED">
+<code class="descname">OPER_FPLOCK_STATE_LOCKED</code><em class="property"> = 'locked'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_FPLOCK_STATE_LOCKED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_FPLOCK_STATE_UNKNOWN">
+<code class="descname">OPER_FPLOCK_STATE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_FPLOCK_STATE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_FPLOCK_STATE_UNLOCKED">
+<code class="descname">OPER_FPLOCK_STATE_UNLOCKED</code><em class="property"> = 'unlocked'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_FPLOCK_STATE_UNLOCKED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_MIN_UNBOUNDED">
+<code class="descname">OPER_MIN_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_MIN_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PEAK_UNBOUNDED">
+<code class="descname">OPER_PEAK_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PEAK_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_DEFAULT">
+<code class="descname">OPER_PROF_METHOD_DEFAULT</code><em class="property"> = 'default'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_NODEMGR">
+<code class="descname">OPER_PROF_METHOD_NODEMGR</code><em class="property"> = 'nodemgr'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_NODEMGR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_PNUOS">
+<code class="descname">OPER_PROF_METHOD_PNUOS</code><em class="property"> = 'pnuos'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_PNUOS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_STATIC">
+<code class="descname">OPER_PROF_METHOD_STATIC</code><em class="property"> = 'static'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_STATIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_UNKNOWN">
+<code class="descname">OPER_PROF_METHOD_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_PROF_METHOD_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_BUDGETED">
+<code class="descname">OPER_STATE_BUDGETED</code><em class="property"> = 'budgeted'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_BUDGETED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_BUDGETING">
+<code class="descname">OPER_STATE_BUDGETING</code><em class="property"> = 'budgeting'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_BUDGETING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_DEPLOYED">
+<code class="descname">OPER_STATE_DEPLOYED</code><em class="property"> = 'deployed'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_DEPLOYED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_DEPLOYING">
+<code class="descname">OPER_STATE_DEPLOYING</code><em class="property"> = 'deploying'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_DEPLOYING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_DISCOVERY_BUDGETED">
+<code class="descname">OPER_STATE_DISCOVERY_BUDGETED</code><em class="property"> = 'discovery-budgeted'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_DISCOVERY_BUDGETED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_DISCOVERY_RETRY">
+<code class="descname">OPER_STATE_DISCOVERY_RETRY</code><em class="property"> = 'discovery-retry'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_DISCOVERY_RETRY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_FIRMWARE_MISMATCH">
+<code class="descname">OPER_STATE_FIRMWARE_MISMATCH</code><em class="property"> = 'firmware-mismatch'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_FIRMWARE_MISMATCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_NON_COMPLIANT">
+<code class="descname">OPER_STATE_NON_COMPLIANT</code><em class="property"> = 'non-compliant'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_NON_COMPLIANT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_NOT_CAPPED">
+<code class="descname">OPER_STATE_NOT_CAPPED</code><em class="property"> = 'not-capped'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_NOT_CAPPED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_UNBUDGETED">
+<code class="descname">OPER_STATE_UNBUDGETED</code><em class="property"> = 'unbudgeted'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.OPER_STATE_UNBUDGETED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_AVAIL_STATE_AVAILABLE">
+<code class="descname">POWER_AVAIL_STATE_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_AVAIL_STATE_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_AVAIL_STATE_UNAVAILABLE">
+<code class="descname">POWER_AVAIL_STATE_UNAVAILABLE</code><em class="property"> = 'unavailable'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_AVAIL_STATE_UNAVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_AVAIL_STATE_UNKNOWN">
+<code class="descname">POWER_AVAIL_STATE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_AVAIL_STATE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_ON_DEPLOY_FALSE">
+<code class="descname">POWER_ON_DEPLOY_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_ON_DEPLOY_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_ON_DEPLOY_NO">
+<code class="descname">POWER_ON_DEPLOY_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_ON_DEPLOY_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_ON_DEPLOY_TRUE">
+<code class="descname">POWER_ON_DEPLOY_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_ON_DEPLOY_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_ON_DEPLOY_YES">
+<code class="descname">POWER_ON_DEPLOY_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.POWER_ON_DEPLOY_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PRIO_NO_CAP">
+<code class="descname">PRIO_NO_CAP</code><em class="property"> = 'no-cap'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PRIO_NO_CAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PRIO_UTILITY">
+<code class="descname">PRIO_UTILITY</code><em class="property"> = 'utility'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PRIO_UTILITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROFILING_FALSE">
+<code class="descname">PROFILING_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROFILING_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROFILING_NO">
+<code class="descname">PROFILING_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROFILING_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROFILING_TRUE">
+<code class="descname">PROFILING_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROFILING_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROFILING_YES">
+<code class="descname">PROFILING_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROFILING_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_DEFAULT">
+<code class="descname">PROF_METHOD_DEFAULT</code><em class="property"> = 'default'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_NODEMGR">
+<code class="descname">PROF_METHOD_NODEMGR</code><em class="property"> = 'nodemgr'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_NODEMGR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_PNUOS">
+<code class="descname">PROF_METHOD_PNUOS</code><em class="property"> = 'pnuos'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_PNUOS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_STATIC">
+<code class="descname">PROF_METHOD_STATIC</code><em class="property"> = 'static'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_STATIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_UNKNOWN">
+<code class="descname">PROF_METHOD_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PROF_METHOD_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_HIGH_LINE">
+<code class="descname">PSU_LINE_MODE_HIGH_LINE</code><em class="property"> = 'high-line'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_HIGH_LINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_LOW_LINE">
+<code class="descname">PSU_LINE_MODE_LOW_LINE</code><em class="property"> = 'low-line'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_LOW_LINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_MIXED_LINE">
+<code class="descname">PSU_LINE_MODE_MIXED_LINE</code><em class="property"> = 'mixed-line'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_MIXED_LINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_UNDETERMINED">
+<code class="descname">PSU_LINE_MODE_UNDETERMINED</code><em class="property"> = 'undetermined'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_UNDETERMINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_UNKNOWN">
+<code class="descname">PSU_LINE_MODE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_LINE_MODE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_STATE_INSUFFICIENT">
+<code class="descname">PSU_STATE_INSUFFICIENT</code><em class="property"> = 'insufficient'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_STATE_INSUFFICIENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_STATE_OK">
+<code class="descname">PSU_STATE_OK</code><em class="property"> = 'ok'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.PSU_STATE_OK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.STYLE_INTELLIGENT_POLICY_DRIVEN">
+<code class="descname">STYLE_INTELLIGENT_POLICY_DRIVEN</code><em class="property"> = 'intelligent-policy-driven'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.STYLE_INTELLIGENT_POLICY_DRIVEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.STYLE_MANUAL_PER_BLADE">
+<code class="descname">STYLE_MANUAL_PER_BLADE</code><em class="property"> = 'manual-per-blade'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerBudget.PowerBudgetConsts.STYLE_MANUAL_PER_BLADE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerChassisMember">
+<span id="ucscentralsdk-mometa-power-powerchassismember-module"></span><h2>ucscentralsdk.mometa.power.PowerChassisMember module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerChassisMember" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerChassisMember ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerChassisMember.</code><code class="descname">PowerChassisMember</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerChassisMember.html#PowerChassisMember"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerChassisMember class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'operState': 'oper_state', 'rn': 'rn', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79acb210&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79acb850&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79acb250&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79acb810&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79acb4d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79acbbd0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMember.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerChassisMember.</code><code class="descname">PowerChassisMemberConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerChassisMember.html#PowerChassisMemberConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_CAP_INSUFFICIENT">
+<code class="descname">OPER_STATE_CAP_INSUFFICIENT</code><em class="property"> = 'cap-insufficient'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_CAP_INSUFFICIENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_CAP_OK">
+<code class="descname">OPER_STATE_CAP_OK</code><em class="property"> = 'cap-ok'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_CAP_OK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_FW_MISMATCH">
+<code class="descname">OPER_STATE_FW_MISMATCH</code><em class="property"> = 'fw-mismatch'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_FW_MISMATCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_PSU_INSUFFICIENT">
+<code class="descname">OPER_STATE_PSU_INSUFFICIENT</code><em class="property"> = 'psu-insufficient'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_PSU_INSUFFICIENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_PSU_REDUNDANCY_FAILED">
+<code class="descname">OPER_STATE_PSU_REDUNDANCY_FAILED</code><em class="property"> = 'psu-redundancy-failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_PSU_REDUNDANCY_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_UNINITIALIZED">
+<code class="descname">OPER_STATE_UNINITIALIZED</code><em class="property"> = 'uninitialized'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerChassisMember.PowerChassisMemberConsts.OPER_STATE_UNINITIALIZED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerEp">
+<span id="ucscentralsdk-mometa-power-powerep-module"></span><h2>ucscentralsdk.mometa.power.PowerEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerEp.PowerEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerEp.</code><code class="descname">PowerEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerEp.html#PowerEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerEp.PowerEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerEp.PowerEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerEp.PowerEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerEp.PowerEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerEp.PowerEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerEp.PowerEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerEp.PowerEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerEp.PowerEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerEp.PowerEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerEp.PowerEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerEp.PowerEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79b96f90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79b96dd0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79b96910&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79b96fd0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerEp.PowerEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerEp.PowerEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerEp.</code><code class="descname">PowerEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerEp.html#PowerEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerEp.PowerEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerGroup">
+<span id="ucscentralsdk-mometa-power-powergroup-module"></span><h2>ucscentralsdk.mometa.power.PowerGroup module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerGroup" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerGroup ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroup">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerGroup.</code><code class="descname">PowerGroup</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerGroup.html#PowerGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerGroup class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroup.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroup.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroup.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroup.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroup.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroup.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroup.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'adminPeak': 'admin_peak', 'curReqPower': 'cur_req_power', 'policyLevel': 'policy_level', 'name': 'name', 'descr': 'descr', 'qualifier': 'qualifier', 'realloc': 'realloc', 'fltAggr': 'flt_aggr', 'policyOwner': 'policy_owner', 'operState': 'oper_state', 'currentPower': 'current_power', 'operCommitted': 'oper_committed', 'status': 'status', 'minReqPower': 'min_req_power', 'operPeak': 'oper_peak', 'intId': 'int_id', 'rn': 'rn', 'adminCommitted': 'admin_committed', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroup.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroup.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'cur_req_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d24850&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50c10&gt;, 'oper_peak': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50150&gt;, 'min_req_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50690&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d24990&gt;, 'oper_committed': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e509d0&gt;, 'current_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d24810&gt;, 'admin_committed': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d24cd0&gt;, 'flt_aggr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50a10&gt;, 'qualifier': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50590&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50f10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50e50&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50350&gt;, 'admin_peak': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d24a10&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e505d0&gt;, 'realloc': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50110&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50850&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50ad0&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50810&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d24e50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroup.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerGroup.</code><code class="descname">PowerGroupConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerGroup.html#PowerGroupConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.ADMIN_COMMITTED_UNBOUNDED">
+<code class="descname">ADMIN_COMMITTED_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.ADMIN_COMMITTED_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.ADMIN_PEAK_UNBOUNDED">
+<code class="descname">ADMIN_PEAK_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.ADMIN_PEAK_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.CURRENT_POWER_UNBOUNDED">
+<code class="descname">CURRENT_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.CURRENT_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.CUR_REQ_POWER_UNBOUNDED">
+<code class="descname">CUR_REQ_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.CUR_REQ_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.MIN_REQ_POWER_UNBOUNDED">
+<code class="descname">MIN_REQ_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.MIN_REQ_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.OPER_COMMITTED_UNBOUNDED">
+<code class="descname">OPER_COMMITTED_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.OPER_COMMITTED_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.OPER_PEAK_UNBOUNDED">
+<code class="descname">OPER_PEAK_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.OPER_PEAK_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.REALLOC_CHASSIS">
+<code class="descname">REALLOC_CHASSIS</code><em class="property"> = 'chassis'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.REALLOC_CHASSIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.REALLOC_NONE">
+<code class="descname">REALLOC_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroup.PowerGroupConsts.REALLOC_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerGroupQual">
+<span id="ucscentralsdk-mometa-power-powergroupqual-module"></span><h2>ucscentralsdk.mometa.power.PowerGroupQual module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerGroupQual" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerGroupQual ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerGroupQual.</code><code class="descname">PowerGroupQual</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>group_name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerGroupQual.html#PowerGroupQual"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerGroupQual class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQualConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'groupName'])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'groupName': 'group_name', 'rn': 'rn', 'status': 'status', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75a4cb90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b690&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b810&gt;, 'group_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75a4cd90&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75a4c510&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQual.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQualConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerGroupQual.</code><code class="descname">PowerGroupQualConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerGroupQual.html#PowerGroupQualConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupQual.PowerGroupQualConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerGroupStats">
+<span id="ucscentralsdk-mometa-power-powergroupstats-module"></span><h2>ucscentralsdk.mometa.power.PowerGroupStats module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerGroupStats" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerGroupStats ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerGroupStats.</code><code class="descname">PowerGroupStats</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerGroupStats.html#PowerGroupStats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerGroupStats class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'statsReported': 'stats_reported', 'power': 'power', 'powerMin': 'power_min', 'normalizedTimeCol': 'normalized_time_col', 'update': 'update', 'intervals': 'intervals', 'timeCollected': 'time_collected', 'childAction': 'child_action', 'powerAvg': 'power_avg', 'thresholded': 'thresholded', 'status': 'status', 'powerMax': 'power_max', 'suspect': 'suspect', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9d10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a9452d0&gt;, 'power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9610&gt;, 'power_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a9459d0&gt;, 'normalized_time_col': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9710&gt;, 'update': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a9455d0&gt;, 'intervals': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9cd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9c50&gt;, 'power_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a945450&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a9453d0&gt;, 'stats_reported': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a945c90&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a945290&gt;, 'power_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a945190&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a945dd0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a9451d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStats.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerGroupStats.</code><code class="descname">PowerGroupStatsConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerGroupStats.html#PowerGroupStatsConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStats.PowerGroupStatsConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerGroupStatsHist">
+<span id="ucscentralsdk-mometa-power-powergroupstatshist-module"></span><h2>ucscentralsdk.mometa.power.PowerGroupStatsHist module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerGroupStatsHist" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerGroupStatsHist ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerGroupStatsHist.</code><code class="descname">PowerGroupStatsHist</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerGroupStatsHist.html#PowerGroupStatsHist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerGroupStatsHist class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'power': 'power', 'powerMin': 'power_min', 'mostRecent': 'most_recent', 'id': 'id', 'childAction': 'child_action', 'powerAvg': 'power_avg', 'thresholded': 'thresholded', 'suspect': 'suspect', 'powerMax': 'power_max', 'timeCollected': 'time_collected', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2fad0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2f710&gt;, 'power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2f150&gt;, 'power_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2f5d0&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2f990&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2fd90&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2f650&gt;, 'most_recent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2f290&gt;, 'power_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2f0d0&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2fc90&gt;, 'power_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2ff50&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2f850&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79c2ff10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHist.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerGroupStatsHist.</code><code class="descname">PowerGroupStatsHistConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerGroupStatsHist.html#PowerGroupStatsHistConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.MOST_RECENT_FALSE">
+<code class="descname">MOST_RECENT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.MOST_RECENT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.MOST_RECENT_NO">
+<code class="descname">MOST_RECENT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.MOST_RECENT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.MOST_RECENT_TRUE">
+<code class="descname">MOST_RECENT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.MOST_RECENT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.MOST_RECENT_YES">
+<code class="descname">MOST_RECENT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.MOST_RECENT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerGroupStatsHist.PowerGroupStatsHistConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerMgmtPolicy">
+<span id="ucscentralsdk-mometa-power-powermgmtpolicy-module"></span><h2>ucscentralsdk.mometa.power.PowerMgmtPolicy module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerMgmtPolicy" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerMgmtPolicy ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerMgmtPolicy.</code><code class="descname">PowerMgmtPolicy</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerMgmtPolicy.html#PowerMgmtPolicy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerMgmtPolicy class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'style': 'style', 'policyLevel': 'policy_level', 'name': 'name', 'descr': 'descr', 'intId': 'int_id', 'rn': 'rn', 'policyOwner': 'policy_owner', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edfb90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edfd50&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edf710&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edf290&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edf9d0&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edf550&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edf450&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edf650&gt;, 'style': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edf990&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79edf3d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicy.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerMgmtPolicy.</code><code class="descname">PowerMgmtPolicyConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerMgmtPolicy.html#PowerMgmtPolicyConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.STYLE_INTELLIGENT_POLICY_DRIVEN">
+<code class="descname">STYLE_INTELLIGENT_POLICY_DRIVEN</code><em class="property"> = 'intelligent-policy-driven'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.STYLE_INTELLIGENT_POLICY_DRIVEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.STYLE_MANUAL_PER_BLADE">
+<code class="descname">STYLE_MANUAL_PER_BLADE</code><em class="property"> = 'manual-per-blade'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerMgmtPolicy.PowerMgmtPolicyConsts.STYLE_MANUAL_PER_BLADE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerPolicy">
+<span id="ucscentralsdk-mometa-power-powerpolicy-module"></span><h2>ucscentralsdk.mometa.power.PowerPolicy module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerPolicy" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerPolicy ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerPolicy.</code><code class="descname">PowerPolicy</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerPolicy.html#PowerPolicy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerPolicy class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'policyLevel': 'policy_level', 'prio': 'prio', 'policyOwner': 'policy_owner', 'fanSpeed': 'fan_speed', 'intId': 'int_id', 'childAction': 'child_action', 'name': 'name', 'descr': 'descr', 'operPrio': 'oper_prio', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d8ad10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e2eb90&gt;, 'prio': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e2e090&gt;, 'oper_prio': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e2efd0&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e2e0d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d8ab10&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e2e2d0&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d8ab90&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e2e610&gt;, 'fan_speed': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79d8a790&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e2ec10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e2e290&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicy.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerPolicy.</code><code class="descname">PowerPolicyConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerPolicy.html#PowerPolicyConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_ANY">
+<code class="descname">FAN_SPEED_ANY</code><em class="property"> = 'any'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_ANY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_BALANCED">
+<code class="descname">FAN_SPEED_BALANCED</code><em class="property"> = 'balanced'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_BALANCED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_ERR">
+<code class="descname">FAN_SPEED_ERR</code><em class="property"> = 'err'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_ERR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_HIGH_POWER">
+<code class="descname">FAN_SPEED_HIGH_POWER</code><em class="property"> = 'high-power'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_HIGH_POWER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_LOW_POWER">
+<code class="descname">FAN_SPEED_LOW_POWER</code><em class="property"> = 'low-power'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_LOW_POWER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_MAX_POWER">
+<code class="descname">FAN_SPEED_MAX_POWER</code><em class="property"> = 'max-power'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_MAX_POWER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_NA">
+<code class="descname">FAN_SPEED_NA</code><em class="property"> = 'na'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_NA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_NOT_SUPPORTED">
+<code class="descname">FAN_SPEED_NOT_SUPPORTED</code><em class="property"> = 'not-supported'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_NOT_SUPPORTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_NO_UPDATE">
+<code class="descname">FAN_SPEED_NO_UPDATE</code><em class="property"> = 'no-update'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_NO_UPDATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_PERFORMANCE">
+<code class="descname">FAN_SPEED_PERFORMANCE</code><em class="property"> = 'performance'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.FAN_SPEED_PERFORMANCE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.OPER_PRIO_NO_CAP">
+<code class="descname">OPER_PRIO_NO_CAP</code><em class="property"> = 'no-cap'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.OPER_PRIO_NO_CAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.OPER_PRIO_UTILITY">
+<code class="descname">OPER_PRIO_UTILITY</code><em class="property"> = 'utility'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.OPER_PRIO_UTILITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.PRIO_NO_CAP">
+<code class="descname">PRIO_NO_CAP</code><em class="property"> = 'no-cap'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.PRIO_NO_CAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.PRIO_UTILITY">
+<code class="descname">PRIO_UTILITY</code><em class="property"> = 'utility'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerPolicy.PowerPolicyConsts.PRIO_UTILITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power.PowerProfiledPower">
+<span id="ucscentralsdk-mometa-power-powerprofiledpower-module"></span><h2>ucscentralsdk.mometa.power.PowerProfiledPower module<a class="headerlink" href="#module-ucscentralsdk.mometa.power.PowerProfiledPower" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PowerProfiledPower ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerProfiledPower.</code><code class="descname">PowerProfiledPower</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerProfiledPower.html#PowerProfiledPower"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PowerProfiledPower class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'absMinPostPower': 'abs_min_post_power', 'minNormPostPower': 'min_norm_post_power', 'preDiscoveryPower': 'pre_discovery_power', 'maxAppPower': 'max_app_power', 'skipProfiling': 'skip_profiling', 'profiledMax': 'profiled_max', 'maxPostPower': 'max_post_power', 'minPostPower': 'min_post_power', 'profileRunTime': 'profile_run_time', 'profiledBoot': 'profiled_boot', 'minAppPower': 'min_app_power', 'profiledMin': 'profiled_min', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50450&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c874d0&gt;, 'max_app_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50390&gt;, 'profile_run_time': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c87890&gt;, 'skip_profiling': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c87210&gt;, 'min_app_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50ed0&gt;, 'profiled_boot': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c87790&gt;, 'abs_min_post_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50cd0&gt;, 'profiled_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c87510&gt;, 'pre_discovery_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c87250&gt;, 'min_norm_post_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50d90&gt;, 'min_post_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c87b50&gt;, 'profiled_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c87e90&gt;, 'max_post_power': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50e90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75c87590&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79e50950&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPower.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.power.PowerProfiledPower.</code><code class="descname">PowerProfiledPowerConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/power/PowerProfiledPower.html#PowerProfiledPowerConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.ABS_MIN_POST_POWER_UNBOUNDED">
+<code class="descname">ABS_MIN_POST_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.ABS_MIN_POST_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MAX_APP_POWER_UNBOUNDED">
+<code class="descname">MAX_APP_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MAX_APP_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MAX_POST_POWER_UNBOUNDED">
+<code class="descname">MAX_POST_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MAX_POST_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MIN_APP_POWER_UNBOUNDED">
+<code class="descname">MIN_APP_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MIN_APP_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MIN_NORM_POST_POWER_UNBOUNDED">
+<code class="descname">MIN_NORM_POST_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MIN_NORM_POST_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MIN_POST_POWER_UNBOUNDED">
+<code class="descname">MIN_POST_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.MIN_POST_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.PRE_DISCOVERY_POWER_UNBOUNDED">
+<code class="descname">PRE_DISCOVERY_POWER_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.PRE_DISCOVERY_POWER_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.PROFILED_BOOT_UNBOUNDED">
+<code class="descname">PROFILED_BOOT_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.PROFILED_BOOT_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.PROFILED_MAX_UNBOUNDED">
+<code class="descname">PROFILED_MAX_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.PROFILED_MAX_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.PROFILED_MIN_UNBOUNDED">
+<code class="descname">PROFILED_MIN_UNBOUNDED</code><em class="property"> = 'unbounded'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.PROFILED_MIN_UNBOUNDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.SKIP_PROFILING_FALSE">
+<code class="descname">SKIP_PROFILING_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.SKIP_PROFILING_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.SKIP_PROFILING_NO">
+<code class="descname">SKIP_PROFILING_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.SKIP_PROFILING_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.SKIP_PROFILING_TRUE">
+<code class="descname">SKIP_PROFILING_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.SKIP_PROFILING_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.SKIP_PROFILING_YES">
+<code class="descname">SKIP_PROFILING_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.power.PowerProfiledPower.PowerProfiledPowerConsts.SKIP_PROFILING_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.power">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.power" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.proc.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.proc package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.port.html" class="btn btn-neutral" title="ucscentralsdk.mometa.port package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

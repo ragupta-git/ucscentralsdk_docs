@@ -1,0 +1,54 @@
+ucscentralsdk.mometa.change package
+===================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.change.ChangeChangedObjectRef module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.change.ChangeChangedObjectRef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.change.ChangeEp module
+-------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.change.ChangeEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.change.ChangeEpFsm module
+----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.change.ChangeEpFsm
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.change.ChangeEpFsmStage module
+---------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.change.ChangeEpFsmStage
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.change.ChangeEpFsmTask module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.change.ChangeEpFsmTask
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.change
+    :members:
+    :undoc-members:
+    :show-inheritance:

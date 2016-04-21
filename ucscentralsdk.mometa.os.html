@@ -1,0 +1,605 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.os package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.pki package" href="ucscentralsdk.mometa.pki.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.org package" href="ucscentralsdk.mometa.org.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.os package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.os.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-os-package">
+<h1>ucscentralsdk.mometa.os package<a class="headerlink" href="#ucscentralsdk-mometa-os-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.os.OsController">
+<span id="ucscentralsdk-mometa-os-oscontroller-module"></span><h2>ucscentralsdk.mometa.os.OsController module<a class="headerlink" href="#module-ucscentralsdk.mometa.os.OsController" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for OsController ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsController.OsController">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsController.</code><code class="descname">OsController</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsController.html#OsController"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsController" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is OsController class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsController.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.os.OsController.OsControllerConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsController.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsController.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsController.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsController.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsController.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsController.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'pnDn': 'pn_dn', 'status': 'status', 'name': 'name', 'deployState': 'deploy_state', 'rn': 'rn', 'hostname': 'hostname', 'type': 'type', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsController.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsController.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543b50&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543ed0&gt;, 'hostname': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543b10&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543f10&gt;, 'pn_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543f90&gt;, 'deploy_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543c50&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543890&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543e10&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79543710&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsController.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsController.</code><code class="descname">OsControllerConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsController.html#OsControllerConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_COMPLETE">
+<code class="descname">DEPLOY_STATE_COMPLETE</code><em class="property"> = 'complete'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_COMPLETE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_FAILED">
+<code class="descname">DEPLOY_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_IN_PROGRESS">
+<code class="descname">DEPLOY_STATE_IN_PROGRESS</code><em class="property"> = 'in-progress'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_IN_PROGRESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_RETRY">
+<code class="descname">DEPLOY_STATE_RETRY</code><em class="property"> = 'retry'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_RETRY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_THROTTLED">
+<code class="descname">DEPLOY_STATE_THROTTLED</code><em class="property"> = 'throttled'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_THROTTLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_UNDEFINED">
+<code class="descname">DEPLOY_STATE_UNDEFINED</code><em class="property"> = 'undefined'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_UNDEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_UNDEPLOYED">
+<code class="descname">DEPLOY_STATE_UNDEPLOYED</code><em class="property"> = 'undeployed'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.DEPLOY_STATE_UNDEPLOYED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_LINUX">
+<code class="descname">TYPE_LINUX</code><em class="property"> = 'Linux'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_LINUX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_PNU_OS">
+<code class="descname">TYPE_PNU_OS</code><em class="property"> = 'PnuOS'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_PNU_OS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_SOLARIS">
+<code class="descname">TYPE_SOLARIS</code><em class="property"> = 'Solaris'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_SOLARIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_UNSPECIFIED">
+<code class="descname">TYPE_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_VMWARE_ESX">
+<code class="descname">TYPE_VMWARE_ESX</code><em class="property"> = 'VMWareESX'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_VMWARE_ESX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_WINDOWS">
+<code class="descname">TYPE_WINDOWS</code><em class="property"> = 'Windows'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsController.OsControllerConsts.TYPE_WINDOWS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.os.OsEthBondIntf">
+<span id="ucscentralsdk-mometa-os-osethbondintf-module"></span><h2>ucscentralsdk.mometa.os.OsEthBondIntf module<a class="headerlink" href="#module-ucscentralsdk.mometa.os.OsEthBondIntf" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for OsEthBondIntf ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsEthBondIntf.</code><code class="descname">OsEthBondIntf</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsEthBondIntf.html#OsEthBondIntf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is OsEthBondIntf class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'operState': 'oper_state', 'maxBonds': 'max_bonds', 'transport': 'transport', 'name': 'name', 'addr': 'addr', 'mtu': 'mtu', 'rn': 'rn', 'childAction': 'child_action', 'type': 'type'}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc590&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc890&gt;, 'max_bonds': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc610&gt;, 'transport': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc910&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc710&gt;, 'addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc490&gt;, 'mtu': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc690&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc790&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc810&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc510&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c9fc990&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntf.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsEthBondIntf.</code><code class="descname">OsEthBondIntfConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsEthBondIntf.html#OsEthBondIntfConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts.OPER_STATE_DOWN">
+<code class="descname">OPER_STATE_DOWN</code><em class="property"> = 'down'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts.OPER_STATE_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts.OPER_STATE_FAILED">
+<code class="descname">OPER_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts.OPER_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts.OPER_STATE_INDETERMINATE">
+<code class="descname">OPER_STATE_INDETERMINATE</code><em class="property"> = 'indeterminate'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts.OPER_STATE_INDETERMINATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts.OPER_STATE_UP">
+<code class="descname">OPER_STATE_UP</code><em class="property"> = 'up'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthBondIntf.OsEthBondIntfConsts.OPER_STATE_UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.os.OsEthIntf">
+<span id="ucscentralsdk-mometa-os-osethintf-module"></span><h2>ucscentralsdk.mometa.os.OsEthIntf module<a class="headerlink" href="#module-ucscentralsdk.mometa.os.OsEthIntf" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for OsEthIntf ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsEthIntf.</code><code class="descname">OsEthIntf</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsEthIntf.html#OsEthIntf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is OsEthIntf class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'operState': 'oper_state', 'addr': 'addr', 'name': 'name', 'rn': 'rn', 'mtu': 'mtu', 'type': 'type', 'transport': 'transport', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a390&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a610&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a510&gt;, 'addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a110&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a490&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a590&gt;, 'mtu': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a410&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a710&gt;, 'transport': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a690&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5003a050&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntf.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsEthIntf.</code><code class="descname">OsEthIntfConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsEthIntf.html#OsEthIntfConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts.OPER_STATE_DOWN">
+<code class="descname">OPER_STATE_DOWN</code><em class="property"> = 'down'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts.OPER_STATE_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts.OPER_STATE_FAILED">
+<code class="descname">OPER_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts.OPER_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts.OPER_STATE_INDETERMINATE">
+<code class="descname">OPER_STATE_INDETERMINATE</code><em class="property"> = 'indeterminate'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts.OPER_STATE_INDETERMINATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts.OPER_STATE_UP">
+<code class="descname">OPER_STATE_UP</code><em class="property"> = 'up'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsEthIntf.OsEthIntfConsts.OPER_STATE_UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.os.OsInstance">
+<span id="ucscentralsdk-mometa-os-osinstance-module"></span><h2>ucscentralsdk.mometa.os.OsInstance module<a class="headerlink" href="#module-ucscentralsdk.mometa.os.OsInstance" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for OsInstance ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstance">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsInstance.</code><code class="descname">OsInstance</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsInstance.html#OsInstance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is OsInstance class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstance.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstance.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstance.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstance.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstance.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstance.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstance.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'kernelVersion': 'kernel_version', 'status': 'status', 'name': 'name', 'kernelRelease': 'kernel_release', 'kernelName': 'kernel_name', 'rn': 'rn', 'hostname': 'hostname', 'type': 'type', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstance.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstance.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c3eaed0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4fbd7290&gt;, 'kernel_release': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4fbd7090&gt;, 'kernel_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c3eafd0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4fbd7190&gt;, 'kernel_version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4fbd7110&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4fbd7210&gt;, 'hostname': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c3eaf50&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4fbd7310&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4c3eae50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstance.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsInstance.</code><code class="descname">OsInstanceConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsInstance.html#OsInstanceConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_LINUX">
+<code class="descname">TYPE_LINUX</code><em class="property"> = 'Linux'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_LINUX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_PNU_OS">
+<code class="descname">TYPE_PNU_OS</code><em class="property"> = 'PnuOS'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_PNU_OS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_SOLARIS">
+<code class="descname">TYPE_SOLARIS</code><em class="property"> = 'Solaris'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_SOLARIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_UNSPECIFIED">
+<code class="descname">TYPE_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_VMWARE_ESX">
+<code class="descname">TYPE_VMWARE_ESX</code><em class="property"> = 'VMWareESX'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_VMWARE_ESX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_WINDOWS">
+<code class="descname">TYPE_WINDOWS</code><em class="property"> = 'Windows'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsInstance.OsInstanceConsts.TYPE_WINDOWS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.os.OsPrimarySlave">
+<span id="ucscentralsdk-mometa-os-osprimaryslave-module"></span><h2>ucscentralsdk.mometa.os.OsPrimarySlave module<a class="headerlink" href="#module-ucscentralsdk.mometa.os.OsPrimarySlave" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for OsPrimarySlave ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsPrimarySlave.</code><code class="descname">OsPrimarySlave</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsPrimarySlave.html#OsPrimarySlave"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is OsPrimarySlave class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'name': 'name', 'reselectPolicy': 'reselect_policy', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4baaefd0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79b3e210&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79b3e090&gt;, 'reselect_policy': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79b3e110&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79b3e190&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4baaef50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlave.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.os.OsPrimarySlave.</code><code class="descname">OsPrimarySlaveConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/os/OsPrimarySlave.html#OsPrimarySlaveConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts.RESELECT_POLICY_ALWAYS">
+<code class="descname">RESELECT_POLICY_ALWAYS</code><em class="property"> = 'always'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts.RESELECT_POLICY_ALWAYS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts.RESELECT_POLICY_BETTER">
+<code class="descname">RESELECT_POLICY_BETTER</code><em class="property"> = 'better'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts.RESELECT_POLICY_BETTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts.RESELECT_POLICY_FAILURE">
+<code class="descname">RESELECT_POLICY_FAILURE</code><em class="property"> = 'failure'</em><a class="headerlink" href="#ucscentralsdk.mometa.os.OsPrimarySlave.OsPrimarySlaveConsts.RESELECT_POLICY_FAILURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.os">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.os" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.pki.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.pki package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.org.html" class="btn btn-neutral" title="ucscentralsdk.mometa.org package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

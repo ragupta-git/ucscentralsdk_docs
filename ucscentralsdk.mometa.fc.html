@@ -1,0 +1,1465 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.fc package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.fcpool package" href="ucscentralsdk.mometa.fcpool.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.fault package" href="ucscentralsdk.mometa.fault.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.fc package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.fc.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-fc-package">
+<h1>ucscentralsdk.mometa.fc package<a class="headerlink" href="#ucscentralsdk-mometa-fc-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.fc.FcErrStats">
+<span id="ucscentralsdk-mometa-fc-fcerrstats-module"></span><h2>ucscentralsdk.mometa.fc.FcErrStats module<a class="headerlink" href="#module-ucscentralsdk.mometa.fc.FcErrStats" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FcErrStats ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStats">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcErrStats.</code><code class="descname">FcErrStats</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcErrStats.html#FcErrStats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FcErrStats class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'statsReported': 'stats_reported', 'syncLossesDeltaMax': 'sync_losses_delta_max', 'rxDelta': 'rx_delta', 'crcRxDeltaMax': 'crc_rx_delta_max', 'crcRxDeltaMin': 'crc_rx_delta_min', 'discardRx': 'discard_rx', 'linkFailures': 'link_failures', 'intervals': 'intervals', 'tx': 'tx', 'discardTxDeltaAvg': 'discard_tx_delta_avg', 'tooShortRxDelta': 'too_short_rx_delta', 'syncLossesDeltaMin': 'sync_losses_delta_min', 'tooLongRxDelta': 'too_long_rx_delta', 'crcRxDelta': 'crc_rx_delta', 'discardRxDelta': 'discard_rx_delta', 'dn': 'dn', 'discardTxDelta': 'discard_tx_delta', 'txDeltaMin': 'tx_delta_min', 'discardTxDeltaMin': 'discard_tx_delta_min', 'discardRxDeltaMin': 'discard_rx_delta_min', 'signalLossesDeltaMax': 'signal_losses_delta_max', 'rxDeltaAvg': 'rx_delta_avg', 'signalLossesDelta': 'signal_losses_delta', 'signalLossesDeltaMin': 'signal_losses_delta_min', 'linkFailuresDeltaMax': 'link_failures_delta_max', 'txDeltaMax': 'tx_delta_max', 'linkFailuresDelta': 'link_failures_delta', 'syncLosses': 'sync_losses', 'discardRxDeltaMax': 'discard_rx_delta_max', 'discardTxDeltaMax': 'discard_tx_delta_max', 'crcRxDeltaAvg': 'crc_rx_delta_avg', 'tooShortRxDeltaAvg': 'too_short_rx_delta_avg', 'tooLongRx': 'too_long_rx', 'linkFailuresDeltaMin': 'link_failures_delta_min', 'signalLosses': 'signal_losses', 'tooLongRxDeltaMin': 'too_long_rx_delta_min', 'tooLongRxDeltaMax': 'too_long_rx_delta_max', 'rx': 'rx', 'thresholded': 'thresholded', 'discardRxDeltaAvg': 'discard_rx_delta_avg', 'suspect': 'suspect', 'rn': 'rn', 'status': 'status', 'linkFailuresDeltaAvg': 'link_failures_delta_avg', 'normalizedTimeCol': 'normalized_time_col', 'update': 'update', 'tooShortRx': 'too_short_rx', 'syncLossesDeltaAvg': 'sync_losses_delta_avg', 'timeCollected': 'time_collected', 'tooLongRxDeltaAvg': 'too_long_rx_delta_avg', 'rxDeltaMin': 'rx_delta_min', 'childAction': 'child_action', 'discardTx': 'discard_tx', 'syncLossesDelta': 'sync_losses_delta', 'txDeltaAvg': 'tx_delta_avg', 'txDelta': 'tx_delta', 'tooShortRxDeltaMax': 'too_short_rx_delta_max', 'crcRx': 'crc_rx', 'signalLossesDeltaAvg': 'signal_losses_delta_avg', 'rxDeltaMax': 'rx_delta_max', 'tooShortRxDeltaMin': 'too_short_rx_delta_min'}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'link_failures_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf355d4210&gt;, 'tx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d04b8d0&gt;, 'sync_losses_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cfabf10&gt;, 'discard_tx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30729c90&gt;, 'sync_losses_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cfabd50&gt;, 'crc_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c6932d0&gt;, 'signal_losses': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cf923d0&gt;, 'signal_losses_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cf92450&gt;, 'discard_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c639fd0&gt;, 'intervals': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30729d50&gt;, 'signal_losses_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d0cf4d0&gt;, 'sync_losses': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf14f46350&gt;, 'discard_tx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317f17d0&gt;, 'tx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d05ad10&gt;, 'tx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d04b850&gt;, 'stats_reported': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d0cf550&gt;, 'discard_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf347df610&gt;, 'discard_tx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30729e90&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d2e9710&gt;, 'crc_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c688950&gt;, 'crc_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c688690&gt;, 'crc_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c6930d0&gt;, 'signal_losses_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d0cf3d0&gt;, 'tx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d04b210&gt;, 'too_short_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d262450&gt;, 'sync_losses_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cfabc90&gt;, 'discard_tx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cdec550&gt;, 'too_short_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d05acd0&gt;, 'too_long_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d2e9790&gt;, 'too_long_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d2e9750&gt;, 'signal_losses_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3726ef10&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30729250&gt;, 'rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ce9bf10&gt;, 'too_short_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d262c50&gt;, 'discard_tx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf317f1b90&gt;, 'sync_losses_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cfabc50&gt;, 'discard_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c396f10&gt;, 'too_long_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c30d7d0&gt;, 'rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d31fbd0&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cfabc10&gt;, 'too_short_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d27ead0&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf14f46510&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d31fcd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31469ad0&gt;, 'rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d307210&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c2b9e10&gt;, 'link_failures_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf14fa5090&gt;, 'normalized_time_col': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d31fb50&gt;, 'update': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bdf5990&gt;, 'rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cf92a90&gt;, 'discard_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf355da650&gt;, 'too_long_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d2e9610&gt;, 'link_failures': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30729e10&gt;, 'link_failures_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d31ff90&gt;, 'crc_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c6e9b50&gt;, 'link_failures_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf355d43d0&gt;, 'too_long_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d27ef50&gt;, 'too_short_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d262690&gt;, 'tx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bdf5a90&gt;, 'rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35fa2d10&gt;, 'discard_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf347df110&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStats.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcErrStats.</code><code class="descname">FcErrStatsConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcErrStats.html#FcErrStatsConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStats.FcErrStatsConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.fc.FcErrStatsHist">
+<span id="ucscentralsdk-mometa-fc-fcerrstatshist-module"></span><h2>ucscentralsdk.mometa.fc.FcErrStatsHist module<a class="headerlink" href="#module-ucscentralsdk.mometa.fc.FcErrStatsHist" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FcErrStatsHist ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcErrStatsHist.</code><code class="descname">FcErrStatsHist</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcErrStatsHist.html#FcErrStatsHist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FcErrStatsHist class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'syncLossesDeltaMax': 'sync_losses_delta_max', 'rxDelta': 'rx_delta', 'crcRxDeltaMax': 'crc_rx_delta_max', 'crcRxDeltaMin': 'crc_rx_delta_min', 'discardRx': 'discard_rx', 'linkFailures': 'link_failures', 'discardRxDeltaAvg': 'discard_rx_delta_avg', 'tx': 'tx', 'discardTxDeltaAvg': 'discard_tx_delta_avg', 'tooShortRxDelta': 'too_short_rx_delta', 'syncLossesDeltaMin': 'sync_losses_delta_min', 'tooLongRxDelta': 'too_long_rx_delta', 'crcRxDelta': 'crc_rx_delta', 'discardRxDelta': 'discard_rx_delta', 'dn': 'dn', 'discardTxDelta': 'discard_tx_delta', 'txDeltaMin': 'tx_delta_min', 'discardTxDeltaMin': 'discard_tx_delta_min', 'discardRxDeltaMin': 'discard_rx_delta_min', 'signalLossesDeltaMax': 'signal_losses_delta_max', 'rxDeltaAvg': 'rx_delta_avg', 'signalLossesDelta': 'signal_losses_delta', 'signalLossesDeltaMin': 'signal_losses_delta_min', 'linkFailuresDeltaMax': 'link_failures_delta_max', 'txDeltaMax': 'tx_delta_max', 'linkFailuresDelta': 'link_failures_delta', 'syncLosses': 'sync_losses', 'discardRxDeltaMax': 'discard_rx_delta_max', 'discardTxDeltaMax': 'discard_tx_delta_max', 'crcRxDeltaAvg': 'crc_rx_delta_avg', 'tooShortRxDeltaAvg': 'too_short_rx_delta_avg', 'tooLongRx': 'too_long_rx', 'mostRecent': 'most_recent', 'linkFailuresDeltaMin': 'link_failures_delta_min', 'id': 'id', 'tooLongRxDeltaMin': 'too_long_rx_delta_min', 'tooLongRxDeltaMax': 'too_long_rx_delta_max', 'rx': 'rx', 'thresholded': 'thresholded', 'signalLosses': 'signal_losses', 'suspect': 'suspect', 'rn': 'rn', 'status': 'status', 'linkFailuresDeltaAvg': 'link_failures_delta_avg', 'tooShortRx': 'too_short_rx', 'syncLossesDeltaAvg': 'sync_losses_delta_avg', 'timeCollected': 'time_collected', 'tooLongRxDeltaAvg': 'too_long_rx_delta_avg', 'rxDeltaMin': 'rx_delta_min', 'childAction': 'child_action', 'discardTx': 'discard_tx', 'syncLossesDelta': 'sync_losses_delta', 'txDeltaAvg': 'tx_delta_avg', 'txDelta': 'tx_delta', 'tooShortRxDeltaMax': 'too_short_rx_delta_max', 'crcRx': 'crc_rx', 'signalLossesDeltaAvg': 'signal_losses_delta_avg', 'rxDeltaMax': 'rx_delta_max', 'tooShortRxDeltaMin': 'too_short_rx_delta_min'}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'link_failures_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80d90&gt;, 'tx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31336090&gt;, 'sync_losses_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee850&gt;, 'discard_tx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80f50&gt;, 'sync_losses_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee7d0&gt;, 'crc_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff810&gt;, 'signal_losses': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80150&gt;, 'signal_losses_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80090&gt;, 'discard_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff5d0&gt;, 'signal_losses_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee0d0&gt;, 'sync_losses': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee650&gt;, 'discard_tx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff190&gt;, 'tx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deeed0&gt;, 'tx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deef50&gt;, 'too_short_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deec50&gt;, 'discard_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff590&gt;, 'discard_tx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff0d0&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee950&gt;, 'crc_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff790&gt;, 'crc_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ffc10&gt;, 'crc_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff990&gt;, 'signal_losses_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee4d0&gt;, 'tx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deefd0&gt;, 'too_short_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deedd0&gt;, 'sync_losses_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee750&gt;, 'discard_tx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff450&gt;, 'too_short_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deee50&gt;, 'too_long_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee9d0&gt;, 'too_long_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deead0&gt;, 'signal_losses_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80590&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80e10&gt;, 'rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d805d0&gt;, 'too_short_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deecd0&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80910&gt;, 'discard_tx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff550&gt;, 'sync_losses_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee6d0&gt;, 'discard_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff8d0&gt;, 'too_long_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deeb50&gt;, 'rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d806d0&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee8d0&gt;, 'most_recent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80a50&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee5d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80790&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ffd10&gt;, 'rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d807d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30dee550&gt;, 'link_failures_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80b10&gt;, 'rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80050&gt;, 'discard_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff1d0&gt;, 'too_long_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deea50&gt;, 'link_failures': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80dd0&gt;, 'link_failures_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80990&gt;, 'crc_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff890&gt;, 'link_failures_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80a10&gt;, 'too_long_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deebd0&gt;, 'too_short_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30deed50&gt;, 'tx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31336110&gt;, 'rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80810&gt;, 'discard_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314ff390&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHist.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcErrStatsHist.</code><code class="descname">FcErrStatsHistConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcErrStatsHist.html#FcErrStatsHistConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.MOST_RECENT_FALSE">
+<code class="descname">MOST_RECENT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.MOST_RECENT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.MOST_RECENT_NO">
+<code class="descname">MOST_RECENT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.MOST_RECENT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.MOST_RECENT_TRUE">
+<code class="descname">MOST_RECENT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.MOST_RECENT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.MOST_RECENT_YES">
+<code class="descname">MOST_RECENT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.MOST_RECENT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcErrStatsHist.FcErrStatsHistConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.fc.FcPIo">
+<span id="ucscentralsdk-mometa-fc-fcpio-module"></span><h2>ucscentralsdk.mometa.fc.FcPIo module<a class="headerlink" href="#module-ucscentralsdk.mometa.fc.FcPIo" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FcPIo ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIo">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcPIo.</code><code class="descname">FcPIo</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>port_id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcPIo.html#FcPIo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FcPIo class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIo.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIo.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIo.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIo.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIo.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'portId'])</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIo.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIo.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'operState': 'oper_state', 'peerDn': 'peer_dn', 'adminTransport': 'admin_transport', 'portId': 'port_id', 'lc': 'lc', 'adminState': 'admin_state', 'xcvrType': 'xcvr_type', 'ts': 'ts', 'aggrPortId': 'aggr_port_id', 'type': 'type', 'dn': 'dn', 'vendor': 'vendor', 'licState': 'lic_state', 'unifiedPort': 'unified_port', 'name': 'name', 'fltAggr': 'flt_aggr', 'mode': 'mode', 'peerChassisId': 'peer_chassis_id', 'ifType': 'if_type', 'ifRole': 'if_role', 'locale': 'locale', 'peerSlotId': 'peer_slot_id', 'peerAggrPortId': 'peer_aggr_port_id', 'usrLbl': 'usr_lbl', 'switchId': 'switch_id', 'licGP': 'lic_gp', 'serial': 'serial', 'wwn': 'wwn', 'transport': 'transport', 'epDn': 'ep_dn', 'stateQual': 'state_qual', 'chassisId': 'chassis_id', 'encap': 'encap', 'rn': 'rn', 'revision': 'revision', 'status': 'status', 'slotId': 'slot_id', 'operSpeed': 'oper_speed', 'peerPortId': 'peer_port_id', 'childAction': 'child_action', 'maxSpeed': 'max_speed', 'isPortChannelMember': 'is_port_channel_member', 'model': 'model'}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIo.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIo.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319aef90&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be6d0&gt;, 'lc': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be250&gt;, 'peer_aggr_port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be750&gt;, 'ts': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319bee50&gt;, 'usr_lbl': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319befd0&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319beed0&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319aee90&gt;, 'peer_port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be8d0&gt;, 'vendor': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319b8090&gt;, 'switch_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319bed50&gt;, 'peer_slot_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be950&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be5d0&gt;, 'peer_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be850&gt;, 'mode': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be4d0&gt;, 'if_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be150&gt;, 'peer_chassis_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be7d0&gt;, 'if_role': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be0d0&gt;, 'locale': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be3d0&gt;, 'xcvr_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319b8190&gt;, 'aggr_port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319aed10&gt;, 'serial': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319beb50&gt;, 'wwn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319b8110&gt;, 'port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be9d0&gt;, 'transport': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319bedd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319aee10&gt;, 'chassis_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319aed90&gt;, 'encap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319aef10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319bead0&gt;, 'revision': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319bea50&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319becd0&gt;, 'flt_aggr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be050&gt;, 'lic_gp': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be2d0&gt;, 'is_port_channel_member': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be1d0&gt;, 'max_speed': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be450&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319aec90&gt;, 'oper_speed': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be650&gt;, 'unified_port': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319bef50&gt;, 'state_qual': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319bec50&gt;, 'admin_transport': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319aea90&gt;, 'slot_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319bebd0&gt;, 'lic_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be350&gt;, 'model': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319be550&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIo.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcPIo.</code><code class="descname">FcPIoConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcPIo.html#FcPIoConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ADMIN_STATE_DISABLED">
+<code class="descname">ADMIN_STATE_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ADMIN_STATE_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ADMIN_STATE_ENABLED">
+<code class="descname">ADMIN_STATE_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ADMIN_STATE_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.CHASSIS_ID_N_A">
+<code class="descname">CHASSIS_ID_N_A</code><em class="property"> = 'N/A'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.CHASSIS_ID_N_A" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_DOT1Q">
+<code class="descname">ENCAP_DOT1Q</code><em class="property"> = 'dot1q'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_DOT1Q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_ISL">
+<code class="descname">ENCAP_ISL</code><em class="property"> = 'isl'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_ISL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_NEGOTIATE">
+<code class="descname">ENCAP_NEGOTIATE</code><em class="property"> = 'negotiate'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_NEGOTIATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_PROPRIETARY">
+<code class="descname">ENCAP_PROPRIETARY</code><em class="property"> = 'proprietary'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_PROPRIETARY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_UNKNOWN">
+<code class="descname">ENCAP_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.ENCAP_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_DIAG">
+<code class="descname">IF_ROLE_DIAG</code><em class="property"> = 'diag'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_DIAG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_FCOE_NAS_STORAGE">
+<code class="descname">IF_ROLE_FCOE_NAS_STORAGE</code><em class="property"> = 'fcoe-nas-storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_FCOE_NAS_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_FCOE_STORAGE">
+<code class="descname">IF_ROLE_FCOE_STORAGE</code><em class="property"> = 'fcoe-storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_FCOE_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_FCOE_UPLINK">
+<code class="descname">IF_ROLE_FCOE_UPLINK</code><em class="property"> = 'fcoe-uplink'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_FCOE_UPLINK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_MGMT">
+<code class="descname">IF_ROLE_MGMT</code><em class="property"> = 'mgmt'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_MGMT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_MONITOR">
+<code class="descname">IF_ROLE_MONITOR</code><em class="property"> = 'monitor'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_MONITOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_NAS_STORAGE">
+<code class="descname">IF_ROLE_NAS_STORAGE</code><em class="property"> = 'nas-storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_NAS_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_NETWORK">
+<code class="descname">IF_ROLE_NETWORK</code><em class="property"> = 'network'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_NETWORK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_NETWORK_FCOE_UPLINK">
+<code class="descname">IF_ROLE_NETWORK_FCOE_UPLINK</code><em class="property"> = 'network-fcoe-uplink'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_NETWORK_FCOE_UPLINK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_SERVER">
+<code class="descname">IF_ROLE_SERVER</code><em class="property"> = 'server'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_SERVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_SERVICE">
+<code class="descname">IF_ROLE_SERVICE</code><em class="property"> = 'service'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_STORAGE">
+<code class="descname">IF_ROLE_STORAGE</code><em class="property"> = 'storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_UNKNOWN">
+<code class="descname">IF_ROLE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_ROLE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_TYPE_AGGREGATION">
+<code class="descname">IF_TYPE_AGGREGATION</code><em class="property"> = 'aggregation'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_TYPE_AGGREGATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_TYPE_PHYSICAL">
+<code class="descname">IF_TYPE_PHYSICAL</code><em class="property"> = 'physical'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_TYPE_PHYSICAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_TYPE_UNKNOWN">
+<code class="descname">IF_TYPE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_TYPE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_TYPE_VIRTUAL">
+<code class="descname">IF_TYPE_VIRTUAL</code><em class="property"> = 'virtual'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IF_TYPE_VIRTUAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IS_PORT_CHANNEL_MEMBER_FALSE">
+<code class="descname">IS_PORT_CHANNEL_MEMBER_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IS_PORT_CHANNEL_MEMBER_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IS_PORT_CHANNEL_MEMBER_NO">
+<code class="descname">IS_PORT_CHANNEL_MEMBER_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IS_PORT_CHANNEL_MEMBER_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IS_PORT_CHANNEL_MEMBER_TRUE">
+<code class="descname">IS_PORT_CHANNEL_MEMBER_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IS_PORT_CHANNEL_MEMBER_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IS_PORT_CHANNEL_MEMBER_YES">
+<code class="descname">IS_PORT_CHANNEL_MEMBER_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.IS_PORT_CHANNEL_MEMBER_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LC_ALLOCATED">
+<code class="descname">LC_ALLOCATED</code><em class="property"> = 'allocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LC_ALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LC_AVAILABLE">
+<code class="descname">LC_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LC_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LC_DEALLOCATED">
+<code class="descname">LC_DEALLOCATED</code><em class="property"> = 'deallocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LC_DEALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LC_REPURPOSED">
+<code class="descname">LC_REPURPOSED</code><em class="property"> = 'repurposed'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LC_REPURPOSED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_LICENSE_EXPIRED">
+<code class="descname">LIC_STATE_LICENSE_EXPIRED</code><em class="property"> = 'license-expired'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_LICENSE_EXPIRED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_LICENSE_GRACEPERIOD">
+<code class="descname">LIC_STATE_LICENSE_GRACEPERIOD</code><em class="property"> = 'license-graceperiod'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_LICENSE_GRACEPERIOD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_LICENSE_INSUFFICIENT">
+<code class="descname">LIC_STATE_LICENSE_INSUFFICIENT</code><em class="property"> = 'license-insufficient'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_LICENSE_INSUFFICIENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_LICENSE_OK">
+<code class="descname">LIC_STATE_LICENSE_OK</code><em class="property"> = 'license-ok'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_LICENSE_OK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_NOT_APPLICABLE">
+<code class="descname">LIC_STATE_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_UNKNOWN">
+<code class="descname">LIC_STATE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.LIC_STATE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_16GBPS">
+<code class="descname">MAX_SPEED_16GBPS</code><em class="property"> = '16gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_16GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_1GBPS">
+<code class="descname">MAX_SPEED_1GBPS</code><em class="property"> = '1gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_1GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_2GBPS">
+<code class="descname">MAX_SPEED_2GBPS</code><em class="property"> = '2gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_2GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_4GBPS">
+<code class="descname">MAX_SPEED_4GBPS</code><em class="property"> = '4gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_4GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_8GBPS">
+<code class="descname">MAX_SPEED_8GBPS</code><em class="property"> = '8gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_8GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_AUTO">
+<code class="descname">MAX_SPEED_AUTO</code><em class="property"> = 'auto'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_AUTO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_INDETERMINATE">
+<code class="descname">MAX_SPEED_INDETERMINATE</code><em class="property"> = 'indeterminate'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MAX_SPEED_INDETERMINATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_ACCESS">
+<code class="descname">MODE_ACCESS</code><em class="property"> = 'access'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_E">
+<code class="descname">MODE_E</code><em class="property"> = 'E'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_E" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_F">
+<code class="descname">MODE_F</code><em class="property"> = 'F'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_F" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_FABRIC">
+<code class="descname">MODE_FABRIC</code><em class="property"> = 'fabric'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_FABRIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_N_PROXY">
+<code class="descname">MODE_N_PROXY</code><em class="property"> = 'n_proxy'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_N_PROXY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_PROMISCUOUS_ACCESS">
+<code class="descname">MODE_PROMISCUOUS_ACCESS</code><em class="property"> = 'promiscuousAccess'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_PROMISCUOUS_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_PROMISCUOUS_TRUNK">
+<code class="descname">MODE_PROMISCUOUS_TRUNK</code><em class="property"> = 'promiscuousTrunk'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_PROMISCUOUS_TRUNK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_SD">
+<code class="descname">MODE_SD</code><em class="property"> = 'SD'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_SD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_TRUNK">
+<code class="descname">MODE_TRUNK</code><em class="property"> = 'trunk'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_TRUNK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_UNKNOWN">
+<code class="descname">MODE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_VNTAG">
+<code class="descname">MODE_VNTAG</code><em class="property"> = 'vntag'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.MODE_VNTAG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_16GBPS">
+<code class="descname">OPER_SPEED_16GBPS</code><em class="property"> = '16gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_16GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_1GBPS">
+<code class="descname">OPER_SPEED_1GBPS</code><em class="property"> = '1gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_1GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_2GBPS">
+<code class="descname">OPER_SPEED_2GBPS</code><em class="property"> = '2gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_2GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_4GBPS">
+<code class="descname">OPER_SPEED_4GBPS</code><em class="property"> = '4gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_4GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_8GBPS">
+<code class="descname">OPER_SPEED_8GBPS</code><em class="property"> = '8gbps'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_8GBPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_AUTO">
+<code class="descname">OPER_SPEED_AUTO</code><em class="property"> = 'auto'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_AUTO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_INDETERMINATE">
+<code class="descname">OPER_SPEED_INDETERMINATE</code><em class="property"> = 'indeterminate'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_SPEED_INDETERMINATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_ADMIN_DOWN">
+<code class="descname">OPER_STATE_ADMIN_DOWN</code><em class="property"> = 'admin-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_ADMIN_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_DOWN">
+<code class="descname">OPER_STATE_DOWN</code><em class="property"> = 'down'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_ERROR_DISABLED">
+<code class="descname">OPER_STATE_ERROR_DISABLED</code><em class="property"> = 'error-disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_ERROR_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_FAILED">
+<code class="descname">OPER_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_HARDWARE_FAILURE">
+<code class="descname">OPER_STATE_HARDWARE_FAILURE</code><em class="property"> = 'hardware-failure'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_HARDWARE_FAILURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_INDETERMINATE">
+<code class="descname">OPER_STATE_INDETERMINATE</code><em class="property"> = 'indeterminate'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_INDETERMINATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_LINK_DOWN">
+<code class="descname">OPER_STATE_LINK_DOWN</code><em class="property"> = 'link-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_LINK_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_LINK_UP">
+<code class="descname">OPER_STATE_LINK_UP</code><em class="property"> = 'link-up'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_LINK_UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_NO_LICENSE">
+<code class="descname">OPER_STATE_NO_LICENSE</code><em class="property"> = 'no-license'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_NO_LICENSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_SFP_NOT_PRESENT">
+<code class="descname">OPER_STATE_SFP_NOT_PRESENT</code><em class="property"> = 'sfp-not-present'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_SFP_NOT_PRESENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_SOFTWARE_FAILURE">
+<code class="descname">OPER_STATE_SOFTWARE_FAILURE</code><em class="property"> = 'software-failure'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_SOFTWARE_FAILURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_UDLD_AGGR_DOWN">
+<code class="descname">OPER_STATE_UDLD_AGGR_DOWN</code><em class="property"> = 'udld-aggr-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_UDLD_AGGR_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_UP">
+<code class="descname">OPER_STATE_UP</code><em class="property"> = 'up'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.OPER_STATE_UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.PEER_CHASSIS_ID_N_A">
+<code class="descname">PEER_CHASSIS_ID_N_A</code><em class="property"> = 'N/A'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.PEER_CHASSIS_ID_N_A" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.SWITCH_ID_A">
+<code class="descname">SWITCH_ID_A</code><em class="property"> = 'A'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.SWITCH_ID_A" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.SWITCH_ID_B">
+<code class="descname">SWITCH_ID_B</code><em class="property"> = 'B'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.SWITCH_ID_B" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.SWITCH_ID_MGMT">
+<code class="descname">SWITCH_ID_MGMT</code><em class="property"> = 'mgmt'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.SWITCH_ID_MGMT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.SWITCH_ID_NONE">
+<code class="descname">SWITCH_ID_NONE</code><em class="property"> = 'NONE'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.SWITCH_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.UNIFIED_PORT_FALSE">
+<code class="descname">UNIFIED_PORT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.UNIFIED_PORT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.UNIFIED_PORT_NO">
+<code class="descname">UNIFIED_PORT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.UNIFIED_PORT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.UNIFIED_PORT_TRUE">
+<code class="descname">UNIFIED_PORT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.UNIFIED_PORT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.UNIFIED_PORT_YES">
+<code class="descname">UNIFIED_PORT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.UNIFIED_PORT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASECX">
+<code class="descname">XCVR_TYPE_1000BASECX</code><em class="property"> = '1000basecx'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASECX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASELH">
+<code class="descname">XCVR_TYPE_1000BASELH</code><em class="property"> = '1000baselh'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASELH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASELX">
+<code class="descname">XCVR_TYPE_1000BASELX</code><em class="property"> = '1000baselx'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASELX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASESX">
+<code class="descname">XCVR_TYPE_1000BASESX</code><em class="property"> = '1000basesx'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASESX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASET">
+<code class="descname">XCVR_TYPE_1000BASET</code><em class="property"> = '1000baset'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASEUNKNOWN">
+<code class="descname">XCVR_TYPE_1000BASEUNKNOWN</code><em class="property"> = '1000baseunknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASEUNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASEVX">
+<code class="descname">XCVR_TYPE_1000BASEVX</code><em class="property"> = '1000basevx'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASEVX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASEX">
+<code class="descname">XCVR_TYPE_1000BASEX</code><em class="property"> = '1000basex'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASEZX">
+<code class="descname">XCVR_TYPE_1000BASEZX</code><em class="property"> = '1000basezx'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_1000BASEZX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASEER">
+<code class="descname">XCVR_TYPE_10GBASEER</code><em class="property"> = '10gbaseer'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASEER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASELR">
+<code class="descname">XCVR_TYPE_10GBASELR</code><em class="property"> = '10gbaselr'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASELR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASELRM">
+<code class="descname">XCVR_TYPE_10GBASELRM</code><em class="property"> = '10gbaselrm'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASELRM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASESR">
+<code class="descname">XCVR_TYPE_10GBASESR</code><em class="property"> = '10gbasesr'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASESR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASEZR">
+<code class="descname">XCVR_TYPE_10GBASEZR</code><em class="property"> = '10gbasezr'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_10GBASEZR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_CWDM1471">
+<code class="descname">XCVR_TYPE_CWDM1471</code><em class="property"> = 'cwdm1471'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_CWDM1471" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_CWDM1531">
+<code class="descname">XCVR_TYPE_CWDM1531</code><em class="property"> = 'cwdm1531'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_CWDM1531" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_CWDM1551">
+<code class="descname">XCVR_TYPE_CWDM1551</code><em class="property"> = 'cwdm1551'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_CWDM1551" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_DWDMSFP">
+<code class="descname">XCVR_TYPE_DWDMSFP</code><em class="property"> = 'dwdmsfp'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_DWDMSFP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_FET">
+<code class="descname">XCVR_TYPE_FET</code><em class="property"> = 'fet'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_FET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU10M">
+<code class="descname">XCVR_TYPE_H10GACU10M</code><em class="property"> = 'h10gacu10m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU10M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU15M">
+<code class="descname">XCVR_TYPE_H10GACU15M</code><em class="property"> = 'h10gacu15m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU15M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU1M">
+<code class="descname">XCVR_TYPE_H10GACU1M</code><em class="property"> = 'h10gacu1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU3M">
+<code class="descname">XCVR_TYPE_H10GACU3M</code><em class="property"> = 'h10gacu3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU5M">
+<code class="descname">XCVR_TYPE_H10GACU5M</code><em class="property"> = 'h10gacu5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU7M">
+<code class="descname">XCVR_TYPE_H10GACU7M</code><em class="property"> = 'h10gacu7m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACU7M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC10M">
+<code class="descname">XCVR_TYPE_H10GACUAOC10M</code><em class="property"> = 'h10gacuaoc10m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC10M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC15M">
+<code class="descname">XCVR_TYPE_H10GACUAOC15M</code><em class="property"> = 'h10gacuaoc15m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC15M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC1M">
+<code class="descname">XCVR_TYPE_H10GACUAOC1M</code><em class="property"> = 'h10gacuaoc1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC2M">
+<code class="descname">XCVR_TYPE_H10GACUAOC2M</code><em class="property"> = 'h10gacuaoc2m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC2M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC3M">
+<code class="descname">XCVR_TYPE_H10GACUAOC3M</code><em class="property"> = 'h10gacuaoc3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC5M">
+<code class="descname">XCVR_TYPE_H10GACUAOC5M</code><em class="property"> = 'h10gacuaoc5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC7M">
+<code class="descname">XCVR_TYPE_H10GACUAOC7M</code><em class="property"> = 'h10gacuaoc7m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GACUAOC7M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC10M">
+<code class="descname">XCVR_TYPE_H10GAOC10M</code><em class="property"> = 'h10gaoc10m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC10M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC1M">
+<code class="descname">XCVR_TYPE_H10GAOC1M</code><em class="property"> = 'h10gaoc1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC2M">
+<code class="descname">XCVR_TYPE_H10GAOC2M</code><em class="property"> = 'h10gaoc2m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC2M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC3M">
+<code class="descname">XCVR_TYPE_H10GAOC3M</code><em class="property"> = 'h10gaoc3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC5M">
+<code class="descname">XCVR_TYPE_H10GAOC5M</code><em class="property"> = 'h10gaoc5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC7M">
+<code class="descname">XCVR_TYPE_H10GAOC7M</code><em class="property"> = 'h10gaoc7m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GAOC7M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU10M">
+<code class="descname">XCVR_TYPE_H10GCU10M</code><em class="property"> = 'h10gcu10m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU10M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU1M">
+<code class="descname">XCVR_TYPE_H10GCU1M</code><em class="property"> = 'h10gcu1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU2M">
+<code class="descname">XCVR_TYPE_H10GCU2M</code><em class="property"> = 'h10gcu2m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU2M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU3M">
+<code class="descname">XCVR_TYPE_H10GCU3M</code><em class="property"> = 'h10gcu3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU5M">
+<code class="descname">XCVR_TYPE_H10GCU5M</code><em class="property"> = 'h10gcu5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU7M">
+<code class="descname">XCVR_TYPE_H10GCU7M</code><em class="property"> = 'h10gcu7m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GCU7M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GLRMSM">
+<code class="descname">XCVR_TYPE_H10GLRMSM</code><em class="property"> = 'h10glrmsm'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GLRMSM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GUSR">
+<code class="descname">XCVR_TYPE_H10GUSR</code><em class="property"> = 'h10gusr'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_H10GUSR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GCR4">
+<code class="descname">XCVR_TYPE_QSFP40GCR4</code><em class="property"> = 'qsfp40gcr4'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GCR4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GCSR4">
+<code class="descname">XCVR_TYPE_QSFP40GCSR4</code><em class="property"> = 'qsfp40gcsr4'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GCSR4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GFET">
+<code class="descname">XCVR_TYPE_QSFP40GFET</code><em class="property"> = 'qsfp40gfet'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GFET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GLR4">
+<code class="descname">XCVR_TYPE_QSFP40GLR4</code><em class="property"> = 'qsfp40glr4'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GLR4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GSR4">
+<code class="descname">XCVR_TYPE_QSFP40GSR4</code><em class="property"> = 'qsfp40gsr4'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GSR4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GSRBD">
+<code class="descname">XCVR_TYPE_QSFP40GSRBD</code><em class="property"> = 'qsfp40gsrbd'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP40GSRBD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4SFP10GCU1M">
+<code class="descname">XCVR_TYPE_QSFP4SFP10GCU1M</code><em class="property"> = 'qsfp4sfp10gcu1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4SFP10GCU1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4SFP10GCU2M">
+<code class="descname">XCVR_TYPE_QSFP4SFP10GCU2M</code><em class="property"> = 'qsfp4sfp10gcu2m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4SFP10GCU2M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4SFP10GCU3M">
+<code class="descname">XCVR_TYPE_QSFP4SFP10GCU3M</code><em class="property"> = 'qsfp4sfp10gcu3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4SFP10GCU3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4SFP10GCU5M">
+<code class="descname">XCVR_TYPE_QSFP4SFP10GCU5M</code><em class="property"> = 'qsfp4sfp10gcu5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4SFP10GCU5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C10M">
+<code class="descname">XCVR_TYPE_QSFP4X10GA0C10M</code><em class="property"> = 'qsfp4x10ga0c10m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C10M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C1M">
+<code class="descname">XCVR_TYPE_QSFP4X10GA0C1M</code><em class="property"> = 'qsfp4x10ga0c1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C2M">
+<code class="descname">XCVR_TYPE_QSFP4X10GA0C2M</code><em class="property"> = 'qsfp4x10ga0c2m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C2M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C3M">
+<code class="descname">XCVR_TYPE_QSFP4X10GA0C3M</code><em class="property"> = 'qsfp4x10ga0c3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C5M">
+<code class="descname">XCVR_TYPE_QSFP4X10GA0C5M</code><em class="property"> = 'qsfp4x10ga0c5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C7M">
+<code class="descname">XCVR_TYPE_QSFP4X10GA0C7M</code><em class="property"> = 'qsfp4x10ga0c7m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0C7M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0CUNKNOWN">
+<code class="descname">XCVR_TYPE_QSFP4X10GA0CUNKNOWN</code><em class="property"> = 'qsfp4x10ga0cunknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GA0CUNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC10M">
+<code class="descname">XCVR_TYPE_QSFP4X10GAC10M</code><em class="property"> = 'qsfp4x10gac10m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC10M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC1M">
+<code class="descname">XCVR_TYPE_QSFP4X10GAC1M</code><em class="property"> = 'qsfp4x10gac1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC3M">
+<code class="descname">XCVR_TYPE_QSFP4X10GAC3M</code><em class="property"> = 'qsfp4x10gac3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC5M">
+<code class="descname">XCVR_TYPE_QSFP4X10GAC5M</code><em class="property"> = 'qsfp4x10gac5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC7M">
+<code class="descname">XCVR_TYPE_QSFP4X10GAC7M</code><em class="property"> = 'qsfp4x10gac7m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GAC7M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GLR">
+<code class="descname">XCVR_TYPE_QSFP4X10GLR</code><em class="property"> = 'qsfp4x10glr'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFP4X10GLR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU10M">
+<code class="descname">XCVR_TYPE_QSFPH40GACU10M</code><em class="property"> = 'qsfph40gacu10m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU10M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU1M">
+<code class="descname">XCVR_TYPE_QSFPH40GACU1M</code><em class="property"> = 'qsfph40gacu1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU3M">
+<code class="descname">XCVR_TYPE_QSFPH40GACU3M</code><em class="property"> = 'qsfph40gacu3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU5M">
+<code class="descname">XCVR_TYPE_QSFPH40GACU5M</code><em class="property"> = 'qsfph40gacu5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU7M">
+<code class="descname">XCVR_TYPE_QSFPH40GACU7M</code><em class="property"> = 'qsfph40gacu7m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GACU7M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC10M">
+<code class="descname">XCVR_TYPE_QSFPH40GAOC10M</code><em class="property"> = 'qsfph40gaoc10m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC10M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC15M">
+<code class="descname">XCVR_TYPE_QSFPH40GAOC15M</code><em class="property"> = 'qsfph40gaoc15m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC15M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC1M">
+<code class="descname">XCVR_TYPE_QSFPH40GAOC1M</code><em class="property"> = 'qsfph40gaoc1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC2M">
+<code class="descname">XCVR_TYPE_QSFPH40GAOC2M</code><em class="property"> = 'qsfph40gaoc2m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC2M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC3M">
+<code class="descname">XCVR_TYPE_QSFPH40GAOC3M</code><em class="property"> = 'qsfph40gaoc3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC5M">
+<code class="descname">XCVR_TYPE_QSFPH40GAOC5M</code><em class="property"> = 'qsfph40gaoc5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC7M">
+<code class="descname">XCVR_TYPE_QSFPH40GAOC7M</code><em class="property"> = 'qsfph40gaoc7m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOC7M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOCUNKNOWN">
+<code class="descname">XCVR_TYPE_QSFPH40GAOCUNKNOWN</code><em class="property"> = 'qsfph40gaocunknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GAOCUNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GCU1M">
+<code class="descname">XCVR_TYPE_QSFPH40GCU1M</code><em class="property"> = 'qsfph40gcu1m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GCU1M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GCU2M">
+<code class="descname">XCVR_TYPE_QSFPH40GCU2M</code><em class="property"> = 'qsfph40gcu2m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GCU2M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GCU3M">
+<code class="descname">XCVR_TYPE_QSFPH40GCU3M</code><em class="property"> = 'qsfph40gcu3m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GCU3M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GCU5M">
+<code class="descname">XCVR_TYPE_QSFPH40GCU5M</code><em class="property"> = 'qsfph40gcu5m'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPH40GCU5M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPLOOP">
+<code class="descname">XCVR_TYPE_QSFPLOOP</code><em class="property"> = 'qsfploop'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPLOOP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPQSA">
+<code class="descname">XCVR_TYPE_QSFPQSA</code><em class="property"> = 'qsfpqsa'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPQSA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPUNKNOWN">
+<code class="descname">XCVR_TYPE_QSFPUNKNOWN</code><em class="property"> = 'qsfpunknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_QSFPUNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_SFP">
+<code class="descname">XCVR_TYPE_SFP</code><em class="property"> = 'sfp'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_SFP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_UNKNOWN">
+<code class="descname">XCVR_TYPE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_X2">
+<code class="descname">XCVR_TYPE_X2</code><em class="property"> = 'x2'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcPIo.FcPIoConsts.XCVR_TYPE_X2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.fc.FcStats">
+<span id="ucscentralsdk-mometa-fc-fcstats-module"></span><h2>ucscentralsdk.mometa.fc.FcStats module<a class="headerlink" href="#module-ucscentralsdk.mometa.fc.FcStats" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FcStats ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStats">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcStats.</code><code class="descname">FcStats</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcStats.html#FcStats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FcStats class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStats.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.fc.FcStats.FcStatsConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStats.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStats.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStats.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStats.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStats.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStats.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'statsReported': 'stats_reported', 'bytesTxDeltaAvg': 'bytes_tx_delta_avg', 'packetsRxDeltaAvg': 'packets_rx_delta_avg', 'packetsTxDeltaMin': 'packets_tx_delta_min', 'bytesRxDeltaMin': 'bytes_rx_delta_min', 'bytesRxDeltaMax': 'bytes_rx_delta_max', 'intervals': 'intervals', 'packetsTxDeltaAvg': 'packets_tx_delta_avg', 'packetsRxDeltaMax': 'packets_rx_delta_max', 'bytesTxDeltaMax': 'bytes_tx_delta_max', 'thresholded': 'thresholded', 'packetsRxDelta': 'packets_rx_delta', 'bytesTx': 'bytes_tx', 'suspect': 'suspect', 'packetsTxDeltaMax': 'packets_tx_delta_max', 'rn': 'rn', 'dn': 'dn', 'bytesTxDelta': 'bytes_tx_delta', 'bytesRx': 'bytes_rx', 'packetsRx': 'packets_rx', 'normalizedTimeCol': 'normalized_time_col', 'update': 'update', 'packetsTx': 'packets_tx', 'packetsTxDelta': 'packets_tx_delta', 'packetsRxDeltaMin': 'packets_rx_delta_min', 'bytesTxDeltaMin': 'bytes_tx_delta_min', 'childAction': 'child_action', 'bytesRxDeltaAvg': 'bytes_rx_delta_avg', 'bytesRxDelta': 'bytes_rx_delta', 'status': 'status', 'timeCollected': 'time_collected'}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStats.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStats.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'packets_tx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765510&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765790&gt;, 'packets_tx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765610&gt;, 'packets_tx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765590&gt;, 'intervals': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77e590&gt;, 'bytes_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77ed90&gt;, 'bytes_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77ed10&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e7651d0&gt;, 'bytes_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77ec90&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765890&gt;, 'bytes_tx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e7650d0&gt;, 'bytes_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77ee90&gt;, 'stats_reported': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765710&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765810&gt;, 'packets_tx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765410&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765910&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765690&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bf310&gt;, 'packets_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77e710&gt;, 'packets_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77e650&gt;, 'bytes_tx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77ef90&gt;, 'normalized_time_col': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77e610&gt;, 'bytes_tx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765150&gt;, 'bytes_tx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77ef10&gt;, 'packets_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765310&gt;, 'bytes_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e77ee10&gt;, 'packets_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765290&gt;, 'packets_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765390&gt;, 'bytes_tx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765050&gt;, 'packets_tx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765490&gt;, 'update': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e765990&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStats.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStatsConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcStats.</code><code class="descname">FcStatsConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcStats.html#FcStatsConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStatsConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStatsConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStatsConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStatsConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStatsConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStatsConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStatsConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStats.FcStatsConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStats.FcStatsConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.fc.FcStatsHist">
+<span id="ucscentralsdk-mometa-fc-fcstatshist-module"></span><h2>ucscentralsdk.mometa.fc.FcStatsHist module<a class="headerlink" href="#module-ucscentralsdk.mometa.fc.FcStatsHist" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for FcStatsHist ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcStatsHist.</code><code class="descname">FcStatsHist</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcStatsHist.html#FcStatsHist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is FcStatsHist class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'status': 'status', 'bytesTxDeltaAvg': 'bytes_tx_delta_avg', 'packetsRxDeltaAvg': 'packets_rx_delta_avg', 'packetsTxDeltaMin': 'packets_tx_delta_min', 'bytesRxDeltaMin': 'bytes_rx_delta_min', 'bytesRxDeltaMax': 'bytes_rx_delta_max', 'mostRecent': 'most_recent', 'id': 'id', 'packetsTxDeltaAvg': 'packets_tx_delta_avg', 'packetsRxDeltaMax': 'packets_rx_delta_max', 'bytesTxDeltaMax': 'bytes_tx_delta_max', 'thresholded': 'thresholded', 'packetsRxDelta': 'packets_rx_delta', 'bytesTx': 'bytes_tx', 'suspect': 'suspect', 'packetsTxDeltaMax': 'packets_tx_delta_max', 'rn': 'rn', 'dn': 'dn', 'bytesTxDelta': 'bytes_tx_delta', 'bytesRx': 'bytes_rx', 'packetsRx': 'packets_rx', 'packetsTx': 'packets_tx', 'packetsTxDelta': 'packets_tx_delta', 'packetsRxDeltaMin': 'packets_rx_delta_min', 'bytesTxDeltaMin': 'bytes_tx_delta_min', 'childAction': 'child_action', 'bytesRxDeltaAvg': 'bytes_rx_delta_avg', 'bytesRxDelta': 'bytes_rx_delta', 'timeCollected': 'time_collected'}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'packets_tx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c290&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01ca90&gt;, 'packets_tx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c990&gt;, 'packets_tx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c250&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01cb90&gt;, 'bytes_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e762bd0&gt;, 'bytes_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e762f10&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bf950&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3eff5610&gt;, 'bytes_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e762e10&gt;, 'bytes_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0c7bd0&gt;, 'bytes_tx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3eff5f10&gt;, 'most_recent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bf610&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01cb10&gt;, 'packets_tx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c390&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01cc10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01ca10&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3eff5890&gt;, 'packets_rx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f013d10&gt;, 'packets_rx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f013110&gt;, 'bytes_tx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0c7d90&gt;, 'bytes_tx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3eff5950&gt;, 'bytes_tx': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0c7c90&gt;, 'packets_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f013950&gt;, 'bytes_rx_delta_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3e762b90&gt;, 'packets_rx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f013b50&gt;, 'packets_rx_delta_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c950&gt;, 'bytes_tx_delta_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0c7c10&gt;, 'packets_tx_delta': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f01c350&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHist.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.fc.FcStatsHist.</code><code class="descname">FcStatsHistConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/fc/FcStatsHist.html#FcStatsHistConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.MOST_RECENT_FALSE">
+<code class="descname">MOST_RECENT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.MOST_RECENT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.MOST_RECENT_NO">
+<code class="descname">MOST_RECENT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.MOST_RECENT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.MOST_RECENT_TRUE">
+<code class="descname">MOST_RECENT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.MOST_RECENT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.MOST_RECENT_YES">
+<code class="descname">MOST_RECENT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.MOST_RECENT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.fc.FcStatsHist.FcStatsHistConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.fc">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.fc" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.fcpool.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.fcpool package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.fault.html" class="btn btn-neutral" title="ucscentralsdk.mometa.fault package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

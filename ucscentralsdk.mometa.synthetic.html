@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.synthetic package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.sysdebug package" href="ucscentralsdk.mometa.sysdebug.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.sw package" href="ucscentralsdk.mometa.sw.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.synthetic package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.synthetic.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-synthetic-package">
+<h1>ucscentralsdk.mometa.synthetic package<a class="headerlink" href="#ucscentralsdk-mometa-synthetic-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.synthetic.SyntheticDirectory">
+<span id="ucscentralsdk-mometa-synthetic-syntheticdirectory-module"></span><h2>ucscentralsdk.mometa.synthetic.SyntheticDirectory module<a class="headerlink" href="#module-ucscentralsdk.mometa.synthetic.SyntheticDirectory" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SyntheticDirectory ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticDirectory.</code><code class="descname">SyntheticDirectory</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>ino</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticDirectory.html#SyntheticDirectory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SyntheticDirectory class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectoryConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'ino'])</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'size': 'size', 'blocks': 'blocks', 'ctime': 'ctime', 'name': 'name', 'rdev': 'rdev', 'dev': 'dev', 'mode': 'mode', 'nlink': 'nlink', 'gid': 'gid', 'status': 'status', 'blksize': 'blksize', 'mtime': 'mtime', 'uid': 'uid', 'path': 'path', 'rn': 'rn', 'atime': 'atime', 'ino': 'ino', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6aba50&gt;, 'size': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5aabe490&gt;, 'blocks': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb8f50&gt;, 'ctime': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb8ad0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6ab350&gt;, 'rdev': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5aabe050&gt;, 'dev': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb8ed0&gt;, 'mode': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6ab0d0&gt;, 'nlink': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6abe10&gt;, 'gid': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6ab310&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5aabee90&gt;, 'blksize': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb8d10&gt;, 'mtime': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6ab710&gt;, 'uid': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5aabe250&gt;, 'path': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6ab390&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5aabe1d0&gt;, 'atime': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb83d0&gt;, 'ino': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d6abb50&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb8850&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectory.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectoryConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticDirectory.</code><code class="descname">SyntheticDirectoryConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticDirectory.html#SyntheticDirectoryConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticDirectory.SyntheticDirectoryConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.synthetic.SyntheticFile">
+<span id="ucscentralsdk-mometa-synthetic-syntheticfile-module"></span><h2>ucscentralsdk.mometa.synthetic.SyntheticFile module<a class="headerlink" href="#module-ucscentralsdk.mometa.synthetic.SyntheticFile" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SyntheticFile ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticFile.</code><code class="descname">SyntheticFile</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>ino</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticFile.html#SyntheticFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SyntheticFile class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFileConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'ino'])</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'size': 'size', 'blocks': 'blocks', 'ctime': 'ctime', 'name': 'name', 'rdev': 'rdev', 'dev': 'dev', 'mode': 'mode', 'nlink': 'nlink', 'gid': 'gid', 'status': 'status', 'blksize': 'blksize', 'mtime': 'mtime', 'uid': 'uid', 'path': 'path', 'rn': 'rn', 'atime': 'atime', 'ino': 'ino', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef94d0&gt;, 'size': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798fdd50&gt;, 'blocks': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9910&gt;, 'ctime': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9ad0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798fddd0&gt;, 'rdev': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798fda10&gt;, 'dev': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9bd0&gt;, 'mode': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9410&gt;, 'nlink': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798fde50&gt;, 'gid': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef93d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798fd890&gt;, 'blksize': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9790&gt;, 'mtime': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9e50&gt;, 'uid': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798fd3d0&gt;, 'path': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798fdc90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798fded0&gt;, 'atime': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9fd0&gt;, 'ino': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9b10&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79ef9490&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFile.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFileConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticFile.</code><code class="descname">SyntheticFileConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticFile.html#SyntheticFileConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFile.SyntheticFileConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.synthetic.SyntheticFileSystem">
+<span id="ucscentralsdk-mometa-synthetic-syntheticfilesystem-module"></span><h2>ucscentralsdk.mometa.synthetic.SyntheticFileSystem module<a class="headerlink" href="#module-ucscentralsdk.mometa.synthetic.SyntheticFileSystem" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SyntheticFileSystem ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticFileSystem.</code><code class="descname">SyntheticFileSystem</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticFileSystem.html#SyntheticFileSystem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SyntheticFileSystem class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystemConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f027810&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f027090&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f027550&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c756b50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystem.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystemConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticFileSystem.</code><code class="descname">SyntheticFileSystemConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticFileSystem.html#SyntheticFileSystemConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFileSystem.SyntheticFileSystemConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.synthetic.SyntheticFsObj">
+<span id="ucscentralsdk-mometa-synthetic-syntheticfsobj-module"></span><h2>ucscentralsdk.mometa.synthetic.SyntheticFsObj module<a class="headerlink" href="#module-ucscentralsdk.mometa.synthetic.SyntheticFsObj" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SyntheticFsObj ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticFsObj.</code><code class="descname">SyntheticFsObj</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticFsObj.html#SyntheticFsObj"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SyntheticFsObj class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObjConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'name': 'name', 'path': 'path', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c845b10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75a4c990&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c845a10&gt;, 'path': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf213947d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf213940d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c845c90&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObj.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObjConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticFsObj.</code><code class="descname">SyntheticFsObjConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticFsObj.html#SyntheticFsObjConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticFsObj.SyntheticFsObjConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.synthetic.SyntheticTime">
+<span id="ucscentralsdk-mometa-synthetic-synthetictime-module"></span><h2>ucscentralsdk.mometa.synthetic.SyntheticTime module<a class="headerlink" href="#module-ucscentralsdk.mometa.synthetic.SyntheticTime" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SyntheticTime ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticTime.</code><code class="descname">SyntheticTime</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>ts</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticTime.html#SyntheticTime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SyntheticTime class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTimeConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'ts'])</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'ts': 'ts', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb8a90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75a6ae50&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb8fd0&gt;, 'ts': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75a6a190&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3ceb8490&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTime.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTimeConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.synthetic.SyntheticTime.</code><code class="descname">SyntheticTimeConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/synthetic/SyntheticTime.html#SyntheticTimeConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.synthetic.SyntheticTime.SyntheticTimeConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.synthetic">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.synthetic" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.sysdebug.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.sysdebug package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.sw.html" class="btn btn-neutral" title="ucscentralsdk.mometa.sw package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.queryresult package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.security package" href="ucscentralsdk.mometa.security.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.query package" href="ucscentralsdk.mometa.query.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.queryresult package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.queryresult.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-queryresult-package">
+<h1>ucscentralsdk.mometa.queryresult package<a class="headerlink" href="#ucscentralsdk-mometa-queryresult-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.queryresult.QueryresultDependency">
+<span id="ucscentralsdk-mometa-queryresult-queryresultdependency-module"></span><h2>ucscentralsdk.mometa.queryresult.QueryresultDependency module<a class="headerlink" href="#module-ucscentralsdk.mometa.queryresult.QueryresultDependency" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for QueryresultDependency ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.queryresult.QueryresultDependency.</code><code class="descname">QueryresultDependency</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>ref_converted_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/queryresult/QueryresultDependency.html#QueryresultDependency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is QueryresultDependency class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'refConvertedDn'])</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'refDn': 'ref_dn', 'status': 'status', 'refConvertedDn': 'ref_converted_dn', 'classType': 'class_type', 'rn': 'rn', 'isImportable': 'is_importable', 'policyOwner': 'policy_owner', 'refName': 'ref_name', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314691d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38cc3250&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31469090&gt;, 'class_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31469210&gt;, 'ref_converted_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38cc3510&gt;, 'is_importable': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf314698d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38cc3910&gt;, 'ref_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38cc3fd0&gt;, 'ref_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38cc3710&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31469250&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependency.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.queryresult.QueryresultDependency.</code><code class="descname">QueryresultDependencyConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/queryresult/QueryresultDependency.html#QueryresultDependencyConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.IS_IMPORTABLE_FALSE">
+<code class="descname">IS_IMPORTABLE_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.IS_IMPORTABLE_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.IS_IMPORTABLE_NO">
+<code class="descname">IS_IMPORTABLE_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.IS_IMPORTABLE_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.IS_IMPORTABLE_TRUE">
+<code class="descname">IS_IMPORTABLE_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.IS_IMPORTABLE_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.IS_IMPORTABLE_YES">
+<code class="descname">IS_IMPORTABLE_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.IS_IMPORTABLE_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDependency.QueryresultDependencyConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp">
+<span id="ucscentralsdk-mometa-queryresult-queryresultdomaingroupep-module"></span><h2>ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for QueryresultDomainGroupEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.</code><code class="descname">QueryresultDomainGroupEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/queryresult/QueryresultDomainGroupEp.html#QueryresultDomainGroupEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is QueryresultDomainGroupEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e6d6910&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e6d6050&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e6d6cd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e6d6a90&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.</code><code class="descname">QueryresultDomainGroupEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/queryresult/QueryresultDomainGroupEp.html#QueryresultDomainGroupEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp.QueryresultDomainGroupEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.queryresult.QueryresultOrgEp">
+<span id="ucscentralsdk-mometa-queryresult-queryresultorgep-module"></span><h2>ucscentralsdk.mometa.queryresult.QueryresultOrgEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.queryresult.QueryresultOrgEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for QueryresultOrgEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.queryresult.QueryresultOrgEp.</code><code class="descname">QueryresultOrgEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/queryresult/QueryresultOrgEp.html#QueryresultOrgEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is QueryresultOrgEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76560610&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76560b90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76560dd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76560d10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.queryresult.QueryresultOrgEp.</code><code class="descname">QueryresultOrgEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/queryresult/QueryresultOrgEp.html#QueryresultOrgEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultOrgEp.QueryresultOrgEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.queryresult.QueryresultUsage">
+<span id="ucscentralsdk-mometa-queryresult-queryresultusage-module"></span><h2>ucscentralsdk.mometa.queryresult.QueryresultUsage module<a class="headerlink" href="#module-ucscentralsdk.mometa.queryresult.QueryresultUsage" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for QueryresultUsage ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.queryresult.QueryresultUsage.</code><code class="descname">QueryresultUsage</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>ref_converted_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/queryresult/QueryresultUsage.html#QueryresultUsage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is QueryresultUsage class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'refConvertedDn'])</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'refDn': 'ref_dn', 'isServiceTemplate': 'is_service_template', 'status': 'status', 'classType': 'class_type', 'rn': 'rn', 'refConvertedDn': 'ref_converted_dn', 'policyOwner': 'policy_owner', 'refName': 'ref_name', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38320cd0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf36e93a90&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319ae4d0&gt;, 'class_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38320250&gt;, 'ref_converted_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319ae7d0&gt;, 'ref_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf36e93910&gt;, 'ref_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf36e93a10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf36e93f10&gt;, 'is_service_template': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf319ae910&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38320150&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsage.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.queryresult.QueryresultUsage.</code><code class="descname">QueryresultUsageConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/queryresult/QueryresultUsage.html#QueryresultUsageConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.IS_SERVICE_TEMPLATE_FALSE">
+<code class="descname">IS_SERVICE_TEMPLATE_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.IS_SERVICE_TEMPLATE_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.IS_SERVICE_TEMPLATE_NO">
+<code class="descname">IS_SERVICE_TEMPLATE_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.IS_SERVICE_TEMPLATE_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.IS_SERVICE_TEMPLATE_TRUE">
+<code class="descname">IS_SERVICE_TEMPLATE_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.IS_SERVICE_TEMPLATE_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.IS_SERVICE_TEMPLATE_YES">
+<code class="descname">IS_SERVICE_TEMPLATE_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.IS_SERVICE_TEMPLATE_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.queryresult.QueryresultUsage.QueryresultUsageConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.queryresult">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.queryresult" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.security.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.security package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.query.html" class="btn btn-neutral" title="ucscentralsdk.mometa.query package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

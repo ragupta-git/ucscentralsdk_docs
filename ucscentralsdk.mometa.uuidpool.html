@@ -1,0 +1,696 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.uuidpool package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.version package" href="ucscentralsdk.mometa.version.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.trig package" href="ucscentralsdk.mometa.trig.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.uuidpool package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.uuidpool.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-uuidpool-package">
+<h1>ucscentralsdk.mometa.uuidpool package<a class="headerlink" href="#ucscentralsdk-mometa-uuidpool-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.uuidpool.UuidpoolAddr">
+<span id="ucscentralsdk-mometa-uuidpool-uuidpooladdr-module"></span><h2>ucscentralsdk.mometa.uuidpool.UuidpoolAddr module<a class="headerlink" href="#module-ucscentralsdk.mometa.uuidpool.UuidpoolAddr" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for UuidpoolAddr ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolAddr.</code><code class="descname">UuidpoolAddr</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolAddr.html#UuidpoolAddr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is UuidpoolAddr class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'globalPoolCnt': 'global_pool_cnt', 'generation': 'generation', 'epPoolCnt': 'ep_pool_cnt', 'id': 'id', 'childAction': 'child_action', 'fltAggr': 'flt_aggr', 'sysCnt': 'sys_cnt', 'domainCnt': 'domain_cnt', 'consCnt': 'cons_cnt', 'scope': 'scope', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5c510&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5c050&gt;, 'generation': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5cb50&gt;, 'flt_aggr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5c990&gt;, 'ep_pool_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5ce50&gt;, 'global_pool_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5cc50&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5c190&gt;, 'domain_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5c290&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf390f8c90&gt;, 'sys_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5cd50&gt;, 'cons_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf390f8550&gt;, 'scope': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5c690&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bc5c2d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddr.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolAddr.</code><code class="descname">UuidpoolAddrConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolAddr.html#UuidpoolAddrConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.CONS_CNT_ASSIGNED_TO_SINGLE">
+<code class="descname">CONS_CNT_ASSIGNED_TO_SINGLE</code><em class="property"> = 'assigned-to-single'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.CONS_CNT_ASSIGNED_TO_SINGLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.CONS_CNT_AVAILABLE">
+<code class="descname">CONS_CNT_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.CONS_CNT_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.DOMAIN_CNT_DEFINED_BY_SINGLE">
+<code class="descname">DOMAIN_CNT_DEFINED_BY_SINGLE</code><em class="property"> = 'defined-by-single'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.DOMAIN_CNT_DEFINED_BY_SINGLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.DOMAIN_CNT_UNDEFINED">
+<code class="descname">DOMAIN_CNT_UNDEFINED</code><em class="property"> = 'undefined'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.DOMAIN_CNT_UNDEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.EP_POOL_CNT_NOT_DEFINED_IN_POOL">
+<code class="descname">EP_POOL_CNT_NOT_DEFINED_IN_POOL</code><em class="property"> = 'not-defined-in-pool'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.EP_POOL_CNT_NOT_DEFINED_IN_POOL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.GLOBAL_POOL_CNT_NOT_DEFINED_IN_POOL">
+<code class="descname">GLOBAL_POOL_CNT_NOT_DEFINED_IN_POOL</code><em class="property"> = 'not-defined-in-pool'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.GLOBAL_POOL_CNT_NOT_DEFINED_IN_POOL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.SCOPE_PRIVATE">
+<code class="descname">SCOPE_PRIVATE</code><em class="property"> = 'private'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.SCOPE_PRIVATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.SCOPE_PUBLIC">
+<code class="descname">SCOPE_PUBLIC</code><em class="property"> = 'public'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.SCOPE_PUBLIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.SYS_CNT_DEFINED_BY_SINGLE">
+<code class="descname">SYS_CNT_DEFINED_BY_SINGLE</code><em class="property"> = 'defined-by-single'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.SYS_CNT_DEFINED_BY_SINGLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.SYS_CNT_UNDEFINED">
+<code class="descname">SYS_CNT_UNDEFINED</code><em class="property"> = 'undefined'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolAddr.UuidpoolAddrConsts.SYS_CNT_UNDEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.uuidpool.UuidpoolBlock">
+<span id="ucscentralsdk-mometa-uuidpool-uuidpoolblock-module"></span><h2>ucscentralsdk.mometa.uuidpool.UuidpoolBlock module<a class="headerlink" href="#module-ucscentralsdk.mometa.uuidpool.UuidpoolBlock" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for UuidpoolBlock ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolBlock.</code><code class="descname">UuidpoolBlock</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>r_from</em>, <em>to</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolBlock.html#UuidpoolBlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is UuidpoolBlock class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'to', u'from'])</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'qualifier': 'qualifier', 'assigned': 'assigned', 'size': 'size', 'from': 'r_from', 'to': 'to', 'configScope': 'config_scope', 'scope': 'scope', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b173fd0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798a6490&gt;, 'qualifier': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b173610&gt;, 'r_from': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b173790&gt;, 'assigned': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b173a10&gt;, 'size': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b173a50&gt;, 'config_scope': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b173210&gt;, 'to': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf798a60d0&gt;, 'scope': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b1739d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b173650&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6b1733d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlock.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolBlock.</code><code class="descname">UuidpoolBlockConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolBlock.html#UuidpoolBlockConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts.CONFIG_SCOPE_PRIVATE">
+<code class="descname">CONFIG_SCOPE_PRIVATE</code><em class="property"> = 'private'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts.CONFIG_SCOPE_PRIVATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts.CONFIG_SCOPE_PUBLIC">
+<code class="descname">CONFIG_SCOPE_PUBLIC</code><em class="property"> = 'public'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts.CONFIG_SCOPE_PUBLIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts.SCOPE_PRIVATE">
+<code class="descname">SCOPE_PRIVATE</code><em class="property"> = 'private'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts.SCOPE_PRIVATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts.SCOPE_PUBLIC">
+<code class="descname">SCOPE_PUBLIC</code><em class="property"> = 'public'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolBlock.UuidpoolBlockConsts.SCOPE_PUBLIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.uuidpool.UuidpoolFormat">
+<span id="ucscentralsdk-mometa-uuidpool-uuidpoolformat-module"></span><h2>ucscentralsdk.mometa.uuidpool.UuidpoolFormat module<a class="headerlink" href="#module-ucscentralsdk.mometa.uuidpool.UuidpoolFormat" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for UuidpoolFormat ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolFormat.</code><code class="descname">UuidpoolFormat</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>format</em>, <em>mask</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolFormat.html#UuidpoolFormat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is UuidpoolFormat class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'mask', u'format'])</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'format': 'format', 'mask': 'mask', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf77904a90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf77904b50&gt;, 'format': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf77904750&gt;, 'mask': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf77904090&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf77904b90&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf779047d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormat.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolFormat.</code><code class="descname">UuidpoolFormatConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolFormat.html#UuidpoolFormatConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FF_FF_FX">
+<code class="descname">MASK_FF_FF_FF_FF_FF_FF_FF_FX</code><em class="property"> = 'FF:FF:FF:FF:FF:FF:FF:Fx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FF_FF_FX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FF_FF_XX">
+<code class="descname">MASK_FF_FF_FF_FF_FF_FF_FF_XX</code><em class="property"> = 'FF:FF:FF:FF:FF:FF:FF:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FF_FF_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FF_FX_XX">
+<code class="descname">MASK_FF_FF_FF_FF_FF_FF_FX_XX</code><em class="property"> = 'FF:FF:FF:FF:FF:FF:Fx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FF_FX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FF_XX_XX">
+<code class="descname">MASK_FF_FF_FF_FF_FF_FF_XX_XX</code><em class="property"> = 'FF:FF:FF:FF:FF:FF:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FF_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FX_XX_XX">
+<code class="descname">MASK_FF_FF_FF_FF_FF_FX_XX_XX</code><em class="property"> = 'FF:FF:FF:FF:FF:Fx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_XX_XX_XX">
+<code class="descname">MASK_FF_FF_FF_FF_FF_XX_XX_XX</code><em class="property"> = 'FF:FF:FF:FF:FF:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FF_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FX_XX_XX_XX">
+<code class="descname">MASK_FF_FF_FF_FF_FX_XX_XX_XX</code><em class="property"> = 'FF:FF:FF:FF:Fx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_FX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_XX_XX_XX_XX">
+<code class="descname">MASK_FF_FF_FF_FF_XX_XX_XX_XX</code><em class="property"> = 'FF:FF:FF:FF:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FF_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FX_XX_XX_XX_XX">
+<code class="descname">MASK_FF_FF_FF_FX_XX_XX_XX_XX</code><em class="property"> = 'FF:FF:FF:Fx:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_FX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_XX_XX_XX_XX_XX">
+<code class="descname">MASK_FF_FF_FF_XX_XX_XX_XX_XX</code><em class="property"> = 'FF:FF:FF:xx:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FF_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FX_XX_XX_XX_XX_XX">
+<code class="descname">MASK_FF_FF_FX_XX_XX_XX_XX_XX</code><em class="property"> = 'FF:FF:Fx:xx:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_FX_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_XX_XX_XX_XX_XX_XX">
+<code class="descname">MASK_FF_FF_XX_XX_XX_XX_XX_XX</code><em class="property"> = 'FF:FF:xx:xx:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FF_XX_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FX_XX_XX_XX_XX_XX_XX">
+<code class="descname">MASK_FF_FX_XX_XX_XX_XX_XX_XX</code><em class="property"> = 'FF:Fx:xx:xx:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_FX_XX_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_XX_XX_XX_XX_XX_XX_XX">
+<code class="descname">MASK_FF_XX_XX_XX_XX_XX_XX_XX</code><em class="property"> = 'FF:xx:xx:xx:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FF_XX_XX_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FX_XX_XX_XX_XX_XX_XX_XX">
+<code class="descname">MASK_FX_XX_XX_XX_XX_XX_XX_XX</code><em class="property"> = 'Fx:xx:xx:xx:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_FX_XX_XX_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_XX_XX_XX_XX_XX_XX_XX_XX">
+<code class="descname">MASK_XX_XX_XX_XX_XX_XX_XX_XX</code><em class="property"> = 'xx:xx:xx:xx:xx:xx:xx:xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolFormat.UuidpoolFormatConsts.MASK_XX_XX_XX_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.uuidpool.UuidpoolPool">
+<span id="ucscentralsdk-mometa-uuidpool-uuidpoolpool-module"></span><h2>ucscentralsdk.mometa.uuidpool.UuidpoolPool module<a class="headerlink" href="#module-ucscentralsdk.mometa.uuidpool.UuidpoolPool" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for UuidpoolPool ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolPool.</code><code class="descname">UuidpoolPool</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolPool.html#UuidpoolPool"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is UuidpoolPool class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'policyLevel': 'policy_level', 'policyOwner': 'policy_owner', 'assigned': 'assigned', 'poolType': 'pool_type', 'intId': 'int_id', 'childAction': 'child_action', 'name': 'name', 'descr': 'descr', 'fltAggr': 'flt_aggr', 'prefix': 'prefix', 'rn': 'rn', 'size': 'size'}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06a50&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06c50&gt;, 'flt_aggr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b064d0&gt;, 'assigned': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6efbce90&gt;, 'prefix': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b067d0&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06990&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6efbc750&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06dd0&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06610&gt;, 'pool_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06e50&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b061d0&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06a90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06a10&gt;, 'size': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b06bd0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPool.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolPool.</code><code class="descname">UuidpoolPoolConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolPool.html#UuidpoolPoolConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POOL_TYPE_NON_QUALIFER">
+<code class="descname">POOL_TYPE_NON_QUALIFER</code><em class="property"> = 'non-qualifer'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POOL_TYPE_NON_QUALIFER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POOL_TYPE_QUALIFER">
+<code class="descname">POOL_TYPE_QUALIFER</code><em class="property"> = 'qualifer'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.POOL_TYPE_QUALIFER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.PREFIX_DERIVED">
+<code class="descname">PREFIX_DERIVED</code><em class="property"> = 'derived'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPool.UuidpoolPoolConsts.PREFIX_DERIVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.uuidpool.UuidpoolPooled">
+<span id="ucscentralsdk-mometa-uuidpool-uuidpoolpooled-module"></span><h2>ucscentralsdk.mometa.uuidpool.UuidpoolPooled module<a class="headerlink" href="#module-ucscentralsdk.mometa.uuidpool.UuidpoolPooled" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for UuidpoolPooled ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolPooled.</code><code class="descname">UuidpoolPooled</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolPooled.html#UuidpoolPooled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is UuidpoolPooled class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooledConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'id': 'id', 'prevAssignedToDn': 'prev_assigned_to_dn', 'childAction': 'child_action', 'poolableDn': 'poolable_dn', 'blockDn': 'block_dn', 'consCnt': 'cons_cnt', 'rn': 'rn', 'idReleasedTime': 'id_released_time', 'assignedToDn': 'assigned_to_dn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2148de50&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e24a810&gt;, 'block_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676af90&gt;, 'assigned_to_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf416b2050&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e24a5d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf49e46cd0&gt;, 'poolable_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e24a1d0&gt;, 'cons_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf49e46dd0&gt;, 'prev_assigned_to_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e24acd0&gt;, 'id_released_time': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e24a190&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e24a310&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooled.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooledConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolPooled.</code><code class="descname">UuidpoolPooledConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolPooled.html#UuidpoolPooledConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooledConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooledConsts.CONS_CNT_ASSIGNED_TO_SINGLE">
+<code class="descname">CONS_CNT_ASSIGNED_TO_SINGLE</code><em class="property"> = 'assigned-to-single'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooledConsts.CONS_CNT_ASSIGNED_TO_SINGLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooledConsts.CONS_CNT_AVAILABLE">
+<code class="descname">CONS_CNT_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolPooled.UuidpoolPooledConsts.CONS_CNT_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.uuidpool.UuidpoolUniverse">
+<span id="ucscentralsdk-mometa-uuidpool-uuidpooluniverse-module"></span><h2>ucscentralsdk.mometa.uuidpool.UuidpoolUniverse module<a class="headerlink" href="#module-ucscentralsdk.mometa.uuidpool.UuidpoolUniverse" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for UuidpoolUniverse ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.</code><code class="descname">UuidpoolUniverse</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolUniverse.html#UuidpoolUniverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is UuidpoolUniverse class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverseConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf77037ad0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf50066550&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2daaf2d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf77037410&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverse.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverseConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.</code><code class="descname">UuidpoolUniverseConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/uuidpool/UuidpoolUniverse.html#UuidpoolUniverseConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.uuidpool.UuidpoolUniverse.UuidpoolUniverseConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.uuidpool">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.uuidpool" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.version.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.version package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.trig.html" class="btn btn-neutral" title="ucscentralsdk.mometa.trig package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

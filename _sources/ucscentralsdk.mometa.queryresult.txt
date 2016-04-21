@@ -1,0 +1,46 @@
+ucscentralsdk.mometa.queryresult package
+========================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.queryresult.QueryresultDependency module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.queryresult.QueryresultDependency
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp module
+----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.queryresult.QueryresultDomainGroupEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.queryresult.QueryresultOrgEp module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.queryresult.QueryresultOrgEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.queryresult.QueryresultUsage module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.queryresult.QueryresultUsage
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.queryresult
+    :members:
+    :undoc-members:
+    :show-inheritance:

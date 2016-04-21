@@ -1,0 +1,22 @@
+ucscentralsdk.mometa.sol package
+================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.sol.SolPolicy module
+-----------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.sol.SolPolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.sol
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.port package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.power package" href="ucscentralsdk.mometa.power.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.policy package" href="ucscentralsdk.mometa.policy.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.port package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.port.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-port-package">
+<h1>ucscentralsdk.mometa.port package<a class="headerlink" href="#ucscentralsdk-mometa-port-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.port.PortGroup">
+<span id="ucscentralsdk-mometa-port-portgroup-module"></span><h2>ucscentralsdk.mometa.port.PortGroup module<a class="headerlink" href="#module-ucscentralsdk.mometa.port.PortGroup" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PortGroup ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroup">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.port.PortGroup.</code><code class="descname">PortGroup</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>type</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/port/PortGroup.html#PortGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PortGroup class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroup.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.port.PortGroup.PortGroupConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroup.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroup.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroup.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroup.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'type'])</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroup.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroup.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'type': 'type', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroup.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroup.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76f873d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf39d05110&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf36454a10&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf39d05350&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf396ef550&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroup.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.port.PortGroup.</code><code class="descname">PortGroupConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/port/PortGroup.html#PortGroupConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_ADAPTOR_EXT">
+<code class="descname">TYPE_ADAPTOR_EXT</code><em class="property"> = 'adaptor-ext'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_ADAPTOR_EXT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_ADAPTOR_PC">
+<code class="descname">TYPE_ADAPTOR_PC</code><em class="property"> = 'adaptor-pc'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_ADAPTOR_PC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_FABRIC">
+<code class="descname">TYPE_FABRIC</code><em class="property"> = 'fabric'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_FABRIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_FABRIC_PC">
+<code class="descname">TYPE_FABRIC_PC</code><em class="property"> = 'fabric-pc'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_FABRIC_PC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_HOST">
+<code class="descname">TYPE_HOST</code><em class="property"> = 'host'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_HOST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_HOST_PC">
+<code class="descname">TYPE_HOST_PC</code><em class="property"> = 'host-pc'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_HOST_PC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_SERVER_PC">
+<code class="descname">TYPE_SERVER_PC</code><em class="property"> = 'server-pc'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_SERVER_PC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_SWITCH_ETHER">
+<code class="descname">TYPE_SWITCH_ETHER</code><em class="property"> = 'switch-ether'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_SWITCH_ETHER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_SWITCH_FC">
+<code class="descname">TYPE_SWITCH_FC</code><em class="property"> = 'switch-fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortGroup.PortGroupConsts.TYPE_SWITCH_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.port.PortSubGroup">
+<span id="ucscentralsdk-mometa-port-portsubgroup-module"></span><h2>ucscentralsdk.mometa.port.PortSubGroup module<a class="headerlink" href="#module-ucscentralsdk.mometa.port.PortSubGroup" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for PortSubGroup ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.port.PortSubGroup.</code><code class="descname">PortSubGroup</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>aggr_port_id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/port/PortSubGroup.html#PortSubGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is PortSubGroup class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'aggrPortId'])</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'locale': 'locale', 'configState': 'config_state', 'slotId': 'slot_id', 'switchId': 'switch_id', 'licGP': 'lic_gp', 'transport': 'transport', 'childAction': 'child_action', 'licState': 'lic_state', 'name': 'name', 'aggrPortId': 'aggr_port_id', 'rn': 'rn', 'type': 'type'}</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'config_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b390&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7bcd0&gt;, 'locale': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b790&gt;, 'lic_gp': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b250&gt;, 'switch_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b150&gt;, 'aggr_port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7bb50&gt;, 'transport': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b490&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7bd50&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7ba10&gt;, 'slot_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7bad0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b210&gt;, 'lic_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b050&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2fd7b310&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35c997d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroup.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.port.PortSubGroup.</code><code class="descname">PortSubGroupConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/port/PortSubGroup.html#PortSubGroupConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.CONFIG_STATE_DISABLED">
+<code class="descname">CONFIG_STATE_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.CONFIG_STATE_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.CONFIG_STATE_ENABLED">
+<code class="descname">CONFIG_STATE_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.CONFIG_STATE_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_LICENSE_EXPIRED">
+<code class="descname">LIC_STATE_LICENSE_EXPIRED</code><em class="property"> = 'license-expired'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_LICENSE_EXPIRED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_LICENSE_GRACEPERIOD">
+<code class="descname">LIC_STATE_LICENSE_GRACEPERIOD</code><em class="property"> = 'license-graceperiod'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_LICENSE_GRACEPERIOD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_LICENSE_INSUFFICIENT">
+<code class="descname">LIC_STATE_LICENSE_INSUFFICIENT</code><em class="property"> = 'license-insufficient'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_LICENSE_INSUFFICIENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_LICENSE_OK">
+<code class="descname">LIC_STATE_LICENSE_OK</code><em class="property"> = 'license-ok'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_LICENSE_OK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_NOT_APPLICABLE">
+<code class="descname">LIC_STATE_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_UNKNOWN">
+<code class="descname">LIC_STATE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.LIC_STATE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.SWITCH_ID_A">
+<code class="descname">SWITCH_ID_A</code><em class="property"> = 'A'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.SWITCH_ID_A" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.SWITCH_ID_B">
+<code class="descname">SWITCH_ID_B</code><em class="property"> = 'B'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.SWITCH_ID_B" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.SWITCH_ID_MGMT">
+<code class="descname">SWITCH_ID_MGMT</code><em class="property"> = 'mgmt'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.SWITCH_ID_MGMT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.SWITCH_ID_NONE">
+<code class="descname">SWITCH_ID_NONE</code><em class="property"> = 'NONE'</em><a class="headerlink" href="#ucscentralsdk.mometa.port.PortSubGroup.PortSubGroupConsts.SWITCH_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.port">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.port" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.power.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.power package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.policy.html" class="btn btn-neutral" title="ucscentralsdk.mometa.policy package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

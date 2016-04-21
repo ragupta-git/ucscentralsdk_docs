@@ -1,0 +1,1054 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.trig package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.uuidpool package" href="ucscentralsdk.mometa.uuidpool.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.top package" href="ucscentralsdk.mometa.top.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.trig package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.trig.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-trig-package">
+<h1>ucscentralsdk.mometa.trig package<a class="headerlink" href="#ucscentralsdk-mometa-trig-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigAbsWindow">
+<span id="ucscentralsdk-mometa-trig-trigabswindow-module"></span><h2>ucscentralsdk.mometa.trig.TrigAbsWindow module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigAbsWindow" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigAbsWindow ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigAbsWindow.</code><code class="descname">TrigAbsWindow</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigAbsWindow.html#TrigAbsWindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigAbsWindow class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'procBreak': 'proc_break', 'concurCap': 'concur_cap', 'procCap': 'proc_cap', 'date': 'date', 'timeCap': 'time_cap', 'jobCount': 'job_count', 'childAction': 'child_action', 'name': 'name', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92690&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92950&gt;, 'concur_cap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92e10&gt;, 'proc_break': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92dd0&gt;, 'date': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92150&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92450&gt;, 'job_count': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92fd0&gt;, 'proc_cap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92f10&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92850&gt;, 'time_cap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e920d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72e92710&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindow.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigAbsWindow.</code><code class="descname">TrigAbsWindowConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigAbsWindow.html#TrigAbsWindowConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts.CONCUR_CAP_UNLIMITED">
+<code class="descname">CONCUR_CAP_UNLIMITED</code><em class="property"> = 'unlimited'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts.CONCUR_CAP_UNLIMITED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts.PROC_BREAK_NONE">
+<code class="descname">PROC_BREAK_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts.PROC_BREAK_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts.PROC_CAP_UNLIMITED">
+<code class="descname">PROC_CAP_UNLIMITED</code><em class="property"> = 'unlimited'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts.PROC_CAP_UNLIMITED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts.TIME_CAP_NONE">
+<code class="descname">TIME_CAP_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigAbsWindow.TrigAbsWindowConsts.TIME_CAP_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigMeta">
+<span id="ucscentralsdk-mometa-trig-trigmeta-module"></span><h2>ucscentralsdk.mometa.trig.TrigMeta module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigMeta" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigMeta ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMeta">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigMeta.</code><code class="descname">TrigMeta</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>sched_name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigMeta.html#TrigMeta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigMeta class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'schedName'])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'operState': 'oper_state', 'policyLevel': 'policy_level', 'policyOwner': 'policy_owner', 'schedName': 'sched_name', 'intId': 'int_id', 'jobCount': 'job_count', 'childAction': 'child_action', 'name': 'name', 'descr': 'descr', 'trigTime': 'trig_time', 'windowDn': 'window_dn', 'adminState': 'admin_state', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888ee10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30f69090&gt;, 'trig_time': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30f69710&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5da84910&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888e7d0&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888ec50&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888ec10&gt;, 'job_count': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888efd0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888e250&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888ea10&gt;, 'window_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3f0bf090&gt;, 'sched_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30f69250&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888e150&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888e2d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2888ed50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMeta.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigMeta.</code><code class="descname">TrigMetaConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigMeta.html#TrigMetaConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_TRIGGER">
+<code class="descname">ADMIN_STATE_TRIGGER</code><em class="property"> = 'trigger'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_TRIGGER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_TRIGGERED">
+<code class="descname">ADMIN_STATE_TRIGGERED</code><em class="property"> = 'triggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_TRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_TRIGGER_IMMEDIATE">
+<code class="descname">ADMIN_STATE_TRIGGER_IMMEDIATE</code><em class="property"> = 'trigger-immediate'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_TRIGGER_IMMEDIATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_UNTRIGGERED">
+<code class="descname">ADMIN_STATE_UNTRIGGERED</code><em class="property"> = 'untriggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_UNTRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_USER_ACK">
+<code class="descname">ADMIN_STATE_USER_ACK</code><em class="property"> = 'user-ack'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.ADMIN_STATE_USER_ACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_CAP_REACHED">
+<code class="descname">OPER_STATE_CAP_REACHED</code><em class="property"> = 'cap-reached'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_CAP_REACHED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_FAILED">
+<code class="descname">OPER_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_IN_PROGRESS">
+<code class="descname">OPER_STATE_IN_PROGRESS</code><em class="property"> = 'in-progress'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_IN_PROGRESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_PENDING">
+<code class="descname">OPER_STATE_PENDING</code><em class="property"> = 'pending'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_PENDING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_PENDING_ACK">
+<code class="descname">OPER_STATE_PENDING_ACK</code><em class="property"> = 'pending-ack'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_PENDING_ACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_TRIGGERED">
+<code class="descname">OPER_STATE_TRIGGERED</code><em class="property"> = 'triggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.OPER_STATE_TRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigMeta.TrigMetaConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigPendingAckCount">
+<span id="ucscentralsdk-mometa-trig-trigpendingackcount-module"></span><h2>ucscentralsdk.mometa.trig.TrigPendingAckCount module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigPendingAckCount" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigPendingAckCount ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigPendingAckCount.</code><code class="descname">TrigPendingAckCount</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigPendingAckCount.html#TrigPendingAckCount"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigPendingAckCount class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCountConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'count': 'count', 'dn': 'dn', 'rn': 'rn', 'status': 'status', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'count': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6ee53110&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6ee53ed0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4107dd10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4107db90&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6ee53dd0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCount.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCountConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigPendingAckCount.</code><code class="descname">TrigPendingAckCountConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigPendingAckCount.html#TrigPendingAckCountConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigPendingAckCount.TrigPendingAckCountConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigRecurrWindow">
+<span id="ucscentralsdk-mometa-trig-trigrecurrwindow-module"></span><h2>ucscentralsdk.mometa.trig.TrigRecurrWindow module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigRecurrWindow" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigRecurrWindow ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigRecurrWindow.</code><code class="descname">TrigRecurrWindow</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigRecurrWindow.html#TrigRecurrWindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigRecurrWindow class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'startDate': 'start_date', 'procBreak': 'proc_break', 'concurCap': 'concur_cap', 'procCap': 'proc_cap', 'timeCap': 'time_cap', 'day': 'day', 'minute': 'minute', 'childAction': 'child_action', 'name': 'name', 'hour': 'hour', 'status': 'status', 'jobCount': 'job_count', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf425677d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567e10&gt;, 'concur_cap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567490&gt;, 'proc_break': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567550&gt;, 'day': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567a90&gt;, 'minute': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567cd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567390&gt;, 'job_count': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567310&gt;, 'proc_cap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567ed0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567c50&gt;, 'hour': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567290&gt;, 'time_cap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567810&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42567910&gt;, 'start_date': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf425673d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindow.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigRecurrWindow.</code><code class="descname">TrigRecurrWindowConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigRecurrWindow.html#TrigRecurrWindowConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.CONCUR_CAP_UNLIMITED">
+<code class="descname">CONCUR_CAP_UNLIMITED</code><em class="property"> = 'unlimited'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.CONCUR_CAP_UNLIMITED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_EVEN_DAY">
+<code class="descname">DAY_EVEN_DAY</code><em class="property"> = 'even-day'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_EVEN_DAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_EVERY_DAY">
+<code class="descname">DAY_EVERY_DAY</code><em class="property"> = 'every-day'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_EVERY_DAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_FRIDAY">
+<code class="descname">DAY_FRIDAY</code><em class="property"> = 'Friday'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_FRIDAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_MONDAY">
+<code class="descname">DAY_MONDAY</code><em class="property"> = 'Monday'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_MONDAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_ODD_DAY">
+<code class="descname">DAY_ODD_DAY</code><em class="property"> = 'odd-day'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_ODD_DAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_SATURDAY">
+<code class="descname">DAY_SATURDAY</code><em class="property"> = 'Saturday'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_SATURDAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_SUNDAY">
+<code class="descname">DAY_SUNDAY</code><em class="property"> = 'Sunday'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_SUNDAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_THURSDAY">
+<code class="descname">DAY_THURSDAY</code><em class="property"> = 'Thursday'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_THURSDAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_TUESDAY">
+<code class="descname">DAY_TUESDAY</code><em class="property"> = 'Tuesday'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_TUESDAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_WEDNESDAY">
+<code class="descname">DAY_WEDNESDAY</code><em class="property"> = 'Wednesday'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.DAY_WEDNESDAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.PROC_BREAK_NONE">
+<code class="descname">PROC_BREAK_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.PROC_BREAK_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.PROC_CAP_UNLIMITED">
+<code class="descname">PROC_CAP_UNLIMITED</code><em class="property"> = 'unlimited'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.PROC_CAP_UNLIMITED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.TIME_CAP_NONE">
+<code class="descname">TIME_CAP_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigRecurrWindow.TrigRecurrWindowConsts.TIME_CAP_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigSched">
+<span id="ucscentralsdk-mometa-trig-trigsched-module"></span><h2>ucscentralsdk.mometa.trig.TrigSched module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigSched" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigSched ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSched">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigSched.</code><code class="descname">TrigSched</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigSched.html#TrigSched"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSched" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigSched class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSched.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSched.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSched.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSched.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSched.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSched.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSched.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'operState': 'oper_state', 'policyLevel': 'policy_level', 'policyOwner': 'policy_owner', 'intId': 'int_id', 'childAction': 'child_action', 'schedType': 'sched_type', 'name': 'name', 'descr': 'descr', 'schedMode': 'sched_mode', 'adminState': 'admin_state', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSched.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSched.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec6d90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d108550&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec6450&gt;, 'sched_mode': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d108b50&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2daaf810&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf15075e50&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec6b90&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf15075bd0&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec6990&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf15075410&gt;, 'sched_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d1084d0&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf15075c10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3d1080d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSched.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigSched.</code><code class="descname">TrigSchedConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigSched.html#TrigSchedConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_TRIGGER">
+<code class="descname">ADMIN_STATE_TRIGGER</code><em class="property"> = 'trigger'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_TRIGGER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_TRIGGERED">
+<code class="descname">ADMIN_STATE_TRIGGERED</code><em class="property"> = 'triggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_TRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_TRIGGER_IMMEDIATE">
+<code class="descname">ADMIN_STATE_TRIGGER_IMMEDIATE</code><em class="property"> = 'trigger-immediate'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_TRIGGER_IMMEDIATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_UNTRIGGERED">
+<code class="descname">ADMIN_STATE_UNTRIGGERED</code><em class="property"> = 'untriggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_UNTRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_USER_ACK">
+<code class="descname">ADMIN_STATE_USER_ACK</code><em class="property"> = 'user-ack'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.ADMIN_STATE_USER_ACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_CAP_REACHED">
+<code class="descname">OPER_STATE_CAP_REACHED</code><em class="property"> = 'cap-reached'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_CAP_REACHED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_FAILED">
+<code class="descname">OPER_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_IN_PROGRESS">
+<code class="descname">OPER_STATE_IN_PROGRESS</code><em class="property"> = 'in-progress'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_IN_PROGRESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_PENDING">
+<code class="descname">OPER_STATE_PENDING</code><em class="property"> = 'pending'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_PENDING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_PENDING_ACK">
+<code class="descname">OPER_STATE_PENDING_ACK</code><em class="property"> = 'pending-ack'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_PENDING_ACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_TRIGGERED">
+<code class="descname">OPER_STATE_TRIGGERED</code><em class="property"> = 'triggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.OPER_STATE_TRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.SCHED_MODE_ADVANCED">
+<code class="descname">SCHED_MODE_ADVANCED</code><em class="property"> = 'advanced'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.SCHED_MODE_ADVANCED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.SCHED_MODE_SIMPLE">
+<code class="descname">SCHED_MODE_SIMPLE</code><em class="property"> = 'simple'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.SCHED_MODE_SIMPLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.SCHED_TYPE_DEFAULT">
+<code class="descname">SCHED_TYPE_DEFAULT</code><em class="property"> = 'default'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.SCHED_TYPE_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.SCHED_TYPE_STORAGE">
+<code class="descname">SCHED_TYPE_STORAGE</code><em class="property"> = 'storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigSched.TrigSchedConsts.SCHED_TYPE_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigServerToken">
+<span id="ucscentralsdk-mometa-trig-trigservertoken-module"></span><h2>ucscentralsdk.mometa.trig.TrigServerToken module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigServerToken" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigServerToken ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigServerToken.</code><code class="descname">TrigServerToken</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigServerToken.html#TrigServerToken"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigServerToken class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigServerToken.TrigServerTokenConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'ownerDn': 'owner_dn', 'activityTs': 'activity_ts', 'operState': 'oper_state', 'status': 'status', 'triggerableDn': 'triggerable_dn', 'rn': 'rn', 'tokenRequestorDn': 'token_requestor_dn', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030f2d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030f7d0&gt;, 'owner_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030f790&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030f490&gt;, 'token_requestor_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030f390&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030f710&gt;, 'triggerable_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3cf3a490&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030fb50&gt;, 'activity_ts': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030f410&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7030f350&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerToken.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerTokenConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigServerToken.</code><code class="descname">TrigServerTokenConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigServerToken.html#TrigServerTokenConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerTokenConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerTokenConsts.OPER_STATE_EXPIRED">
+<code class="descname">OPER_STATE_EXPIRED</code><em class="property"> = 'expired'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerTokenConsts.OPER_STATE_EXPIRED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigServerToken.TrigServerTokenConsts.OPER_STATE_VALID">
+<code class="descname">OPER_STATE_VALID</code><em class="property"> = 'valid'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigServerToken.TrigServerTokenConsts.OPER_STATE_VALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigTest">
+<span id="ucscentralsdk-mometa-trig-trigtest-module"></span><h2>ucscentralsdk.mometa.trig.TrigTest module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigTest" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigTest ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTest">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigTest.</code><code class="descname">TrigTest</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigTest.html#TrigTest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigTest class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTest.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTest.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTest.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTest.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTest.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTest.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTest.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'policyLevel': 'policy_level', 'policyOwner': 'policy_owner', 'operScheduler': 'oper_scheduler', 'scheduler': 'scheduler', 'intId': 'int_id', 'creationDate': 'creation_date', 'name': 'name', 'autoDelete': 'auto_delete', 'descr': 'descr', 'adminState': 'admin_state', 'rn': 'rn', 'childAction': 'child_action', 'ignoreCap': 'ignore_cap'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTest.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTest.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec6a10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78b0e810&gt;, 'auto_delete': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf303f5690&gt;, 'creation_date': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec6190&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf303f5390&gt;, 'scheduler': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76b1e910&gt;, 'oper_scheduler': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76b1e050&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec6550&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf303f5ad0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76b1ecd0&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec6210&gt;, 'ignore_cap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74ec62d0&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76b1e0d0&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76b1e710&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf76b1ef10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTest.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigTest.</code><code class="descname">TrigTestConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigTest.html#TrigTestConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_TRIGGER">
+<code class="descname">ADMIN_STATE_TRIGGER</code><em class="property"> = 'trigger'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_TRIGGER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_TRIGGERED">
+<code class="descname">ADMIN_STATE_TRIGGERED</code><em class="property"> = 'triggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_TRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_TRIGGER_IMMEDIATE">
+<code class="descname">ADMIN_STATE_TRIGGER_IMMEDIATE</code><em class="property"> = 'trigger-immediate'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_TRIGGER_IMMEDIATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_UNTRIGGERED">
+<code class="descname">ADMIN_STATE_UNTRIGGERED</code><em class="property"> = 'untriggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_UNTRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_USER_ACK">
+<code class="descname">ADMIN_STATE_USER_ACK</code><em class="property"> = 'user-ack'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.ADMIN_STATE_USER_ACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.AUTO_DELETE_FALSE">
+<code class="descname">AUTO_DELETE_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.AUTO_DELETE_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.AUTO_DELETE_NO">
+<code class="descname">AUTO_DELETE_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.AUTO_DELETE_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.AUTO_DELETE_TRUE">
+<code class="descname">AUTO_DELETE_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.AUTO_DELETE_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.AUTO_DELETE_YES">
+<code class="descname">AUTO_DELETE_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.AUTO_DELETE_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.IGNORE_CAP_FALSE">
+<code class="descname">IGNORE_CAP_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.IGNORE_CAP_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.IGNORE_CAP_NO">
+<code class="descname">IGNORE_CAP_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.IGNORE_CAP_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.IGNORE_CAP_TRUE">
+<code class="descname">IGNORE_CAP_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.IGNORE_CAP_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.IGNORE_CAP_YES">
+<code class="descname">IGNORE_CAP_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.IGNORE_CAP_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTest.TrigTestConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigTokenRequestor">
+<span id="ucscentralsdk-mometa-trig-trigtokenrequestor-module"></span><h2>ucscentralsdk.mometa.trig.TrigTokenRequestor module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigTokenRequestor" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigTokenRequestor ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigTokenRequestor.</code><code class="descname">TrigTokenRequestor</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigTokenRequestor.html#TrigTokenRequestor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigTokenRequestor class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id', u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'activityTs': 'activity_ts', 'tokenDn': 'token_dn', 'operState': 'oper_state', 'ownerDn': 'owner_dn', 'triggerableDn': 'triggerable_dn', 'ownerName': 'owner_name', 'id': 'id', 'childAction': 'child_action', 'name': 'name', 'ownerIp': 'owner_ip', 'ownerIpv4v6Addr': 'owner_ipv4v6_addr', 'adminState': 'admin_state', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6290&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75078c90&gt;, 'owner_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6710&gt;, 'activity_ts': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6450&gt;, 'owner_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6b50&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d61d0&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6890&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6d90&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6b90&gt;, 'owner_ip': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6050&gt;, 'owner_ipv4v6_addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d6c10&gt;, 'triggerable_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75078410&gt;, 'token_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75078110&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e3d66d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf750783d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestor.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigTokenRequestor.</code><code class="descname">TrigTokenRequestorConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigTokenRequestor.html#TrigTokenRequestorConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.ADMIN_STATE_AUTO_SCHED">
+<code class="descname">ADMIN_STATE_AUTO_SCHED</code><em class="property"> = 'auto-sched'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.ADMIN_STATE_AUTO_SCHED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.ADMIN_STATE_FORCE_ACK">
+<code class="descname">ADMIN_STATE_FORCE_ACK</code><em class="property"> = 'force-ack'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.ADMIN_STATE_FORCE_ACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.ADMIN_STATE_SCHED_ACK">
+<code class="descname">ADMIN_STATE_SCHED_ACK</code><em class="property"> = 'sched-ack'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.ADMIN_STATE_SCHED_ACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_CAP_REACHED">
+<code class="descname">OPER_STATE_CAP_REACHED</code><em class="property"> = 'cap-reached'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_CAP_REACHED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_FAILED">
+<code class="descname">OPER_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_IN_PROGRESS">
+<code class="descname">OPER_STATE_IN_PROGRESS</code><em class="property"> = 'in-progress'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_IN_PROGRESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_PENDING">
+<code class="descname">OPER_STATE_PENDING</code><em class="property"> = 'pending'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_PENDING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_PENDING_ACK">
+<code class="descname">OPER_STATE_PENDING_ACK</code><em class="property"> = 'pending-ack'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_PENDING_ACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_TRIGGERED">
+<code class="descname">OPER_STATE_TRIGGERED</code><em class="property"> = 'triggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTokenRequestor.TrigTokenRequestorConsts.OPER_STATE_TRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig.TrigTriggered">
+<span id="ucscentralsdk-mometa-trig-trigtriggered-module"></span><h2>ucscentralsdk.mometa.trig.TrigTriggered module<a class="headerlink" href="#module-ucscentralsdk.mometa.trig.TrigTriggered" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for TrigTriggered ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigTriggered.</code><code class="descname">TrigTriggered</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>tr_id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigTriggered.html#TrigTriggered"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is TrigTriggered class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'trId'])</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'operState': 'oper_state', 'trDn': 'tr_dn', 'trId': 'tr_id', 'rn': 'rn', 'order': 'order', 'jobCount': 'job_count', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78098790&gt;, 'job_count': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78098950&gt;, 'tr_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf27278410&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78098d10&gt;, 'tr_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf272789d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf780983d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf27278810&gt;, 'order': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78098f10&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf78098b50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggered.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.trig.TrigTriggered.</code><code class="descname">TrigTriggeredConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/trig/TrigTriggered.html#TrigTriggeredConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts.OPER_STATE_FAILED">
+<code class="descname">OPER_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts.OPER_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts.OPER_STATE_IN_PROGRESS">
+<code class="descname">OPER_STATE_IN_PROGRESS</code><em class="property"> = 'in-progress'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts.OPER_STATE_IN_PROGRESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts.OPER_STATE_PENDING">
+<code class="descname">OPER_STATE_PENDING</code><em class="property"> = 'pending'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts.OPER_STATE_PENDING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts.OPER_STATE_TRIGGERED">
+<code class="descname">OPER_STATE_TRIGGERED</code><em class="property"> = 'triggered'</em><a class="headerlink" href="#ucscentralsdk.mometa.trig.TrigTriggered.TrigTriggeredConsts.OPER_STATE_TRIGGERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.trig">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.trig" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.uuidpool.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.uuidpool package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.top.html" class="btn btn-neutral" title="ucscentralsdk.mometa.top package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

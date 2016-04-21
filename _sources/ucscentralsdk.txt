@@ -1,0 +1,166 @@
+ucscentralsdk package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    ucscentralsdk.methodmeta
+    ucscentralsdk.mometa
+
+Submodules
+----------
+
+ucscentralsdk.ucscentralbasetype module
+---------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralbasetype
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralconstants module
+----------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralconstants
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralcore module
+-----------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralcore
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralcoremeta module
+---------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralcoremeta
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralcoreutils module
+----------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralcoreutils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentraldriver module
+-------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentraldriver
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentraleventhandler module
+-------------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentraleventhandler
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralexception module
+----------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralexception
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralfilter module
+-------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralfilter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralfiltertype module
+-----------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralfiltertype
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralgenutils module
+---------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralgenutils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralhandle module
+-------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralhandle
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralmeta module
+-----------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralmeta
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralmethod module
+-------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralmethod
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralmethodfactory module
+--------------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralmethodfactory
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralmo module
+---------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralmo
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralsession module
+--------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralsession
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.ucscentralxmlcodec module
+---------------------------------------
+
+.. automodule:: ucscentralsdk.ucscentralxmlcodec
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk
+    :members:
+    :undoc-members:
+    :show-inheritance:

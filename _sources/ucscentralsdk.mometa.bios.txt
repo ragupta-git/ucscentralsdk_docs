@@ -1,0 +1,686 @@
+ucscentralsdk.mometa.bios package
+=================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.bios.BiosBOT module
+----------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosBOT
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosBootDev module
+--------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosBootDev
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosBootDevGrp module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosBootDevGrp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosUnit module
+-----------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosUnit
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVProfile module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVProfile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfACPI10Support module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfACPI10Support
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfASPMSupport module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfASPMSupport
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfAllUSBDevices module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfAllUSBDevices
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfAltitude module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfAltitude
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfAssertNMIOnPERR module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfAssertNMIOnPERR
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfAssertNMIOnSERR module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfAssertNMIOnSERR
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfBootOptionRetry module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfBootOptionRetry
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfCPUHardwarePowerManagement module
+-----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfCPUHardwarePowerManagement
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfCPUPerformance module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfCPUPerformance
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfCPUPowerManagement module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfCPUPowerManagement
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfConsistentDeviceNameControl module
+------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfConsistentDeviceNameControl
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfConsoleRedirection module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfConsoleRedirection
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfCoreMultiProcessing module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfCoreMultiProcessing
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfDDR3VoltageSelection module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfDDR3VoltageSelection
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfDRAMClockThrottling module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfDRAMClockThrottling
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfDirectCacheAccess module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfDirectCacheAccess
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfDramRefreshRate module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfDramRefreshRate
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfEnhancedIntelSpeedStepTech module
+-----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfEnhancedIntelSpeedStepTech
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfExecuteDisableBit module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfExecuteDisableBit
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfFRB2Timer module
+------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfFRB2Timer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfFrequencyFloorOverride module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfFrequencyFloorOverride
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfFrontPanelLockout module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfFrontPanelLockout
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfIntegratedGraphics module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfIntegratedGraphics
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfIntegratedGraphicsApertureSize module
+---------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfIntegratedGraphicsApertureSize
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfIntelEntrySASRAIDModule module
+--------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfIntelEntrySASRAIDModule
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfIntelHyperThreadingTech module
+--------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfIntelHyperThreadingTech
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfIntelTrustedExecutionTechnology module
+----------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfIntelTrustedExecutionTechnology
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfIntelTurboBoostTech module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfIntelTurboBoostTech
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfIntelVTForDirectedIO module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfIntelVTForDirectedIO
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfIntelVirtualizationTechnology module
+--------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfIntelVirtualizationTechnology
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfInterleaveConfiguration module
+--------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfInterleaveConfiguration
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfLocalX2Apic module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfLocalX2Apic
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfLvDIMMSupport module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfLvDIMMSupport
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfMaxVariableMTRRSetting module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfMaxVariableMTRRSetting
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfMaximumMemoryBelow4GB module
+------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfMaximumMemoryBelow4GB
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfMemoryMappedIOAbove4GB module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfMemoryMappedIOAbove4GB
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfMirroringMode module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfMirroringMode
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfNUMAOptimized module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfNUMAOptimized
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfOSBootWatchdogTimer module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfOSBootWatchdogTimer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfOSBootWatchdogTimerPolicy module
+----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfOSBootWatchdogTimerPolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfOSBootWatchdogTimerTimeout module
+-----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfOSBootWatchdogTimerTimeout
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfOnboardGraphics module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfOnboardGraphics
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfOnboardSATAController module
+------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfOnboardSATAController
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfOnboardStorage module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfOnboardStorage
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfOptionROMEnable module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfOptionROMEnable
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfOptionROMLoad module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfOptionROMLoad
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfPCILOMPortsConfiguration module
+---------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfPCILOMPortsConfiguration
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfPCISlotLinkSpeed module
+-------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfPCISlotLinkSpeed
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfPCISlotOptionROMEnable module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfPCISlotOptionROMEnable
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfPOSTErrorPause module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfPOSTErrorPause
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfPSTATECoordination module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfPSTATECoordination
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfPackageCStateLimit module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfPackageCStateLimit
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfProcessorC1E module
+---------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfProcessorC1E
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfProcessorC3Report module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfProcessorC3Report
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfProcessorC6Report module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfProcessorC6Report
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfProcessorC7Report module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfProcessorC7Report
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfProcessorCState module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfProcessorCState
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfProcessorEnergyConfiguration module
+-------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfProcessorEnergyConfiguration
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfProcessorPrefetchConfig module
+--------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfProcessorPrefetchConfig
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfQPILinkFrequencySelect module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfQPILinkFrequencySelect
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfQPISnoopMode module
+---------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfQPISnoopMode
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfQuietBoot module
+------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfQuietBoot
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfResumeOnACPowerLoss module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfResumeOnACPowerLoss
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfScrubPolicies module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfScrubPolicies
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfSelectMemoryRASConfiguration module
+-------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfSelectMemoryRASConfiguration
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfSerialPortAEnable module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfSerialPortAEnable
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfSparingMode module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfSparingMode
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfSriovConfig module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfSriovConfig
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfTPMPendingOperation module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfTPMPendingOperation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfTrustedPlatformModule module
+------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfTrustedPlatformModule
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfUCSMBootModeControl module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfUCSMBootModeControl
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfUCSMBootOrderRuleControl module
+---------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfUCSMBootOrderRuleControl
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfUEFIOSUseLegacyVideo module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfUEFIOSUseLegacyVideo
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfUSBBootConfig module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfUSBBootConfig
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfUSBConfiguration module
+-------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfUSBConfiguration
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfUSBFrontPanelAccessLock module
+--------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfUSBFrontPanelAccessLock
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfUSBPortConfiguration module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfUSBPortConfiguration
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfUSBSystemIdlePowerOptimizingSetting module
+--------------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfUSBSystemIdlePowerOptimizingSetting
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.bios.BiosVfVGAPriority module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.bios.BiosVfVGAPriority
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.bios
+    :members:
+    :undoc-members:
+    :show-inheritance:

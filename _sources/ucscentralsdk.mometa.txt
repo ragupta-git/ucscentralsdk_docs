@@ -1,0 +1,100 @@
+ucscentralsdk.mometa package
+============================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    ucscentralsdk.mometa.aaa
+    ucscentralsdk.mometa.adaptor
+    ucscentralsdk.mometa.bios
+    ucscentralsdk.mometa.callhome
+    ucscentralsdk.mometa.capability
+    ucscentralsdk.mometa.cert
+    ucscentralsdk.mometa.change
+    ucscentralsdk.mometa.cimcvmedia
+    ucscentralsdk.mometa.clitest
+    ucscentralsdk.mometa.comm
+    ucscentralsdk.mometa.compute
+    ucscentralsdk.mometa.config
+    ucscentralsdk.mometa.consumer
+    ucscentralsdk.mometa.controller
+    ucscentralsdk.mometa.dcx
+    ucscentralsdk.mometa.domain
+    ucscentralsdk.mometa.dpsec
+    ucscentralsdk.mometa.dupe
+    ucscentralsdk.mometa.epqos
+    ucscentralsdk.mometa.equipment
+    ucscentralsdk.mometa.ether
+    ucscentralsdk.mometa.event
+    ucscentralsdk.mometa.extmgmt
+    ucscentralsdk.mometa.extpol
+    ucscentralsdk.mometa.extvmm
+    ucscentralsdk.mometa.fabric
+    ucscentralsdk.mometa.fault
+    ucscentralsdk.mometa.fc
+    ucscentralsdk.mometa.fcpool
+    ucscentralsdk.mometa.feature
+    ucscentralsdk.mometa.firmware
+    ucscentralsdk.mometa.flowctrl
+    ucscentralsdk.mometa.fsm
+    ucscentralsdk.mometa.gmeta
+    ucscentralsdk.mometa.graphics
+    ucscentralsdk.mometa.gui
+    ucscentralsdk.mometa.ident
+    ucscentralsdk.mometa.identpool
+    ucscentralsdk.mometa.initiator
+    ucscentralsdk.mometa.ip
+    ucscentralsdk.mometa.ippool
+    ucscentralsdk.mometa.iqnpool
+    ucscentralsdk.mometa.iscsi
+    ucscentralsdk.mometa.license
+    ucscentralsdk.mometa.ls
+    ucscentralsdk.mometa.lsboot
+    ucscentralsdk.mometa.lsmaint
+    ucscentralsdk.mometa.lstorage
+    ucscentralsdk.mometa.macpool
+    ucscentralsdk.mometa.memory
+    ucscentralsdk.mometa.message
+    ucscentralsdk.mometa.mgmt
+    ucscentralsdk.mometa.network
+    ucscentralsdk.mometa.nfs
+    ucscentralsdk.mometa.nwctrl
+    ucscentralsdk.mometa.observe
+    ucscentralsdk.mometa.org
+    ucscentralsdk.mometa.os
+    ucscentralsdk.mometa.pki
+    ucscentralsdk.mometa.policy
+    ucscentralsdk.mometa.port
+    ucscentralsdk.mometa.power
+    ucscentralsdk.mometa.proc
+    ucscentralsdk.mometa.processor
+    ucscentralsdk.mometa.qosclass
+    ucscentralsdk.mometa.query
+    ucscentralsdk.mometa.queryresult
+    ucscentralsdk.mometa.security
+    ucscentralsdk.mometa.smartcallhome
+    ucscentralsdk.mometa.smartlicense
+    ucscentralsdk.mometa.sol
+    ucscentralsdk.mometa.stats
+    ucscentralsdk.mometa.storage
+    ucscentralsdk.mometa.sw
+    ucscentralsdk.mometa.synthetic
+    ucscentralsdk.mometa.sysdebug
+    ucscentralsdk.mometa.sysfile
+    ucscentralsdk.mometa.testing
+    ucscentralsdk.mometa.top
+    ucscentralsdk.mometa.trig
+    ucscentralsdk.mometa.uuidpool
+    ucscentralsdk.mometa.version
+    ucscentralsdk.mometa.vm
+    ucscentralsdk.mometa.vnic
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa
+    :members:
+    :undoc-members:
+    :show-inheritance:

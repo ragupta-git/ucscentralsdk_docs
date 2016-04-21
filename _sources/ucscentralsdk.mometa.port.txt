@@ -1,0 +1,30 @@
+ucscentralsdk.mometa.port package
+=================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.port.PortGroup module
+------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.port.PortGroup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.port.PortSubGroup module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.port.PortSubGroup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.port
+    :members:
+    :undoc-members:
+    :show-inheritance:

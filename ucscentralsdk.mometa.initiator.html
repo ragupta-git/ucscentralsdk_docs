@@ -1,0 +1,834 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.initiator package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.ip package" href="ucscentralsdk.mometa.ip.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.identpool package" href="ucscentralsdk.mometa.identpool.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.initiator package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.initiator.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-initiator-package">
+<h1>ucscentralsdk.mometa.initiator package<a class="headerlink" href="#ucscentralsdk-mometa-initiator-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp">
+<span id="ucscentralsdk-mometa-initiator-initiatorfcinitiatorep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorFcInitiatorEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.</code><code class="descname">InitiatorFcInitiatorEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorFcInitiatorEp.html#InitiatorFcInitiatorEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorFcInitiatorEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'epDn': 'ep_dn', 'prot': 'prot', 'status': 'status', 'name': 'name', 'wwpn': 'wwpn', 'rn': 'rn', 'pref': 'pref', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a5d1ed0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf32232550&gt;, 'prot': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf32232a10&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a5d1910&gt;, 'wwpn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf32232390&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a5d1110&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf32232c10&gt;, 'pref': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf25389050&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a5d1fd0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38173c90&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.</code><code class="descname">InitiatorFcInitiatorEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorFcInitiatorEp.html#InitiatorFcInitiatorEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts.PROT_DERIVED">
+<code class="descname">PROT_DERIVED</code><em class="property"> = 'derived'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts.PROT_DERIVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts.PROT_FC">
+<code class="descname">PROT_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts.PROT_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts.PROT_ISCSI">
+<code class="descname">PROT_ISCSI</code><em class="property"> = 'iscsi'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorFcInitiatorEp.InitiatorFcInitiatorEpConsts.PROT_ISCSI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorGroupEp">
+<span id="ucscentralsdk-mometa-initiator-initiatorgroupep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorGroupEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorGroupEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorGroupEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorGroupEp.</code><code class="descname">InitiatorGroupEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorGroupEp.html#InitiatorGroupEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorGroupEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'epDn': 'ep_dn', 'rmtDiskCfgName': 'rmt_disk_cfg_name', 'status': 'status', 'lc': 'lc', 'name': 'name', 'rn': 'rn', 'polName': 'pol_name', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c219c10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c219690&gt;, 'lc': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c2198d0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c219e90&gt;, 'pol_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c219ed0&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c2197d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c219950&gt;, 'rmt_disk_cfg_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c2199d0&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c219410&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c219b10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorGroupEp.</code><code class="descname">InitiatorGroupEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorGroupEp.html#InitiatorGroupEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts.LC_ALLOCATED">
+<code class="descname">LC_ALLOCATED</code><em class="property"> = 'allocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts.LC_ALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts.LC_AVAILABLE">
+<code class="descname">LC_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts.LC_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts.LC_DEALLOCATED">
+<code class="descname">LC_DEALLOCATED</code><em class="property"> = 'deallocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts.LC_DEALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts.LC_REPURPOSED">
+<code class="descname">LC_REPURPOSED</code><em class="property"> = 'repurposed'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorGroupEp.InitiatorGroupEpConsts.LC_REPURPOSED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp">
+<span id="ucscentralsdk-mometa-initiator-initiatoriscsiinitiatorep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorIScsiInitiatorEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.</code><code class="descname">InitiatorIScsiInitiatorEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorIScsiInitiatorEp.html#InitiatorIScsiInitiatorEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorIScsiInitiatorEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'epDn': 'ep_dn', 'iqn': 'iqn', 'status': 'status', 'name': 'name', 'prot': 'prot', 'rn': 'rn', 'pref': 'pref', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748d90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748a90&gt;, 'iqn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748f10&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748510&gt;, 'prot': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748950&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748550&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748210&gt;, 'pref': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748b50&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f7483d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1f748390&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.</code><code class="descname">InitiatorIScsiInitiatorEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorIScsiInitiatorEp.html#InitiatorIScsiInitiatorEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts.PROT_DERIVED">
+<code class="descname">PROT_DERIVED</code><em class="property"> = 'derived'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts.PROT_DERIVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts.PROT_FC">
+<code class="descname">PROT_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts.PROT_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts.PROT_ISCSI">
+<code class="descname">PROT_ISCSI</code><em class="property"> = 'iscsi'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorIScsiInitiatorEp.InitiatorIScsiInitiatorEpConsts.PROT_ISCSI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorLunEp">
+<span id="ucscentralsdk-mometa-initiator-initiatorlunep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorLunEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorLunEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorLunEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorLunEp.</code><code class="descname">InitiatorLunEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorLunEp.html#InitiatorLunEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorLunEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'epDn': 'ep_dn', 'bootable': 'bootable', 'status': 'status', 'rn': 'rn', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3788a210&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bd1c710&gt;, 'bootable': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20500d90&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3788ab50&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bd1cad0&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3bd1c150&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf282cd610&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorLunEp.</code><code class="descname">InitiatorLunEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorLunEp.html#InitiatorLunEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts.BOOTABLE_FALSE">
+<code class="descname">BOOTABLE_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts.BOOTABLE_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts.BOOTABLE_NO">
+<code class="descname">BOOTABLE_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts.BOOTABLE_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts.BOOTABLE_TRUE">
+<code class="descname">BOOTABLE_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts.BOOTABLE_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts.BOOTABLE_YES">
+<code class="descname">BOOTABLE_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorLunEp.InitiatorLunEpConsts.BOOTABLE_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorMemberEp">
+<span id="ucscentralsdk-mometa-initiator-initiatormemberep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorMemberEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorMemberEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorMemberEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorMemberEp.</code><code class="descname">InitiatorMemberEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorMemberEp.html#InitiatorMemberEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorMemberEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'epDn': 'ep_dn', 'status': 'status', 'rn': 'rn', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31e5f350&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31e5fdd0&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31e5f710&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31e5f690&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31e5f950&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31e5fb10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorMemberEp.</code><code class="descname">InitiatorMemberEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorMemberEp.html#InitiatorMemberEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorMemberEp.InitiatorMemberEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorRequestorEp">
+<span id="ucscentralsdk-mometa-initiator-initiatorrequestorep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorRequestorEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorRequestorEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorRequestorEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorRequestorEp.</code><code class="descname">InitiatorRequestorEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>sys_id</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorRequestorEp.html#InitiatorRequestorEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorRequestorEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'sysId', u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'epDn': 'ep_dn', 'status': 'status', 'sysName': 'sys_name', 'sysId': 'sys_id', 'allocState': 'alloc_state', 'rn': 'rn', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e856590&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e856b50&gt;, 'sys_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e856f50&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e856610&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e856550&gt;, 'alloc_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e8567d0&gt;, 'sys_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e856b10&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e856790&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e856910&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorRequestorEp.</code><code class="descname">InitiatorRequestorEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorRequestorEp.html#InitiatorRequestorEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts.ALLOC_STATE_ALLOCATED">
+<code class="descname">ALLOC_STATE_ALLOCATED</code><em class="property"> = 'allocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts.ALLOC_STATE_ALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts.ALLOC_STATE_ALLOCATING">
+<code class="descname">ALLOC_STATE_ALLOCATING</code><em class="property"> = 'allocating'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts.ALLOC_STATE_ALLOCATING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts.ALLOC_STATE_FAILED">
+<code class="descname">ALLOC_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts.ALLOC_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts.ALLOC_STATE_NONE">
+<code class="descname">ALLOC_STATE_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorEp.InitiatorRequestorEpConsts.ALLOC_STATE_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp">
+<span id="ucscentralsdk-mometa-initiator-initiatorrequestorgrpep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorRequestorGrpEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.</code><code class="descname">InitiatorRequestorGrpEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorRequestorGrpEp.html#InitiatorRequestorGrpEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorRequestorGrpEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'epDn': 'ep_dn', 'status': 'status', 'lc': 'lc', 'allocState': 'alloc_state', 'rn': 'rn', 'type': 'type', 'id': 'id', 'polDn': 'pol_dn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf302c0410&gt;, 'pol_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf302c0b50&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37eb6510&gt;, 'lc': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf302c0950&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf302c0250&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf302c00d0&gt;, 'alloc_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf302c0390&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37eb6450&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf302c0e10&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf302c0050&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.</code><code class="descname">InitiatorRequestorGrpEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorRequestorGrpEp.html#InitiatorRequestorGrpEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.ALLOC_STATE_ALLOCATED">
+<code class="descname">ALLOC_STATE_ALLOCATED</code><em class="property"> = 'allocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.ALLOC_STATE_ALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.ALLOC_STATE_ALLOCATING">
+<code class="descname">ALLOC_STATE_ALLOCATING</code><em class="property"> = 'allocating'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.ALLOC_STATE_ALLOCATING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.ALLOC_STATE_FAILED">
+<code class="descname">ALLOC_STATE_FAILED</code><em class="property"> = 'failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.ALLOC_STATE_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.ALLOC_STATE_NONE">
+<code class="descname">ALLOC_STATE_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.ALLOC_STATE_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.LC_ALLOCATED">
+<code class="descname">LC_ALLOCATED</code><em class="property"> = 'allocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.LC_ALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.LC_AVAILABLE">
+<code class="descname">LC_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.LC_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.LC_DEALLOCATED">
+<code class="descname">LC_DEALLOCATED</code><em class="property"> = 'deallocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.LC_DEALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.LC_REPURPOSED">
+<code class="descname">LC_REPURPOSED</code><em class="property"> = 'repurposed'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.LC_REPURPOSED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.TYPE_DEDICATED">
+<code class="descname">TYPE_DEDICATED</code><em class="property"> = 'dedicated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.TYPE_DEDICATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.TYPE_POLICY">
+<code class="descname">TYPE_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.TYPE_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.TYPE_SHARED">
+<code class="descname">TYPE_SHARED</code><em class="property"> = 'shared'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorRequestorGrpEp.InitiatorRequestorGrpEpConsts.TYPE_SHARED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorStoreEp">
+<span id="ucscentralsdk-mometa-initiator-initiatorstoreep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorStoreEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorStoreEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorStoreEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorStoreEp.</code><code class="descname">InitiatorStoreEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorStoreEp.html#InitiatorStoreEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorStoreEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'epDn': 'ep_dn', 'status': 'status', 'rn': 'rn', 'type': 'type', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2ce0fd10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c22d4d0&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c22d510&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c22d210&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf23f06c50&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c22d410&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2ce0f150&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorStoreEp.</code><code class="descname">InitiatorStoreEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorStoreEp.html#InitiatorStoreEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts.TYPE_DEDICATED">
+<code class="descname">TYPE_DEDICATED</code><em class="property"> = 'dedicated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts.TYPE_DEDICATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts.TYPE_POLICY">
+<code class="descname">TYPE_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts.TYPE_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts.TYPE_SHARED">
+<code class="descname">TYPE_SHARED</code><em class="property"> = 'shared'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorStoreEp.InitiatorStoreEpConsts.TYPE_SHARED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator.InitiatorUnitEp">
+<span id="ucscentralsdk-mometa-initiator-initiatorunitep-module"></span><h2>ucscentralsdk.mometa.initiator.InitiatorUnitEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator.InitiatorUnitEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for InitiatorUnitEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorUnitEp.</code><code class="descname">InitiatorUnitEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorUnitEp.html#InitiatorUnitEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is InitiatorUnitEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'phyId': 'phy_id', 'ha': 'ha', 'id': 'id', 'childAction': 'child_action', 'epDn': 'ep_dn', 'lc': 'lc', 'prot': 'prot', 'boot': 'boot', 'itemDn': 'item_dn', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf200ddb90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686190&gt;, 'item_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686810&gt;, 'ep_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686dd0&gt;, 'ha': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686550&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686b50&gt;, 'lc': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686d90&gt;, 'phy_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686490&gt;, 'prot': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686910&gt;, 'boot': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf200dd2d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a686610&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf200dd190&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.initiator.InitiatorUnitEp.</code><code class="descname">InitiatorUnitEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/initiator/InitiatorUnitEp.html#InitiatorUnitEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.BOOT_FALSE">
+<code class="descname">BOOT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.BOOT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.BOOT_NO">
+<code class="descname">BOOT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.BOOT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.BOOT_TRUE">
+<code class="descname">BOOT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.BOOT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.BOOT_YES">
+<code class="descname">BOOT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.BOOT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.LC_ALLOCATED">
+<code class="descname">LC_ALLOCATED</code><em class="property"> = 'allocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.LC_ALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.LC_AVAILABLE">
+<code class="descname">LC_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.LC_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.LC_DEALLOCATED">
+<code class="descname">LC_DEALLOCATED</code><em class="property"> = 'deallocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.LC_DEALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.LC_REPURPOSED">
+<code class="descname">LC_REPURPOSED</code><em class="property"> = 'repurposed'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.LC_REPURPOSED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.PROT_DERIVED">
+<code class="descname">PROT_DERIVED</code><em class="property"> = 'derived'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.PROT_DERIVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.PROT_FC">
+<code class="descname">PROT_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.PROT_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.PROT_ISCSI">
+<code class="descname">PROT_ISCSI</code><em class="property"> = 'iscsi'</em><a class="headerlink" href="#ucscentralsdk.mometa.initiator.InitiatorUnitEp.InitiatorUnitEpConsts.PROT_ISCSI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.initiator">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.initiator" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.ip.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.ip package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.identpool.html" class="btn btn-neutral" title="ucscentralsdk.mometa.identpool package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

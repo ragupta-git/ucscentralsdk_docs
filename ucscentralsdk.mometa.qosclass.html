@@ -1,0 +1,719 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.qosclass package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.query package" href="ucscentralsdk.mometa.query.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.processor package" href="ucscentralsdk.mometa.processor.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.qosclass package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.qosclass.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-qosclass-package">
+<h1>ucscentralsdk.mometa.qosclass package<a class="headerlink" href="#ucscentralsdk-mometa-qosclass-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.qosclass.QosclassDefinition">
+<span id="ucscentralsdk-mometa-qosclass-qosclassdefinition-module"></span><h2>ucscentralsdk.mometa.qosclass.QosclassDefinition module<a class="headerlink" href="#module-ucscentralsdk.mometa.qosclass.QosclassDefinition" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for QosclassDefinition ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.qosclass.QosclassDefinition.</code><code class="descname">QosclassDefinition</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/qosclass/QosclassDefinition.html#QosclassDefinition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is QosclassDefinition class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'policyLevel': 'policy_level', 'name': 'name', 'descr': 'descr', 'intId': 'int_id', 'rn': 'rn', 'policyOwner': 'policy_owner', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3ba10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3b650&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3bfd0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3b7d0&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3b090&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3bc10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3b0d0&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3b550&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2da3ba90&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinition.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.qosclass.QosclassDefinition.</code><code class="descname">QosclassDefinitionConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/qosclass/QosclassDefinition.html#QosclassDefinitionConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassDefinition.QosclassDefinitionConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.qosclass.QosclassEthBE">
+<span id="ucscentralsdk-mometa-qosclass-qosclassethbe-module"></span><h2>ucscentralsdk.mometa.qosclass.QosclassEthBE module<a class="headerlink" href="#module-ucscentralsdk.mometa.qosclass.QosclassEthBE" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for QosclassEthBE ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.qosclass.QosclassEthBE.</code><code class="descname">QosclassEthBE</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/qosclass/QosclassEthBE.html#QosclassEthBE"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is QosclassEthBE class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'weight': 'weight', 'bwPercent': 'bw_percent', 'multicastOptimize': 'multicast_optimize', 'childAction': 'child_action', 'cos': 'cos', 'name': 'name', 'drop': 'drop', 'mtu': 'mtu', 'priority': 'priority', 'adminState': 'admin_state', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf374eab90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4a78bc90&gt;, 'weight': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf23d22850&gt;, 'multicast_optimize': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4a78b750&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf374eab10&gt;, 'bw_percent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf374ea990&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf374ea410&gt;, 'cos': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf374ead10&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4a78b310&gt;, 'drop': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf244993d0&gt;, 'mtu': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf244991d0&gt;, 'priority': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4a78b550&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4a78b7d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBE.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.qosclass.QosclassEthBE.</code><code class="descname">QosclassEthBEConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/qosclass/QosclassEthBE.html#QosclassEthBEConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.ADMIN_STATE_DISABLED">
+<code class="descname">ADMIN_STATE_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.ADMIN_STATE_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.ADMIN_STATE_ENABLED">
+<code class="descname">ADMIN_STATE_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.ADMIN_STATE_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.BW_PERCENT_NOT_APPLICABLE">
+<code class="descname">BW_PERCENT_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.BW_PERCENT_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.COS_ANY">
+<code class="descname">COS_ANY</code><em class="property"> = 'any'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.COS_ANY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.DROP_DROP">
+<code class="descname">DROP_DROP</code><em class="property"> = 'drop'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.DROP_DROP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.DROP_NO_DROP">
+<code class="descname">DROP_NO_DROP</code><em class="property"> = 'no-drop'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.DROP_NO_DROP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MTU_FC">
+<code class="descname">MTU_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MTU_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MTU_NORMAL">
+<code class="descname">MTU_NORMAL</code><em class="property"> = 'normal'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MTU_NORMAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MULTICAST_OPTIMIZE_FALSE">
+<code class="descname">MULTICAST_OPTIMIZE_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MULTICAST_OPTIMIZE_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MULTICAST_OPTIMIZE_NO">
+<code class="descname">MULTICAST_OPTIMIZE_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MULTICAST_OPTIMIZE_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MULTICAST_OPTIMIZE_TRUE">
+<code class="descname">MULTICAST_OPTIMIZE_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MULTICAST_OPTIMIZE_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MULTICAST_OPTIMIZE_YES">
+<code class="descname">MULTICAST_OPTIMIZE_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.MULTICAST_OPTIMIZE_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_BEST_EFFORT">
+<code class="descname">PRIORITY_BEST_EFFORT</code><em class="property"> = 'best-effort'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_BEST_EFFORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_BRONZE">
+<code class="descname">PRIORITY_BRONZE</code><em class="property"> = 'bronze'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_BRONZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_FC">
+<code class="descname">PRIORITY_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_GOLD">
+<code class="descname">PRIORITY_GOLD</code><em class="property"> = 'gold'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_GOLD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_PLATINUM">
+<code class="descname">PRIORITY_PLATINUM</code><em class="property"> = 'platinum'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_PLATINUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_SILVER">
+<code class="descname">PRIORITY_SILVER</code><em class="property"> = 'silver'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.PRIORITY_SILVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.WEIGHT_BEST_EFFORT">
+<code class="descname">WEIGHT_BEST_EFFORT</code><em class="property"> = 'best-effort'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.WEIGHT_BEST_EFFORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.WEIGHT_NONE">
+<code class="descname">WEIGHT_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthBE.QosclassEthBEConsts.WEIGHT_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.qosclass.QosclassEthClassified">
+<span id="ucscentralsdk-mometa-qosclass-qosclassethclassified-module"></span><h2>ucscentralsdk.mometa.qosclass.QosclassEthClassified module<a class="headerlink" href="#module-ucscentralsdk.mometa.qosclass.QosclassEthClassified" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for QosclassEthClassified ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.qosclass.QosclassEthClassified.</code><code class="descname">QosclassEthClassified</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>priority</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/qosclass/QosclassEthClassified.html#QosclassEthClassified"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is QosclassEthClassified class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'priority'])</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'weight': 'weight', 'bwPercent': 'bw_percent', 'multicastOptimize': 'multicast_optimize', 'childAction': 'child_action', 'cos': 'cos', 'name': 'name', 'drop': 'drop', 'mtu': 'mtu', 'priority': 'priority', 'adminState': 'admin_state', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cf868d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1a4250&gt;, 'weight': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1a4f50&gt;, 'multicast_optimize': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1a4310&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cf86a10&gt;, 'bw_percent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cf86f50&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cf86150&gt;, 'cos': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cf86990&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1a4b50&gt;, 'drop': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cf86190&gt;, 'mtu': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cf86810&gt;, 'priority': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1a4e90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1a4b10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassified.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.qosclass.QosclassEthClassified.</code><code class="descname">QosclassEthClassifiedConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/qosclass/QosclassEthClassified.html#QosclassEthClassifiedConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.ADMIN_STATE_DISABLED">
+<code class="descname">ADMIN_STATE_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.ADMIN_STATE_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.ADMIN_STATE_ENABLED">
+<code class="descname">ADMIN_STATE_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.ADMIN_STATE_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.BW_PERCENT_NOT_APPLICABLE">
+<code class="descname">BW_PERCENT_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.BW_PERCENT_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.COS_ANY">
+<code class="descname">COS_ANY</code><em class="property"> = 'any'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.COS_ANY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.DROP_DROP">
+<code class="descname">DROP_DROP</code><em class="property"> = 'drop'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.DROP_DROP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.DROP_NO_DROP">
+<code class="descname">DROP_NO_DROP</code><em class="property"> = 'no-drop'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.DROP_NO_DROP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MTU_FC">
+<code class="descname">MTU_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MTU_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MTU_NORMAL">
+<code class="descname">MTU_NORMAL</code><em class="property"> = 'normal'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MTU_NORMAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MULTICAST_OPTIMIZE_FALSE">
+<code class="descname">MULTICAST_OPTIMIZE_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MULTICAST_OPTIMIZE_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MULTICAST_OPTIMIZE_NO">
+<code class="descname">MULTICAST_OPTIMIZE_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MULTICAST_OPTIMIZE_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MULTICAST_OPTIMIZE_TRUE">
+<code class="descname">MULTICAST_OPTIMIZE_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MULTICAST_OPTIMIZE_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MULTICAST_OPTIMIZE_YES">
+<code class="descname">MULTICAST_OPTIMIZE_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.MULTICAST_OPTIMIZE_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_BEST_EFFORT">
+<code class="descname">PRIORITY_BEST_EFFORT</code><em class="property"> = 'best-effort'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_BEST_EFFORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_BRONZE">
+<code class="descname">PRIORITY_BRONZE</code><em class="property"> = 'bronze'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_BRONZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_FC">
+<code class="descname">PRIORITY_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_GOLD">
+<code class="descname">PRIORITY_GOLD</code><em class="property"> = 'gold'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_GOLD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_PLATINUM">
+<code class="descname">PRIORITY_PLATINUM</code><em class="property"> = 'platinum'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_PLATINUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_SILVER">
+<code class="descname">PRIORITY_SILVER</code><em class="property"> = 'silver'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.PRIORITY_SILVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.WEIGHT_BEST_EFFORT">
+<code class="descname">WEIGHT_BEST_EFFORT</code><em class="property"> = 'best-effort'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.WEIGHT_BEST_EFFORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.WEIGHT_NONE">
+<code class="descname">WEIGHT_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassEthClassified.QosclassEthClassifiedConsts.WEIGHT_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.qosclass.QosclassFc">
+<span id="ucscentralsdk-mometa-qosclass-qosclassfc-module"></span><h2>ucscentralsdk.mometa.qosclass.QosclassFc module<a class="headerlink" href="#module-ucscentralsdk.mometa.qosclass.QosclassFc" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for QosclassFc ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.qosclass.QosclassFc.</code><code class="descname">QosclassFc</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/qosclass/QosclassFc.html#QosclassFc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is QosclassFc class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'weight': 'weight', 'bwPercent': 'bw_percent', 'childAction': 'child_action', 'cos': 'cos', 'name': 'name', 'drop': 'drop', 'mtu': 'mtu', 'priority': 'priority', 'adminState': 'admin_state', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c3af110&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cd31ed0&gt;, 'weight': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf355da390&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31c41c10&gt;, 'bw_percent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c3af9d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c3afa10&gt;, 'cos': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c3af210&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cd31d50&gt;, 'drop': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cd31e90&gt;, 'mtu': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cd319d0&gt;, 'priority': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cd31b90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cd31a50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFc.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.qosclass.QosclassFc.</code><code class="descname">QosclassFcConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/qosclass/QosclassFc.html#QosclassFcConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.ADMIN_STATE_DISABLED">
+<code class="descname">ADMIN_STATE_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.ADMIN_STATE_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.ADMIN_STATE_ENABLED">
+<code class="descname">ADMIN_STATE_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.ADMIN_STATE_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.BW_PERCENT_NOT_APPLICABLE">
+<code class="descname">BW_PERCENT_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.BW_PERCENT_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.COS_ANY">
+<code class="descname">COS_ANY</code><em class="property"> = 'any'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.COS_ANY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.DROP_DROP">
+<code class="descname">DROP_DROP</code><em class="property"> = 'drop'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.DROP_DROP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.DROP_NO_DROP">
+<code class="descname">DROP_NO_DROP</code><em class="property"> = 'no-drop'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.DROP_NO_DROP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.MTU_FC">
+<code class="descname">MTU_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.MTU_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.MTU_NORMAL">
+<code class="descname">MTU_NORMAL</code><em class="property"> = 'normal'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.MTU_NORMAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_BEST_EFFORT">
+<code class="descname">PRIORITY_BEST_EFFORT</code><em class="property"> = 'best-effort'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_BEST_EFFORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_BRONZE">
+<code class="descname">PRIORITY_BRONZE</code><em class="property"> = 'bronze'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_BRONZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_FC">
+<code class="descname">PRIORITY_FC</code><em class="property"> = 'fc'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_GOLD">
+<code class="descname">PRIORITY_GOLD</code><em class="property"> = 'gold'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_GOLD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_PLATINUM">
+<code class="descname">PRIORITY_PLATINUM</code><em class="property"> = 'platinum'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_PLATINUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_SILVER">
+<code class="descname">PRIORITY_SILVER</code><em class="property"> = 'silver'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.PRIORITY_SILVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.WEIGHT_BEST_EFFORT">
+<code class="descname">WEIGHT_BEST_EFFORT</code><em class="property"> = 'best-effort'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.WEIGHT_BEST_EFFORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.WEIGHT_NONE">
+<code class="descname">WEIGHT_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.qosclass.QosclassFc.QosclassFcConsts.WEIGHT_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.qosclass">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.qosclass" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.query.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.query package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.processor.html" class="btn btn-neutral" title="ucscentralsdk.mometa.processor package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

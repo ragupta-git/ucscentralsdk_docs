@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.version package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.vm package" href="ucscentralsdk.mometa.vm.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.uuidpool package" href="ucscentralsdk.mometa.uuidpool.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.version package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.version.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-version-package">
+<h1>ucscentralsdk.mometa.version package<a class="headerlink" href="#ucscentralsdk-mometa-version-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.version.VersionApplication">
+<span id="ucscentralsdk-mometa-version-versionapplication-module"></span><h2>ucscentralsdk.mometa.version.VersionApplication module<a class="headerlink" href="#module-ucscentralsdk.mometa.version.VersionApplication" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for VersionApplication ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionApplication.VersionApplication">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionApplication.</code><code class="descname">VersionApplication</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionApplication.html#VersionApplication"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionApplication.VersionApplication" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is VersionApplication class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionApplication.VersionApplication.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.version.VersionApplication.VersionApplicationConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionApplication.VersionApplication.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionApplication.VersionApplication.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionApplication.VersionApplication.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionApplication.VersionApplication.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionApplication.VersionApplication.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionApplication.VersionApplication.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'detail': 'detail', 'version': 'version', 'time': 'time', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionApplication.VersionApplication.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionApplication.VersionApplication.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7665ec10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7665ef90&gt;, 'detail': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7665e090&gt;, 'version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7665e050&gt;, 'time': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7665e910&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7665e590&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7665e390&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionApplication.VersionApplication.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionApplication.VersionApplicationConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionApplication.</code><code class="descname">VersionApplicationConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionApplication.html#VersionApplicationConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionApplication.VersionApplicationConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.version.VersionEp">
+<span id="ucscentralsdk-mometa-version-versionep-module"></span><h2>ucscentralsdk.mometa.version.VersionEp module<a class="headerlink" href="#module-ucscentralsdk.mometa.version.VersionEp" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for VersionEp ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionEp.VersionEp">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionEp.</code><code class="descname">VersionEp</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionEp.html#VersionEp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionEp.VersionEp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is VersionEp class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionEp.VersionEp.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.version.VersionEp.VersionEpConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionEp.VersionEp.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionEp.VersionEp.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionEp.VersionEp.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionEp.VersionEp.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionEp.VersionEp.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionEp.VersionEp.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionEp.VersionEp.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionEp.VersionEp.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c6885d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c6889d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3c6884d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30d80f10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionEp.VersionEp.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionEp.VersionEpConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionEp.</code><code class="descname">VersionEpConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionEp.html#VersionEpConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionEp.VersionEpConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.version.VersionFilter">
+<span id="ucscentralsdk-mometa-version-versionfilter-module"></span><h2>ucscentralsdk.mometa.version.VersionFilter module<a class="headerlink" href="#module-ucscentralsdk.mometa.version.VersionFilter" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for VersionFilter ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionFilter.VersionFilter">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionFilter.</code><code class="descname">VersionFilter</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>capability</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionFilter.html#VersionFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionFilter.VersionFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is VersionFilter class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionFilter.VersionFilter.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.version.VersionFilter.VersionFilterConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionFilter.VersionFilter.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionFilter.VersionFilter.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionFilter.VersionFilter.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionFilter.VersionFilter.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'capability'])</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionFilter.VersionFilter.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionFilter.VersionFilter.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'compatibleVersion': 'compatible_version', 'capability': 'capability', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionFilter.VersionFilter.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionFilter.VersionFilter.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf736a82d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf739dd390&gt;, 'capability': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf736a8090&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf739dd210&gt;, 'compatible_version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf736a8510&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf736a80d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionFilter.VersionFilter.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionFilter.VersionFilterConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionFilter.</code><code class="descname">VersionFilterConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionFilter.html#VersionFilterConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionFilter.VersionFilterConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.version.VersionMatrix">
+<span id="ucscentralsdk-mometa-version-versionmatrix-module"></span><h2>ucscentralsdk.mometa.version.VersionMatrix module<a class="headerlink" href="#module-ucscentralsdk.mometa.version.VersionMatrix" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for VersionMatrix ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionMatrix.</code><code class="descname">VersionMatrix</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionMatrix.html#VersionMatrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is VersionMatrix class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.version.VersionMatrix.VersionMatrixConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'version': 'version', 'productVersion': 'product_version', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf73d0af90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf73d0a990&gt;, 'product_version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf73d0a490&gt;, 'version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf73d0a1d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf73d0af50&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf73d0a5d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionMatrix.VersionMatrix.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionMatrix.VersionMatrixConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionMatrix.</code><code class="descname">VersionMatrixConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionMatrix.html#VersionMatrixConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionMatrix.VersionMatrixConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.version.VersionProduct">
+<span id="ucscentralsdk-mometa-version-versionproduct-module"></span><h2>ucscentralsdk.mometa.version.VersionProduct module<a class="headerlink" href="#module-ucscentralsdk.mometa.version.VersionProduct" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for VersionProduct ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionProduct.VersionProduct">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionProduct.</code><code class="descname">VersionProduct</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionProduct.html#VersionProduct"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionProduct.VersionProduct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is VersionProduct class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionProduct.VersionProduct.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.version.VersionProduct.VersionProductConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionProduct.VersionProduct.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionProduct.VersionProduct.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionProduct.VersionProduct.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionProduct.VersionProduct.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionProduct.VersionProduct.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionProduct.VersionProduct.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'detail': 'detail', 'version': 'version', 'time': 'time', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionProduct.VersionProduct.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.version.VersionProduct.VersionProduct.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c304b10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1cd70b90&gt;, 'detail': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c304090&gt;, 'version': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1cd709d0&gt;, 'time': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1cd70050&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1cd70750&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf25f4bf90&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionProduct.VersionProduct.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.version.VersionProduct.VersionProductConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.version.VersionProduct.</code><code class="descname">VersionProductConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/version/VersionProduct.html#VersionProductConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.version.VersionProduct.VersionProductConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.version">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.version" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.vm.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.vm package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.uuidpool.html" class="btn btn-neutral" title="ucscentralsdk.mometa.uuidpool package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

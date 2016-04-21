@@ -1,0 +1,22 @@
+ucscentralsdk.mometa.dpsec package
+==================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.dpsec.DpsecMac module
+------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.dpsec.DpsecMac
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.dpsec
+    :members:
+    :undoc-members:
+    :show-inheritance:

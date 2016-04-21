@@ -1,0 +1,22 @@
+ucscentralsdk.mometa.capability package
+=======================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.capability.CapabilityCatalogue module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.capability.CapabilityCatalogue
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.capability
+    :members:
+    :undoc-members:
+    :show-inheritance:

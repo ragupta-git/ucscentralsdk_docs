@@ -1,0 +1,70 @@
+ucscentralsdk.mometa.smartcallhome package
+==========================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.smartcallhome.SmartcallhomeHttpProxy module
+----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.smartcallhome.SmartcallhomeHttpProxy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.smartcallhome.SmartcallhomePeriodicInventoryStatus module
+------------------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.smartcallhome.SmartcallhomePeriodicInventoryStatus
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.smartcallhome.SmartcallhomePeriodicSystemInventory module
+------------------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.smartcallhome.SmartcallhomePeriodicSystemInventory
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.smartcallhome.SmartcallhomePolicy module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.smartcallhome.SmartcallhomePolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.smartcallhome.SmartcallhomeProfile module
+--------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.smartcallhome.SmartcallhomeProfile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.smartcallhome.SmartcallhomeSource module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.smartcallhome.SmartcallhomeSource
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.smartcallhome.SmartcallhomeTransportGateway module
+-----------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.smartcallhome.SmartcallhomeTransportGateway
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.smartcallhome
+    :members:
+    :undoc-members:
+    :show-inheritance:

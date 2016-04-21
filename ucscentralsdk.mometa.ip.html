@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.ip package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.ippool package" href="ucscentralsdk.mometa.ippool.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.initiator package" href="ucscentralsdk.mometa.initiator.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.ip package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.ip.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-ip-package">
+<h1>ucscentralsdk.mometa.ip package<a class="headerlink" href="#ucscentralsdk-mometa-ip-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.ip.IpIPv4Dns">
+<span id="ucscentralsdk-mometa-ip-ipipv4dns-module"></span><h2>ucscentralsdk.mometa.ip.IpIPv4Dns module<a class="headerlink" href="#module-ucscentralsdk.mometa.ip.IpIPv4Dns" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for IpIPv4Dns ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.ip.IpIPv4Dns.</code><code class="descname">IpIPv4Dns</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>pref</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/ip/IpIPv4Dns.html#IpIPv4Dns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is IpIPv4Dns class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4DnsConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'pref'])</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'defGw': 'def_gw', 'addr': 'addr', 'subnet': 'subnet', 'rn': 'rn', 'pref': 'pref', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2dbdc550&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2dbdc2d0&gt;, 'addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2dbdcdd0&gt;, 'subnet': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2dbdc910&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2dbdc610&gt;, 'pref': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2dbdc190&gt;, 'def_gw': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2dbdc210&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2dbdc050&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4Dns.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4DnsConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.ip.IpIPv4Dns.</code><code class="descname">IpIPv4DnsConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/ip/IpIPv4Dns.html#IpIPv4DnsConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIPv4Dns.IpIPv4DnsConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.ip.IpIpV4StaticAddr">
+<span id="ucscentralsdk-mometa-ip-ipipv4staticaddr-module"></span><h2>ucscentralsdk.mometa.ip.IpIpV4StaticAddr module<a class="headerlink" href="#module-ucscentralsdk.mometa.ip.IpIpV4StaticAddr" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for IpIpV4StaticAddr ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.ip.IpIpV4StaticAddr.</code><code class="descname">IpIpV4StaticAddr</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>addr</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/ip/IpIpV4StaticAddr.html#IpIpV4StaticAddr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is IpIpV4StaticAddr class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddrConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'addr'])</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'defGw': 'def_gw', 'addr': 'addr', 'subnet': 'subnet', 'rn': 'rn', 'pref': 'pref', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1f4650&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1f4950&gt;, 'addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1f49d0&gt;, 'subnet': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1f4110&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1f4d10&gt;, 'pref': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1f4e10&gt;, 'def_gw': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1f4590&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c1f4550&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddr.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddrConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.ip.IpIpV4StaticAddr.</code><code class="descname">IpIpV4StaticAddrConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/ip/IpIpV4StaticAddr.html#IpIpV4StaticAddrConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpIpV4StaticAddr.IpIpV4StaticAddrConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.ip.IpServiceIf">
+<span id="ucscentralsdk-mometa-ip-ipserviceif-module"></span><h2>ucscentralsdk.mometa.ip.IpServiceIf module<a class="headerlink" href="#module-ucscentralsdk.mometa.ip.IpServiceIf" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for IpServiceIf ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.ip.IpServiceIf.</code><code class="descname">IpServiceIf</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>addr</em>, <em>port</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/ip/IpServiceIf.html#IpServiceIf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is IpServiceIf class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIfConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'addr', u'port'])</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'defGw': 'def_gw', 'addr': 'addr', 'subnet': 'subnet', 'rn': 'rn', 'pref': 'pref', 'port': 'port', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8610&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8150&gt;, 'addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8490&gt;, 'subnet': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8690&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8590&gt;, 'pref': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8910&gt;, 'def_gw': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8550&gt;, 'port': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8350&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf38df8c90&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIf.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIfConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.ip.IpServiceIf.</code><code class="descname">IpServiceIfConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/ip/IpServiceIf.html#IpServiceIfConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.ip.IpServiceIf.IpServiceIfConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.ip">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.ip" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.ippool.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.ippool package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.initiator.html" class="btn btn-neutral" title="ucscentralsdk.mometa.initiator package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

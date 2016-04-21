@@ -1,0 +1,936 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.cimcvmedia package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.clitest package" href="ucscentralsdk.mometa.clitest.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.change package" href="ucscentralsdk.mometa.change.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.cimcvmedia package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.cimcvmedia.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-cimcvmedia-package">
+<h1>ucscentralsdk.mometa.cimcvmedia package<a class="headerlink" href="#ucscentralsdk-mometa-cimcvmedia-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry">
+<span id="ucscentralsdk-mometa-cimcvmedia-cimcvmediaactualmountentry-module"></span><h2>ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry module<a class="headerlink" href="#module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for CimcvmediaActualMountEntry ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.</code><code class="descname">CimcvmediaActualMountEntry</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>virtual_disk_id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaActualMountEntry.html#CimcvmediaActualMountEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is CimcvmediaActualMountEntry class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'virtualDiskId'])</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'remotePort': 'remote_port', 'mountProtocol': 'mount_protocol', 'imageNameVariable': 'image_name_variable', 'operMountStatus': 'oper_mount_status', 'virtualDiskId': 'virtual_disk_id', 'remoteHost': 'remote_host', 'errorType': 'error_type', 'userId': 'user_id', 'pwdSet': 'pwd_set', 'status': 'status', 'password': 'password', 'imagePath': 'image_path', 'deviceType': 'device_type', 'encPwd': 'enc_pwd', 'remoteIpAddress': 'remote_ip_address', 'mappingName': 'mapping_name', 'rn': 'rn', 'authOption': 'auth_option', 'imageFileName': 'image_file_name', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2670c990&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2601c6d0&gt;, 'pwd_set': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d3bd0&gt;, 'mount_protocol': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d39d0&gt;, 'image_path': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d3b10&gt;, 'oper_mount_status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d3c50&gt;, 'remote_port': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2601c390&gt;, 'remote_ip_address': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2601ca10&gt;, 'error_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d3d50&gt;, 'image_name_variable': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d3b50&gt;, 'auth_option': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26657090&gt;, 'virtual_disk_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2601c810&gt;, 'enc_pwd': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2670c090&gt;, 'mapping_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d36d0&gt;, 'image_file_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d3990&gt;, 'device_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2670cc50&gt;, 'user_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2601c710&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2601ca90&gt;, 'password': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d3f90&gt;, 'remote_host': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf237d3d10&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2670c350&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntry.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.</code><code class="descname">CimcvmediaActualMountEntryConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaActualMountEntry.html#CimcvmediaActualMountEntryConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_DEFAULT">
+<code class="descname">AUTH_OPTION_DEFAULT</code><em class="property"> = 'default'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NONE">
+<code class="descname">AUTH_OPTION_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLM">
+<code class="descname">AUTH_OPTION_NTLM</code><em class="property"> = 'ntlm'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMI">
+<code class="descname">AUTH_OPTION_NTLMI</code><em class="property"> = 'ntlmi'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMSSP">
+<code class="descname">AUTH_OPTION_NTLMSSP</code><em class="property"> = 'ntlmssp'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMSSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMSSPI">
+<code class="descname">AUTH_OPTION_NTLMSSPI</code><em class="property"> = 'ntlmsspi'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMSSPI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMV2">
+<code class="descname">AUTH_OPTION_NTLMV2</code><em class="property"> = 'ntlmv2'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMV2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMV2I">
+<code class="descname">AUTH_OPTION_NTLMV2I</code><em class="property"> = 'ntlmv2i'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.AUTH_OPTION_NTLMV2I" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.DEVICE_TYPE_CDD">
+<code class="descname">DEVICE_TYPE_CDD</code><em class="property"> = 'cdd'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.DEVICE_TYPE_CDD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.DEVICE_TYPE_HDD">
+<code class="descname">DEVICE_TYPE_HDD</code><em class="property"> = 'hdd'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.DEVICE_TYPE_HDD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.DEVICE_TYPE_UNKNOWN">
+<code class="descname">DEVICE_TYPE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.DEVICE_TYPE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_ALREADY_MAPPED">
+<code class="descname">ERROR_TYPE_ALREADY_MAPPED</code><em class="property"> = 'already-mapped'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_ALREADY_MAPPED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_AUTHENTICATION_FAILED">
+<code class="descname">ERROR_TYPE_AUTHENTICATION_FAILED</code><em class="property"> = 'authentication-failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_AUTHENTICATION_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_BAD_PARAM">
+<code class="descname">ERROR_TYPE_BAD_PARAM</code><em class="property"> = 'bad-param'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_BAD_PARAM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_BAD_PATH">
+<code class="descname">ERROR_TYPE_BAD_PATH</code><em class="property"> = 'bad-path'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_BAD_PATH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_CONNECTION_REJECTED">
+<code class="descname">ERROR_TYPE_CONNECTION_REJECTED</code><em class="property"> = 'connection-rejected'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_CONNECTION_REJECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_CONNECTION_TIMEOUT">
+<code class="descname">ERROR_TYPE_CONNECTION_TIMEOUT</code><em class="property"> = 'connection-timeout'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_CONNECTION_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_DISK_EJECTED">
+<code class="descname">ERROR_TYPE_DISK_EJECTED</code><em class="property"> = 'disk-ejected'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_DISK_EJECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_DISK_IO_FAILURE">
+<code class="descname">ERROR_TYPE_DISK_IO_FAILURE</code><em class="property"> = 'disk-io-failure'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_DISK_IO_FAILURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_FILE_NOT_FOUND">
+<code class="descname">ERROR_TYPE_FILE_NOT_FOUND</code><em class="property"> = 'file-not-found'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_FILE_NOT_FOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_GENERIC_FAILURE">
+<code class="descname">ERROR_TYPE_GENERIC_FAILURE</code><em class="property"> = 'generic-failure'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_GENERIC_FAILURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_IMAGE_STORE_FULL">
+<code class="descname">ERROR_TYPE_IMAGE_STORE_FULL</code><em class="property"> = 'image-store-full'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_IMAGE_STORE_FULL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_IMGAGE_DELETED">
+<code class="descname">ERROR_TYPE_IMGAGE_DELETED</code><em class="property"> = 'imgage-deleted'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_IMGAGE_DELETED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_INVALID_ARGUMENT">
+<code class="descname">ERROR_TYPE_INVALID_ARGUMENT</code><em class="property"> = 'invalid-argument'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_INVALID_ARGUMENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_INVALID_VDISK_TYPE">
+<code class="descname">ERROR_TYPE_INVALID_VDISK_TYPE</code><em class="property"> = 'invalid-vdisk-type'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_INVALID_VDISK_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_INVALID_VDISK_USAGE">
+<code class="descname">ERROR_TYPE_INVALID_VDISK_USAGE</code><em class="property"> = 'invalid-vdisk-usage'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_INVALID_VDISK_USAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_MOUNT_IN_USE">
+<code class="descname">ERROR_TYPE_MOUNT_IN_USE</code><em class="property"> = 'mount-in-use'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_MOUNT_IN_USE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_NONE">
+<code class="descname">ERROR_TYPE_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_OPEN_RO_FAILED">
+<code class="descname">ERROR_TYPE_OPEN_RO_FAILED</code><em class="property"> = 'open-ro-failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_OPEN_RO_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_OPEN_RW_FAILED">
+<code class="descname">ERROR_TYPE_OPEN_RW_FAILED</code><em class="property"> = 'open-rw-failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_OPEN_RW_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_POSTMAP_ERROR">
+<code class="descname">ERROR_TYPE_POSTMAP_ERROR</code><em class="property"> = 'postmap-error'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_POSTMAP_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_UNKNOWN">
+<code class="descname">ERROR_TYPE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_WRITE_TO_READONLY_FILE">
+<code class="descname">ERROR_TYPE_WRITE_TO_READONLY_FILE</code><em class="property"> = 'write-to-readonly-file'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.ERROR_TYPE_WRITE_TO_READONLY_FILE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.IMAGE_NAME_VARIABLE_NONE">
+<code class="descname">IMAGE_NAME_VARIABLE_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.IMAGE_NAME_VARIABLE_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.IMAGE_NAME_VARIABLE_SERVICE_PROFILE_NAME">
+<code class="descname">IMAGE_NAME_VARIABLE_SERVICE_PROFILE_NAME</code><em class="property"> = 'service-profile-name'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.IMAGE_NAME_VARIABLE_SERVICE_PROFILE_NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_CIFS">
+<code class="descname">MOUNT_PROTOCOL_CIFS</code><em class="property"> = 'cifs'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_CIFS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_HTTP">
+<code class="descname">MOUNT_PROTOCOL_HTTP</code><em class="property"> = 'http'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_HTTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_HTTPS">
+<code class="descname">MOUNT_PROTOCOL_HTTPS</code><em class="property"> = 'https'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_HTTPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_NFS">
+<code class="descname">MOUNT_PROTOCOL_NFS</code><em class="property"> = 'nfs'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_NFS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_UNKNOWN">
+<code class="descname">MOUNT_PROTOCOL_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.MOUNT_PROTOCOL_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_MOUNTED">
+<code class="descname">OPER_MOUNT_STATUS_MOUNTED</code><em class="property"> = 'mounted'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_MOUNTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_MOUNTING">
+<code class="descname">OPER_MOUNT_STATUS_MOUNTING</code><em class="property"> = 'mounting'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_MOUNTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_MOUNT_FAILED">
+<code class="descname">OPER_MOUNT_STATUS_MOUNT_FAILED</code><em class="property"> = 'mount-failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_MOUNT_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_NOT_MOUNTED">
+<code class="descname">OPER_MOUNT_STATUS_NOT_MOUNTED</code><em class="property"> = 'not-mounted'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_NOT_MOUNTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_UNKNOWN">
+<code class="descname">OPER_MOUNT_STATUS_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_UNMOUNTING">
+<code class="descname">OPER_MOUNT_STATUS_UNMOUNTING</code><em class="property"> = 'unmounting'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_UNMOUNTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_UNMOUNT_FAILED">
+<code class="descname">OPER_MOUNT_STATUS_UNMOUNT_FAILED</code><em class="property"> = 'unmount-failed'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.OPER_MOUNT_STATUS_UNMOUNT_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.PWD_SET_FALSE">
+<code class="descname">PWD_SET_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.PWD_SET_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.PWD_SET_NO">
+<code class="descname">PWD_SET_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.PWD_SET_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.PWD_SET_TRUE">
+<code class="descname">PWD_SET_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.PWD_SET_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.PWD_SET_YES">
+<code class="descname">PWD_SET_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountEntry.CimcvmediaActualMountEntryConsts.PWD_SET_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList">
+<span id="ucscentralsdk-mometa-cimcvmedia-cimcvmediaactualmountlist-module"></span><h2>ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList module<a class="headerlink" href="#module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for CimcvmediaActualMountList ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.</code><code class="descname">CimcvmediaActualMountList</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaActualMountList.html#CimcvmediaActualMountList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is CimcvmediaActualMountList class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountListConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf200c91d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf200c9490&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf200c9b50&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf200c9b10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountList.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountListConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.</code><code class="descname">CimcvmediaActualMountListConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaActualMountList.html#CimcvmediaActualMountListConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaActualMountList.CimcvmediaActualMountListConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry">
+<span id="ucscentralsdk-mometa-cimcvmedia-cimcvmediaconfigmountentry-module"></span><h2>ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry module<a class="headerlink" href="#module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for CimcvmediaConfigMountEntry ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.</code><code class="descname">CimcvmediaConfigMountEntry</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>mapping_name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaConfigMountEntry.html#CimcvmediaConfigMountEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is CimcvmediaConfigMountEntry class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'mappingName'])</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'remotePort': 'remote_port', 'mountProtocol': 'mount_protocol', 'imageNameVariable': 'image_name_variable', 'description': 'description', 'remoteHost': 'remote_host', 'userId': 'user_id', 'pwdSet': 'pwd_set', 'status': 'status', 'password': 'password', 'imagePath': 'image_path', 'deviceType': 'device_type', 'encPwd': 'enc_pwd', 'remoteIpAddress': 'remote_ip_address', 'mappingName': 'mapping_name', 'rn': 'rn', 'authOption': 'auth_option', 'imageFileName': 'image_file_name', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103750&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2396ded0&gt;, 'image_path': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103a10&gt;, 'pwd_set': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf201034d0&gt;, 'mount_protocol': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103e90&gt;, 'description': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103e50&gt;, 'remote_ip_address': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103510&gt;, 'remote_port': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103f10&gt;, 'image_name_variable': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103250&gt;, 'auth_option': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103890&gt;, 'enc_pwd': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103cd0&gt;, 'mapping_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103290&gt;, 'image_file_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103190&gt;, 'device_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103090&gt;, 'user_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2396de90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103910&gt;, 'password': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103810&gt;, 'remote_host': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf201035d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf20103650&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntry.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.</code><code class="descname">CimcvmediaConfigMountEntryConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaConfigMountEntry.html#CimcvmediaConfigMountEntryConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_DEFAULT">
+<code class="descname">AUTH_OPTION_DEFAULT</code><em class="property"> = 'default'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NONE">
+<code class="descname">AUTH_OPTION_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLM">
+<code class="descname">AUTH_OPTION_NTLM</code><em class="property"> = 'ntlm'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMI">
+<code class="descname">AUTH_OPTION_NTLMI</code><em class="property"> = 'ntlmi'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMSSP">
+<code class="descname">AUTH_OPTION_NTLMSSP</code><em class="property"> = 'ntlmssp'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMSSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMSSPI">
+<code class="descname">AUTH_OPTION_NTLMSSPI</code><em class="property"> = 'ntlmsspi'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMSSPI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMV2">
+<code class="descname">AUTH_OPTION_NTLMV2</code><em class="property"> = 'ntlmv2'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMV2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMV2I">
+<code class="descname">AUTH_OPTION_NTLMV2I</code><em class="property"> = 'ntlmv2i'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.AUTH_OPTION_NTLMV2I" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.DEVICE_TYPE_CDD">
+<code class="descname">DEVICE_TYPE_CDD</code><em class="property"> = 'cdd'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.DEVICE_TYPE_CDD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.DEVICE_TYPE_HDD">
+<code class="descname">DEVICE_TYPE_HDD</code><em class="property"> = 'hdd'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.DEVICE_TYPE_HDD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.DEVICE_TYPE_UNKNOWN">
+<code class="descname">DEVICE_TYPE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.DEVICE_TYPE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.IMAGE_NAME_VARIABLE_NONE">
+<code class="descname">IMAGE_NAME_VARIABLE_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.IMAGE_NAME_VARIABLE_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.IMAGE_NAME_VARIABLE_SERVICE_PROFILE_NAME">
+<code class="descname">IMAGE_NAME_VARIABLE_SERVICE_PROFILE_NAME</code><em class="property"> = 'service-profile-name'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.IMAGE_NAME_VARIABLE_SERVICE_PROFILE_NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_CIFS">
+<code class="descname">MOUNT_PROTOCOL_CIFS</code><em class="property"> = 'cifs'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_CIFS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_HTTP">
+<code class="descname">MOUNT_PROTOCOL_HTTP</code><em class="property"> = 'http'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_HTTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_HTTPS">
+<code class="descname">MOUNT_PROTOCOL_HTTPS</code><em class="property"> = 'https'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_HTTPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_NFS">
+<code class="descname">MOUNT_PROTOCOL_NFS</code><em class="property"> = 'nfs'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_NFS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_UNKNOWN">
+<code class="descname">MOUNT_PROTOCOL_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.MOUNT_PROTOCOL_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.PWD_SET_FALSE">
+<code class="descname">PWD_SET_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.PWD_SET_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.PWD_SET_NO">
+<code class="descname">PWD_SET_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.PWD_SET_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.PWD_SET_TRUE">
+<code class="descname">PWD_SET_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.PWD_SET_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.PWD_SET_YES">
+<code class="descname">PWD_SET_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaConfigMountEntry.CimcvmediaConfigMountEntryConsts.PWD_SET_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry">
+<span id="ucscentralsdk-mometa-cimcvmedia-cimcvmediaextmgmtruleentry-module"></span><h2>ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry module<a class="headerlink" href="#module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for CimcvmediaExtMgmtRuleEntry ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.</code><code class="descname">CimcvmediaExtMgmtRuleEntry</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>mapping_name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaExtMgmtRuleEntry.html#CimcvmediaExtMgmtRuleEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is CimcvmediaExtMgmtRuleEntry class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'mappingName'])</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'remotePort': 'remote_port', 'mountProtocol': 'mount_protocol', 'mappingName': 'mapping_name', 'extMgmtIpAddr': 'ext_mgmt_ip_addr', 'mgmtIfIpAddr': 'mgmt_if_ip_addr', 'rn': 'rn', 'status': 'status', 'remoteIpAddr': 'remote_ip_addr', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf250ea210&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf22a5cb90&gt;, 'mapping_name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf250ea5d0&gt;, 'remote_ip_addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26da8b50&gt;, 'remote_port': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf22a5cf50&gt;, 'ext_mgmt_ip_addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf250ea410&gt;, 'mount_protocol': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf250eac10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf22a5c490&gt;, 'mgmt_if_ip_addr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf250ea8d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf250eae50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntry.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.</code><code class="descname">CimcvmediaExtMgmtRuleEntryConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaExtMgmtRuleEntry.html#CimcvmediaExtMgmtRuleEntryConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_CIFS">
+<code class="descname">MOUNT_PROTOCOL_CIFS</code><em class="property"> = 'cifs'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_CIFS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_HTTP">
+<code class="descname">MOUNT_PROTOCOL_HTTP</code><em class="property"> = 'http'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_HTTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_HTTPS">
+<code class="descname">MOUNT_PROTOCOL_HTTPS</code><em class="property"> = 'https'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_HTTPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_NFS">
+<code class="descname">MOUNT_PROTOCOL_NFS</code><em class="property"> = 'nfs'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_NFS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_UNKNOWN">
+<code class="descname">MOUNT_PROTOCOL_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaExtMgmtRuleEntry.CimcvmediaExtMgmtRuleEntryConsts.MOUNT_PROTOCOL_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef">
+<span id="ucscentralsdk-mometa-cimcvmedia-cimcvmediamountconfigdef-module"></span><h2>ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef module<a class="headerlink" href="#module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for CimcvmediaMountConfigDef ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.</code><code class="descname">CimcvmediaMountConfigDef</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaMountConfigDef.html#CimcvmediaMountConfigDef"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is CimcvmediaMountConfigDef class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'policyLevel': 'policy_level', 'name': 'name', 'descr': 'descr', 'retryOnMountFail': 'retry_on_mount_fail', 'intId': 'int_id', 'rn': 'rn', 'policyOwner': 'policy_owner', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1ccc0f90&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c241390&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c241550&gt;, 'retry_on_mount_fail': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c2412d0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1ccc0cd0&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1ccc03d0&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1ccc0f10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c241b50&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1ccc0f50&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1ccc0a90&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDef.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.</code><code class="descname">CimcvmediaMountConfigDefConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaMountConfigDef.html#CimcvmediaMountConfigDefConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigDef.CimcvmediaMountConfigDefConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy">
+<span id="ucscentralsdk-mometa-cimcvmedia-cimcvmediamountconfigpolicy-module"></span><h2>ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy module<a class="headerlink" href="#module-ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for CimcvmediaMountConfigPolicy ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.</code><code class="descname">CimcvmediaMountConfigPolicy</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaMountConfigPolicy.html#CimcvmediaMountConfigPolicy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is CimcvmediaMountConfigPolicy class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'policyLevel': 'policy_level', 'name': 'name', 'descr': 'descr', 'retryOnMountFail': 'retry_on_mount_fail', 'intId': 'int_id', 'rn': 'rn', 'policyOwner': 'policy_owner', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c827750&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c827b90&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c827110&gt;, 'retry_on_mount_fail': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c827450&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c8277d0&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c827d90&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c827550&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c827e10&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c827210&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c8278d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicy.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.</code><code class="descname">CimcvmediaMountConfigPolicyConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/cimcvmedia/CimcvmediaMountConfigPolicy.html#CimcvmediaMountConfigPolicyConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.cimcvmedia.CimcvmediaMountConfigPolicy.CimcvmediaMountConfigPolicyConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.cimcvmedia">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.cimcvmedia" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.clitest.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.clitest package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.change.html" class="btn btn-neutral" title="ucscentralsdk.mometa.change package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

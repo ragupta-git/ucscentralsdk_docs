@@ -1,0 +1,1116 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.sw package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.synthetic package" href="ucscentralsdk.mometa.synthetic.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.storage package" href="ucscentralsdk.mometa.storage.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.sw package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.sw.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-sw-package">
+<h1>ucscentralsdk.mometa.sw package<a class="headerlink" href="#ucscentralsdk-mometa-sw-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.sw.SwCardEnvStats">
+<span id="ucscentralsdk-mometa-sw-swcardenvstats-module"></span><h2>ucscentralsdk.mometa.sw.SwCardEnvStats module<a class="headerlink" href="#module-ucscentralsdk.mometa.sw.SwCardEnvStats" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SwCardEnvStats ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwCardEnvStats.</code><code class="descname">SwCardEnvStats</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwCardEnvStats.html#SwCardEnvStats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SwCardEnvStats class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'statsReported': 'stats_reported', 'SlotOutlet1Avg': 'slot_outlet1_avg', 'SlotOutlet3Min': 'slot_outlet3_min', 'intervals': 'intervals', 'thresholded': 'thresholded', 'SlotOutlet1Min': 'slot_outlet1_min', 'SlotOutlet3Avg': 'slot_outlet3_avg', 'suspect': 'suspect', 'rn': 'rn', 'SlotOutlet2Max': 'slot_outlet2_max', 'SlotOutlet1Max': 'slot_outlet1_max', 'normalizedTimeCol': 'normalized_time_col', 'update': 'update', 'SlotOutlet2Min': 'slot_outlet2_min', 'childAction': 'child_action', 'SlotOutlet2Avg': 'slot_outlet2_avg', 'SlotOutlet3Max': 'slot_outlet3_max', 'status': 'status', 'timeCollected': 'time_collected', 'SlotOutlet2': 'slot_outlet2', 'SlotOutlet3': 'slot_outlet3', 'SlotOutlet1': 'slot_outlet1'}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'slot_outlet3_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471750&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf264712d0&gt;, 'slot_outlet1': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf72f5bcd0&gt;, 'slot_outlet2': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42277cd0&gt;, 'slot_outlet3': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471bd0&gt;, 'intervals': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471290&gt;, 'slot_outlet2_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471190&gt;, 'slot_outlet2_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf264716d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471e90&gt;, 'slot_outlet2_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf264711d0&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28507610&gt;, 'slot_outlet3_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471ed0&gt;, 'stats_reported': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471950&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28507e90&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28507b90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471710&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471dd0&gt;, 'slot_outlet1_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42277b10&gt;, 'slot_outlet1_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42277e10&gt;, 'normalized_time_col': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26471b50&gt;, 'update': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28507f10&gt;, 'slot_outlet3_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf264710d0&gt;, 'slot_outlet1_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf42277e50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStats.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwCardEnvStats.</code><code class="descname">SwCardEnvStatsConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwCardEnvStats.html#SwCardEnvStatsConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET1_AVG_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET1_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET1_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET1_MAX_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET1_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET1_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET1_MIN_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET1_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET1_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET1_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET1_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET1_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET2_AVG_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET2_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET2_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET2_MAX_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET2_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET2_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET2_MIN_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET2_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET2_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET2_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET2_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET2_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET3_AVG_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET3_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET3_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET3_MAX_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET3_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET3_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET3_MIN_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET3_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET3_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET3_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET3_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SLOT_OUTLET3_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStats.SwCardEnvStatsConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.sw.SwCardEnvStatsHist">
+<span id="ucscentralsdk-mometa-sw-swcardenvstatshist-module"></span><h2>ucscentralsdk.mometa.sw.SwCardEnvStatsHist module<a class="headerlink" href="#module-ucscentralsdk.mometa.sw.SwCardEnvStatsHist" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SwCardEnvStatsHist ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwCardEnvStatsHist.</code><code class="descname">SwCardEnvStatsHist</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwCardEnvStatsHist.html#SwCardEnvStatsHist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SwCardEnvStatsHist class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'SlotOutlet1Max': 'slot_outlet1_max', 'dn': 'dn', 'SlotOutlet2Avg': 'slot_outlet2_avg', 'SlotOutlet1Avg': 'slot_outlet1_avg', 'SlotOutlet3Min': 'slot_outlet3_min', 'thresholded': 'thresholded', 'SlotOutlet1Min': 'slot_outlet1_min', 'SlotOutlet3': 'slot_outlet3', 'status': 'status', 'SlotOutlet3Max': 'slot_outlet3_max', 'SlotOutlet2Min': 'slot_outlet2_min', 'SlotOutlet3Avg': 'slot_outlet3_avg', 'mostRecent': 'most_recent', 'timeCollected': 'time_collected', 'id': 'id', 'suspect': 'suspect', 'rn': 'rn', 'childAction': 'child_action', 'SlotOutlet2': 'slot_outlet2', 'SlotOutlet2Max': 'slot_outlet2_max', 'SlotOutlet1': 'slot_outlet1'}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'slot_outlet3_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4dc50&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d310&gt;, 'slot_outlet2_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d750&gt;, 'slot_outlet1_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4dcd0&gt;, 'slot_outlet1': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d890&gt;, 'slot_outlet1_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d4d0&gt;, 'slot_outlet3': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4dd90&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5da84850&gt;, 'slot_outlet3_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4dc10&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d5d0&gt;, 'most_recent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf756f52d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf757198d0&gt;, 'slot_outlet2_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d1d0&gt;, 'slot_outlet3_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4db10&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf5da847d0&gt;, 'slot_outlet1_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d990&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75719250&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf75719090&gt;, 'slot_outlet2_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d9d0&gt;, 'slot_outlet2': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d210&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7aa4d6d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHist.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwCardEnvStatsHist.</code><code class="descname">SwCardEnvStatsHistConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwCardEnvStatsHist.html#SwCardEnvStatsHistConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.MOST_RECENT_FALSE">
+<code class="descname">MOST_RECENT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.MOST_RECENT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.MOST_RECENT_NO">
+<code class="descname">MOST_RECENT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.MOST_RECENT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.MOST_RECENT_TRUE">
+<code class="descname">MOST_RECENT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.MOST_RECENT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.MOST_RECENT_YES">
+<code class="descname">MOST_RECENT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.MOST_RECENT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET1_AVG_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET1_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET1_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET1_MAX_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET1_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET1_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET1_MIN_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET1_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET1_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET1_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET1_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET1_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET2_AVG_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET2_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET2_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET2_MAX_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET2_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET2_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET2_MIN_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET2_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET2_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET2_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET2_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET2_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET3_AVG_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET3_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET3_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET3_MAX_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET3_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET3_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET3_MIN_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET3_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET3_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET3_NOT_APPLICABLE">
+<code class="descname">SLOT_OUTLET3_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SLOT_OUTLET3_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwCardEnvStatsHist.SwCardEnvStatsHistConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.sw.SwEnvStats">
+<span id="ucscentralsdk-mometa-sw-swenvstats-module"></span><h2>ucscentralsdk.mometa.sw.SwEnvStats module<a class="headerlink" href="#module-ucscentralsdk.mometa.sw.SwEnvStats" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SwEnvStats ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwEnvStats.</code><code class="descname">SwEnvStats</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwEnvStats.html#SwEnvStats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SwEnvStats class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'statsReported': 'stats_reported', 'intervals': 'intervals', 'psuCtrlrInlet2Max': 'psu_ctrlr_inlet2_max', 'psuCtrlrInlet2Avg': 'psu_ctrlr_inlet2_avg', 'fanCtrlrInlet4Avg': 'fan_ctrlr_inlet4_avg', 'fanCtrlrInlet4Max': 'fan_ctrlr_inlet4_max', 'fanCtrlrInlet4Min': 'fan_ctrlr_inlet4_min', 'mainBoardOutlet1Max': 'main_board_outlet1_max', 'fanCtrlrInlet2Avg': 'fan_ctrlr_inlet2_avg', 'dn': 'dn', 'fanCtrlrInlet4': 'fan_ctrlr_inlet4', 'psuCtrlrInlet1Min': 'psu_ctrlr_inlet1_min', 'fanCtrlrInlet1': 'fan_ctrlr_inlet1', 'fanCtrlrInlet2': 'fan_ctrlr_inlet2', 'fanCtrlrInlet3': 'fan_ctrlr_inlet3', 'fanCtrlrInlet2Min': 'fan_ctrlr_inlet2_min', 'mainBoardOutlet1Avg': 'main_board_outlet1_avg', 'psuCtrlrInlet1Max': 'psu_ctrlr_inlet1_max', 'timeCollected': 'time_collected', 'psuCtrlrInlet2Min': 'psu_ctrlr_inlet2_min', 'fanCtrlrInlet2Max': 'fan_ctrlr_inlet2_max', 'fanCtrlrInlet1Avg': 'fan_ctrlr_inlet1_avg', 'fanCtrlrInlet3Max': 'fan_ctrlr_inlet3_max', 'mainBoardOutlet2Max': 'main_board_outlet2_max', 'mainBoardOutlet1Min': 'main_board_outlet1_min', 'mainBoardOutlet2Min': 'main_board_outlet2_min', 'thresholded': 'thresholded', 'fanCtrlrInlet1Max': 'fan_ctrlr_inlet1_max', 'suspect': 'suspect', 'fanCtrlrInlet3Min': 'fan_ctrlr_inlet3_min', 'rn': 'rn', 'status': 'status', 'normalizedTimeCol': 'normalized_time_col', 'update': 'update', 'fanCtrlrInlet1Min': 'fan_ctrlr_inlet1_min', 'mainBoardOutlet2Avg': 'main_board_outlet2_avg', 'childAction': 'child_action', 'psuCtrlrInlet1': 'psu_ctrlr_inlet1', 'psuCtrlrInlet2': 'psu_ctrlr_inlet2', 'fanCtrlrInlet3Avg': 'fan_ctrlr_inlet3_avg', 'psuCtrlrInlet1Avg': 'psu_ctrlr_inlet1_avg', 'mainBoardOutlet2': 'main_board_outlet2', 'mainBoardOutlet1': 'main_board_outlet1'}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'main_board_outlet2_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cdf10&gt;, 'intervals': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd450&gt;, 'fan_ctrlr_inlet2_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37664e10&gt;, 'main_board_outlet2_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cdf50&gt;, 'main_board_outlet1_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd510&gt;, 'stats_reported': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7abe4e50&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf775c3590&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37664350&gt;, 'fan_ctrlr_inlet1': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37664910&gt;, 'fan_ctrlr_inlet2': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37664750&gt;, 'fan_ctrlr_inlet3': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a362ad0&gt;, 'fan_ctrlr_inlet4': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37402190&gt;, 'fan_ctrlr_inlet1_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37664690&gt;, 'main_board_outlet1_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd8d0&gt;, 'fan_ctrlr_inlet3_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31e51090&gt;, 'psu_ctrlr_inlet1_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74af62d0&gt;, 'fan_ctrlr_inlet3_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a362190&gt;, 'fan_ctrlr_inlet1_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37664ed0&gt;, 'psu_ctrlr_inlet1_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2f8f0310&gt;, 'fan_ctrlr_inlet3_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31e51f50&gt;, 'fan_ctrlr_inlet4_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd950&gt;, 'psu_ctrlr_inlet2_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74af6ed0&gt;, 'fan_ctrlr_inlet2_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a362390&gt;, 'psu_ctrlr_inlet2_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7abe4790&gt;, 'fan_ctrlr_inlet2_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3a362e10&gt;, 'psu_ctrlr_inlet1': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf378bdc90&gt;, 'psu_ctrlr_inlet2': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf74af6e50&gt;, 'psu_ctrlr_inlet1_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2f8f0110&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37664d50&gt;, 'main_board_outlet1': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd390&gt;, 'main_board_outlet2': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cda90&gt;, 'fan_ctrlr_inlet4_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd5d0&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf775c3050&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf40e6e110&gt;, 'fan_ctrlr_inlet1_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37664dd0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7abe43d0&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf40e6e410&gt;, 'psu_ctrlr_inlet2_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf79951bd0&gt;, 'update': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf775c36d0&gt;, 'normalized_time_col': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf378bdb10&gt;, 'main_board_outlet1_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd410&gt;, 'fan_ctrlr_inlet4_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd090&gt;, 'main_board_outlet2_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf305cd1d0&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStats.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwEnvStats.</code><code class="descname">SwEnvStatsConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwEnvStats.html#SwEnvStatsConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET1_AVG_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET1_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET1_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET1_MAX_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET1_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET1_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET1_MIN_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET1_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET1_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET1_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET1_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET1_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET2_AVG_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET2_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET2_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET2_MAX_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET2_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET2_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET2_MIN_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET2_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET2_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET2_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET2_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET2_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET3_AVG_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET3_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET3_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET3_MAX_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET3_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET3_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET3_MIN_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET3_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET3_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET3_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET3_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET3_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET4_AVG_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET4_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET4_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET4_MAX_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET4_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET4_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET4_MIN_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET4_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET4_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET4_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET4_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.FAN_CTRLR_INLET4_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET1_AVG_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET1_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET1_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET1_MAX_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET1_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET1_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET1_MIN_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET1_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET1_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET1_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET1_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET1_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET2_AVG_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET2_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET2_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET2_MAX_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET2_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET2_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET2_MIN_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET2_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET2_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET2_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET2_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.MAIN_BOARD_OUTLET2_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET1_AVG_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET1_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET1_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET1_MAX_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET1_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET1_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET1_MIN_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET1_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET1_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET1_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET1_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET1_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET2_AVG_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET2_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET2_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET2_MAX_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET2_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET2_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET2_MIN_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET2_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET2_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET2_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET2_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.PSU_CTRLR_INLET2_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStats.SwEnvStatsConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.sw.SwEnvStatsHist">
+<span id="ucscentralsdk-mometa-sw-swenvstatshist-module"></span><h2>ucscentralsdk.mometa.sw.SwEnvStatsHist module<a class="headerlink" href="#module-ucscentralsdk.mometa.sw.SwEnvStatsHist" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SwEnvStatsHist ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwEnvStatsHist.</code><code class="descname">SwEnvStatsHist</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwEnvStatsHist.html#SwEnvStatsHist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SwEnvStatsHist class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'mostRecent': 'most_recent', 'fanCtrlrInlet3Max': 'fan_ctrlr_inlet3_max', 'psuCtrlrInlet2Avg': 'psu_ctrlr_inlet2_avg', 'psuCtrlrInlet1Min': 'psu_ctrlr_inlet1_min', 'fanCtrlrInlet1': 'fan_ctrlr_inlet1', 'fanCtrlrInlet2': 'fan_ctrlr_inlet2', 'fanCtrlrInlet3': 'fan_ctrlr_inlet3', 'fanCtrlrInlet1Min': 'fan_ctrlr_inlet1_min', 'mainBoardOutlet2Max': 'main_board_outlet2_max', 'mainBoardOutlet2Avg': 'main_board_outlet2_avg', 'psuCtrlrInlet2Max': 'psu_ctrlr_inlet2_max', 'fanCtrlrInlet2Min': 'fan_ctrlr_inlet2_min', 'mainBoardOutlet1Avg': 'main_board_outlet1_avg', 'mainBoardOutlet1': 'main_board_outlet1', 'mainBoardOutlet1Min': 'main_board_outlet1_min', 'fanCtrlrInlet4Avg': 'fan_ctrlr_inlet4_avg', 'fanCtrlrInlet4Max': 'fan_ctrlr_inlet4_max', 'childAction': 'child_action', 'psuCtrlrInlet1': 'psu_ctrlr_inlet1', 'fanCtrlrInlet4Min': 'fan_ctrlr_inlet4_min', 'mainBoardOutlet1Max': 'main_board_outlet1_max', 'fanCtrlrInlet3Avg': 'fan_ctrlr_inlet3_avg', 'rn': 'rn', 'fanCtrlrInlet2Avg': 'fan_ctrlr_inlet2_avg', 'mainBoardOutlet2Min': 'main_board_outlet2_min', 'thresholded': 'thresholded', 'fanCtrlrInlet1Max': 'fan_ctrlr_inlet1_max', 'id': 'id', 'fanCtrlrInlet4': 'fan_ctrlr_inlet4', 'psuCtrlrInlet1Avg': 'psu_ctrlr_inlet1_avg', 'suspect': 'suspect', 'psuCtrlrInlet1Max': 'psu_ctrlr_inlet1_max', 'fanCtrlrInlet3Min': 'fan_ctrlr_inlet3_min', 'psuCtrlrInlet2': 'psu_ctrlr_inlet2', 'mainBoardOutlet2': 'main_board_outlet2', 'timeCollected': 'time_collected', 'psuCtrlrInlet2Min': 'psu_ctrlr_inlet2_min', 'fanCtrlrInlet2Max': 'fan_ctrlr_inlet2_max', 'fanCtrlrInlet1Avg': 'fan_ctrlr_inlet1_avg'}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4702fed0&gt;, 'fan_ctrlr_inlet1': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3dfcb390&gt;, 'fan_ctrlr_inlet2': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2f8d4650&gt;, 'fan_ctrlr_inlet3': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf34969710&gt;, 'fan_ctrlr_inlet4': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4b782350&gt;, 'fan_ctrlr_inlet2_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2f8d41d0&gt;, 'psu_ctrlr_inlet1': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676ac90&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676af10&gt;, 'fan_ctrlr_inlet1_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3dfcb710&gt;, 'psu_ctrlr_inlet2_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a810&gt;, 'main_board_outlet2_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4892c850&gt;, 'psu_ctrlr_inlet2': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a590&gt;, 'psu_ctrlr_inlet1_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a090&gt;, 'main_board_outlet1_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7855ef50&gt;, 'main_board_outlet1_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e964790&gt;, 'fan_ctrlr_inlet4_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e964dd0&gt;, 'main_board_outlet2_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf311e2d90&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a610&gt;, 'fan_ctrlr_inlet3_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3b35ac50&gt;, 'fan_ctrlr_inlet2_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2f8d4750&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e964e90&gt;, 'fan_ctrlr_inlet3_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf34969d90&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4702fe50&gt;, 'fan_ctrlr_inlet1_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3dfcb750&gt;, 'psu_ctrlr_inlet1_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676ab90&gt;, 'fan_ctrlr_inlet3_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf4b782b10&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a850&gt;, 'main_board_outlet1': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e964350&gt;, 'main_board_outlet2': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2451dd10&gt;, 'fan_ctrlr_inlet4_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e964550&gt;, 'main_board_outlet1_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7855e6d0&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a050&gt;, 'psu_ctrlr_inlet1_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a190&gt;, 'most_recent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a250&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676acd0&gt;, 'psu_ctrlr_inlet2_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a210&gt;, 'main_board_outlet2_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf311e2f50&gt;, 'fan_ctrlr_inlet1_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3dfcb510&gt;, 'fan_ctrlr_inlet4_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf32ee2a90&gt;, 'psu_ctrlr_inlet2_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3676a790&gt;, 'fan_ctrlr_inlet2_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf26ffdd50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHist.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwEnvStatsHist.</code><code class="descname">SwEnvStatsHistConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwEnvStatsHist.html#SwEnvStatsHistConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET1_AVG_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET1_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET1_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET1_MAX_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET1_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET1_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET1_MIN_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET1_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET1_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET1_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET1_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET1_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET2_AVG_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET2_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET2_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET2_MAX_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET2_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET2_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET2_MIN_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET2_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET2_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET2_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET2_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET2_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET3_AVG_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET3_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET3_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET3_MAX_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET3_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET3_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET3_MIN_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET3_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET3_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET3_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET3_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET3_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET4_AVG_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET4_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET4_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET4_MAX_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET4_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET4_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET4_MIN_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET4_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET4_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET4_NOT_APPLICABLE">
+<code class="descname">FAN_CTRLR_INLET4_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.FAN_CTRLR_INLET4_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET1_AVG_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET1_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET1_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET1_MAX_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET1_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET1_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET1_MIN_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET1_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET1_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET1_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET1_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET1_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET2_AVG_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET2_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET2_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET2_MAX_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET2_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET2_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET2_MIN_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET2_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET2_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET2_NOT_APPLICABLE">
+<code class="descname">MAIN_BOARD_OUTLET2_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MAIN_BOARD_OUTLET2_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MOST_RECENT_FALSE">
+<code class="descname">MOST_RECENT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MOST_RECENT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MOST_RECENT_NO">
+<code class="descname">MOST_RECENT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MOST_RECENT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MOST_RECENT_TRUE">
+<code class="descname">MOST_RECENT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MOST_RECENT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MOST_RECENT_YES">
+<code class="descname">MOST_RECENT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.MOST_RECENT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET1_AVG_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET1_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET1_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET1_MAX_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET1_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET1_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET1_MIN_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET1_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET1_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET1_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET1_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET1_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET2_AVG_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET2_AVG_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET2_AVG_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET2_MAX_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET2_MAX_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET2_MAX_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET2_MIN_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET2_MIN_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET2_MIN_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET2_NOT_APPLICABLE">
+<code class="descname">PSU_CTRLR_INLET2_NOT_APPLICABLE</code><em class="property"> = 'not-applicable'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.PSU_CTRLR_INLET2_NOT_APPLICABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwEnvStatsHist.SwEnvStatsHistConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.sw.SwSystemStats">
+<span id="ucscentralsdk-mometa-sw-swsystemstats-module"></span><h2>ucscentralsdk.mometa.sw.SwSystemStats module<a class="headerlink" href="#module-ucscentralsdk.mometa.sw.SwSystemStats" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SwSystemStats ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwSystemStats.</code><code class="descname">SwSystemStats</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwSystemStats.html#SwSystemStats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SwSystemStats class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'load': 'load', 'statsReported': 'stats_reported', 'memCachedMax': 'mem_cached_max', 'intervals': 'intervals', 'memAvailableAvg': 'mem_available_avg', 'memAvailableMin': 'mem_available_min', 'thresholded': 'thresholded', 'suspect': 'suspect', 'rn': 'rn', 'memCachedMin': 'mem_cached_min', 'dn': 'dn', 'memAvailable': 'mem_available', 'normalizedTimeCol': 'normalized_time_col', 'update': 'update', 'memCachedAvg': 'mem_cached_avg', 'loadAvg': 'load_avg', 'loadMin': 'load_min', 'loadMax': 'load_max', 'memCached': 'mem_cached', 'childAction': 'child_action', 'memAvailableMax': 'mem_available_max', 'status': 'status', 'timeCollected': 'time_collected'}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'load': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35f06610&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482bfd0&gt;, 'intervals': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35f06190&gt;, 'load_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35f06cd0&gt;, 'load_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35f06510&gt;, 'mem_available_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b9d0&gt;, 'mem_available_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b850&gt;, 'mem_available': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b710&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35f065d0&gt;, 'mem_available_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b790&gt;, 'mem_cached': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482ba50&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482bf90&gt;, 'stats_reported': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b350&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482bd90&gt;, 'mem_cached_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482bbd0&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b5d0&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b990&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35f064d0&gt;, 'mem_cached_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b590&gt;, 'normalized_time_col': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482bcd0&gt;, 'update': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b410&gt;, 'mem_cached_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7482b610&gt;, 'load_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf35f06a10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStats.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwSystemStats.</code><code class="descname">SwSystemStatsConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwSystemStats.html#SwSystemStatsConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStats.SwSystemStatsConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.sw.SwSystemStatsHist">
+<span id="ucscentralsdk-mometa-sw-swsystemstatshist-module"></span><h2>ucscentralsdk.mometa.sw.SwSystemStatsHist module<a class="headerlink" href="#module-ucscentralsdk.mometa.sw.SwSystemStatsHist" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for SwSystemStatsHist ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwSystemStatsHist.</code><code class="descname">SwSystemStatsHist</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwSystemStatsHist.html#SwSystemStatsHist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is SwSystemStatsHist class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'load': 'load', 'suspect': 'suspect', 'memCachedMax': 'mem_cached_max', 'memAvailable': 'mem_available', 'memAvailableMin': 'mem_available_min', 'thresholded': 'thresholded', 'mostRecent': 'most_recent', 'memCachedAvg': 'mem_cached_avg', 'memAvailableMax': 'mem_available_max', 'memCachedMin': 'mem_cached_min', 'loadAvg': 'load_avg', 'status': 'status', 'loadMin': 'load_min', 'timeCollected': 'time_collected', 'loadMax': 'load_max', 'rn': 'rn', 'memAvailableAvg': 'mem_available_avg', 'memCached': 'mem_cached', 'id': 'id', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe4d0&gt;, 'load': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe1d0&gt;, 'suspect': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf45e1fb50&gt;, 'mem_available_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebead0&gt;, 'mem_cached': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe9d0&gt;, 'load_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe350&gt;, 'time_collected': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf7a224090&gt;, 'mem_cached_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30ccaf90&gt;, 'thresholded': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf45e1f7d0&gt;, 'mem_available_max': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebeb10&gt;, 'most_recent': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf45e1f550&gt;, 'mem_cached_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe950&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf45e1f210&gt;, 'load_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe110&gt;, 'mem_cached_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf30cca4d0&gt;, 'load_min': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe910&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf45e1f810&gt;, 'mem_available_avg': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe410&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe590&gt;, 'mem_available': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe990&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf6eebe290&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHist.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.sw.SwSystemStatsHist.</code><code class="descname">SwSystemStatsHistConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/sw/SwSystemStatsHist.html#SwSystemStatsHistConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.MOST_RECENT_FALSE">
+<code class="descname">MOST_RECENT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.MOST_RECENT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.MOST_RECENT_NO">
+<code class="descname">MOST_RECENT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.MOST_RECENT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.MOST_RECENT_TRUE">
+<code class="descname">MOST_RECENT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.MOST_RECENT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.MOST_RECENT_YES">
+<code class="descname">MOST_RECENT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.MOST_RECENT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.SUSPECT_FALSE">
+<code class="descname">SUSPECT_FALSE</code><em class="property"> = 'false'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.SUSPECT_FALSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.SUSPECT_NO">
+<code class="descname">SUSPECT_NO</code><em class="property"> = 'no'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.SUSPECT_NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.SUSPECT_TRUE">
+<code class="descname">SUSPECT_TRUE</code><em class="property"> = 'true'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.SUSPECT_TRUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.SUSPECT_YES">
+<code class="descname">SUSPECT_YES</code><em class="property"> = 'yes'</em><a class="headerlink" href="#ucscentralsdk.mometa.sw.SwSystemStatsHist.SwSystemStatsHistConsts.SUSPECT_YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.sw">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.sw" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.synthetic.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.synthetic package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.storage.html" class="btn btn-neutral" title="ucscentralsdk.mometa.storage package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

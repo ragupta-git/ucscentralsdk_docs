@@ -1,0 +1,631 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.dcx package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.domain package" href="ucscentralsdk.mometa.domain.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.controller package" href="ucscentralsdk.mometa.controller.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.dcx package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.dcx.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-dcx-package">
+<h1>ucscentralsdk.mometa.dcx package<a class="headerlink" href="#ucscentralsdk-mometa-dcx-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.dcx.DcxVc">
+<span id="ucscentralsdk-mometa-dcx-dcxvc-module"></span><h2>ucscentralsdk.mometa.dcx.DcxVc module<a class="headerlink" href="#module-ucscentralsdk.mometa.dcx.DcxVc" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for DcxVc ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVc">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.dcx.DcxVc.</code><code class="descname">DcxVc</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/dcx/DcxVc.html#DcxVc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is DcxVc class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVc.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVc.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVc.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVc.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVc.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVc.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVc.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'operState': 'oper_state', 'monTrafDir': 'mon_traf_dir', 'borderAggrPortId': 'border_aggr_port_id', 'cdp': 'cdp', 'lldp': 'lldp', 'borderSlotId': 'border_slot_id', 'lc': 'lc', 'operBorderSlotId': 'oper_border_slot_id', 'qosPolicyId': 'qos_policy_id', 'type': 'type', 'dn': 'dn', 'operBorderPortId': 'oper_border_port_id', 'macRegisterMode': 'mac_register_mode', 'name': 'name', 'fltAggr': 'flt_aggr', 'linkState': 'link_state', 'switchId': 'switch_id', 'borderVfcId': 'border_vfc_id', 'instType': 'inst_type', 'status': 'status', 'locale': 'locale', 'adminState': 'admin_state', 'tag': 'tag', 'id': 'id', 'transport': 'transport', 'uplinkFailAction': 'uplink_fail_action', 'stateQual': 'state_qual', 'state': 'state', 'role': 'role', 'peerId': 'peer_id', 'encap': 'encap', 'rn': 'rn', 'vnic': 'vnic', 'forgeMac': 'forge_mac', 'operBorderAggrPortId': 'oper_border_aggr_port_id', 'cookie': 'cookie', 'borderPortId': 'border_port_id', 'childAction': 'child_action', 'cos': 'cos', 'fcoeId': 'fcoe_id', 'protState': 'prot_state', 'qosPolicyDn': 'qos_policy_dn', 'derivedFromId': 'derived_from_id'}</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVc.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVc.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'switch_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840350&gt;, 'link_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb0d0&gt;, 'oper_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb110&gt;, 'lldp': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb250&gt;, 'lc': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebe50&gt;, 'type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840e10&gt;, 'inst_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebc10&gt;, 'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb990&gt;, 'mac_register_mode': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebc50&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb450&gt;, 'oper_border_slot_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebed0&gt;, 'uplink_fail_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840d50&gt;, 'cdp': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb310&gt;, 'vnic': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840910&gt;, 'border_aggr_port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb610&gt;, 'fcoe_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebf90&gt;, 'oper_border_aggr_port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb710&gt;, 'locale': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb350&gt;, 'border_port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb550&gt;, 'border_vfc_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb150&gt;, 'border_slot_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb790&gt;, 'tag': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840110&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eba50&gt;, 'transport': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840ed0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb410&gt;, 'forge_mac': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebd10&gt;, 'state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840f90&gt;, 'role': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840890&gt;, 'encap': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb390&gt;, 'qos_policy_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840450&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840690&gt;, 'peer_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebf10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840190&gt;, 'derived_from_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebbd0&gt;, 'flt_aggr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebe90&gt;, 'admin_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb290&gt;, 'mon_traf_dir': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebcd0&gt;, 'cos': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eb7d0&gt;, 'prot_state': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840790&gt;, 'qos_policy_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840c50&gt;, 'state_qual': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf28840650&gt;, 'cookie': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287ebb90&gt;, 'oper_border_port_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf287eba10&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVc.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.dcx.DcxVc.</code><code class="descname">DcxVcConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/dcx/DcxVc.html#DcxVcConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ADMIN_STATE_DISABLED">
+<code class="descname">ADMIN_STATE_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ADMIN_STATE_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ADMIN_STATE_ENABLED">
+<code class="descname">ADMIN_STATE_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ADMIN_STATE_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.CDP_DISABLED">
+<code class="descname">CDP_DISABLED</code><em class="property"> = 'disabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.CDP_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.CDP_ENABLED">
+<code class="descname">CDP_ENABLED</code><em class="property"> = 'enabled'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.CDP_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.COS_ANY">
+<code class="descname">COS_ANY</code><em class="property"> = 'any'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.COS_ANY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ENCAP_CONSOLIDATED">
+<code class="descname">ENCAP_CONSOLIDATED</code><em class="property"> = 'consolidated'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ENCAP_CONSOLIDATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ENCAP_VIRTUAL">
+<code class="descname">ENCAP_VIRTUAL</code><em class="property"> = 'virtual'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ENCAP_VIRTUAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ENCAP_VIRTUAL_CE">
+<code class="descname">ENCAP_VIRTUAL_CE</code><em class="property"> = 'virtual-ce'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ENCAP_VIRTUAL_CE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.FORGE_MAC_ALLOW">
+<code class="descname">FORGE_MAC_ALLOW</code><em class="property"> = 'allow'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.FORGE_MAC_ALLOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.FORGE_MAC_DENY">
+<code class="descname">FORGE_MAC_DENY</code><em class="property"> = 'deny'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.FORGE_MAC_DENY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.INST_TYPE_DEFAULT">
+<code class="descname">INST_TYPE_DEFAULT</code><em class="property"> = 'default'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.INST_TYPE_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.INST_TYPE_DYNAMIC">
+<code class="descname">INST_TYPE_DYNAMIC</code><em class="property"> = 'dynamic'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.INST_TYPE_DYNAMIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.INST_TYPE_DYNAMIC_VF">
+<code class="descname">INST_TYPE_DYNAMIC_VF</code><em class="property"> = 'dynamic-vf'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.INST_TYPE_DYNAMIC_VF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.INST_TYPE_MANUAL">
+<code class="descname">INST_TYPE_MANUAL</code><em class="property"> = 'manual'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.INST_TYPE_MANUAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LC_ALLOCATED">
+<code class="descname">LC_ALLOCATED</code><em class="property"> = 'allocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LC_ALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LC_AVAILABLE">
+<code class="descname">LC_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LC_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LC_DEALLOCATED">
+<code class="descname">LC_DEALLOCATED</code><em class="property"> = 'deallocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LC_DEALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LC_REPURPOSED">
+<code class="descname">LC_REPURPOSED</code><em class="property"> = 'repurposed'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LC_REPURPOSED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_ADMIN_DOWN">
+<code class="descname">LINK_STATE_ADMIN_DOWN</code><em class="property"> = 'admin-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_ADMIN_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_DOWN">
+<code class="descname">LINK_STATE_DOWN</code><em class="property"> = 'down'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_ERROR">
+<code class="descname">LINK_STATE_ERROR</code><em class="property"> = 'error'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_OFFLINE">
+<code class="descname">LINK_STATE_OFFLINE</code><em class="property"> = 'offline'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_OFFLINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_UNALLOCATED">
+<code class="descname">LINK_STATE_UNALLOCATED</code><em class="property"> = 'unallocated'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_UNALLOCATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_UNAVAILABLE">
+<code class="descname">LINK_STATE_UNAVAILABLE</code><em class="property"> = 'unavailable'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_UNAVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_UNKNOWN">
+<code class="descname">LINK_STATE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_UP">
+<code class="descname">LINK_STATE_UP</code><em class="property"> = 'up'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.LINK_STATE_UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MAC_REGISTER_MODE_ALL_HOST_VLANS">
+<code class="descname">MAC_REGISTER_MODE_ALL_HOST_VLANS</code><em class="property"> = 'all-host-vlans'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MAC_REGISTER_MODE_ALL_HOST_VLANS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MAC_REGISTER_MODE_ONLY_NATIVE_VLAN">
+<code class="descname">MAC_REGISTER_MODE_ONLY_NATIVE_VLAN</code><em class="property"> = 'only-native-vlan'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MAC_REGISTER_MODE_ONLY_NATIVE_VLAN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MON_TRAF_DIR_BOTH">
+<code class="descname">MON_TRAF_DIR_BOTH</code><em class="property"> = 'both'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MON_TRAF_DIR_BOTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MON_TRAF_DIR_RX">
+<code class="descname">MON_TRAF_DIR_RX</code><em class="property"> = 'rx'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MON_TRAF_DIR_RX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MON_TRAF_DIR_TX">
+<code class="descname">MON_TRAF_DIR_TX</code><em class="property"> = 'tx'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.MON_TRAF_DIR_TX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_ACTIVE">
+<code class="descname">OPER_STATE_ACTIVE</code><em class="property"> = 'active'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_ACTIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_ADMIN_DOWN">
+<code class="descname">OPER_STATE_ADMIN_DOWN</code><em class="property"> = 'admin-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_ADMIN_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_ERROR">
+<code class="descname">OPER_STATE_ERROR</code><em class="property"> = 'error'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_LINK_DOWN">
+<code class="descname">OPER_STATE_LINK_DOWN</code><em class="property"> = 'link-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_LINK_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_PASSIVE">
+<code class="descname">OPER_STATE_PASSIVE</code><em class="property"> = 'passive'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_PASSIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_UNKNOWN">
+<code class="descname">OPER_STATE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.OPER_STATE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.PROT_STATE_ACTIVE">
+<code class="descname">PROT_STATE_ACTIVE</code><em class="property"> = 'active'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.PROT_STATE_ACTIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.PROT_STATE_NO_PROTECTION">
+<code class="descname">PROT_STATE_NO_PROTECTION</code><em class="property"> = 'no-protection'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.PROT_STATE_NO_PROTECTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.PROT_STATE_PASSIVE">
+<code class="descname">PROT_STATE_PASSIVE</code><em class="property"> = 'passive'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.PROT_STATE_PASSIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.QOS_POLICY_ID_NONE">
+<code class="descname">QOS_POLICY_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.QOS_POLICY_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_DIAG">
+<code class="descname">ROLE_DIAG</code><em class="property"> = 'diag'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_DIAG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_FCOE_NAS_STORAGE">
+<code class="descname">ROLE_FCOE_NAS_STORAGE</code><em class="property"> = 'fcoe-nas-storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_FCOE_NAS_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_FCOE_STORAGE">
+<code class="descname">ROLE_FCOE_STORAGE</code><em class="property"> = 'fcoe-storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_FCOE_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_FCOE_UPLINK">
+<code class="descname">ROLE_FCOE_UPLINK</code><em class="property"> = 'fcoe-uplink'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_FCOE_UPLINK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_MGMT">
+<code class="descname">ROLE_MGMT</code><em class="property"> = 'mgmt'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_MGMT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_MONITOR">
+<code class="descname">ROLE_MONITOR</code><em class="property"> = 'monitor'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_MONITOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_NAS_STORAGE">
+<code class="descname">ROLE_NAS_STORAGE</code><em class="property"> = 'nas-storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_NAS_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_NETWORK">
+<code class="descname">ROLE_NETWORK</code><em class="property"> = 'network'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_NETWORK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_NETWORK_FCOE_UPLINK">
+<code class="descname">ROLE_NETWORK_FCOE_UPLINK</code><em class="property"> = 'network-fcoe-uplink'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_NETWORK_FCOE_UPLINK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_SERVER">
+<code class="descname">ROLE_SERVER</code><em class="property"> = 'server'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_SERVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_SERVICE">
+<code class="descname">ROLE_SERVICE</code><em class="property"> = 'service'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_STORAGE">
+<code class="descname">ROLE_STORAGE</code><em class="property"> = 'storage'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_UNKNOWN">
+<code class="descname">ROLE_UNKNOWN</code><em class="property"> = 'unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.ROLE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_CREATE_PEND">
+<code class="descname">STATE_CREATE_PEND</code><em class="property"> = 'CreatePend'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_CREATE_PEND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_CREATING">
+<code class="descname">STATE_CREATING</code><em class="property"> = 'Creating'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_CREATING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_DESTROYING">
+<code class="descname">STATE_DESTROYING</code><em class="property"> = 'Destroying'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_DESTROYING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_DESTROY_PEND">
+<code class="descname">STATE_DESTROY_PEND</code><em class="property"> = 'DestroyPend'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_DESTROY_PEND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_MODIFYING">
+<code class="descname">STATE_MODIFYING</code><em class="property"> = 'Modifying'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_MODIFYING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_MODIFY_PEND">
+<code class="descname">STATE_MODIFY_PEND</code><em class="property"> = 'ModifyPend'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_MODIFY_PEND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_PRESENT">
+<code class="descname">STATE_PRESENT</code><em class="property"> = 'Present'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_PRESENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_UNKNOWN">
+<code class="descname">STATE_UNKNOWN</code><em class="property"> = 'Unknown'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.STATE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.SWITCH_ID_A">
+<code class="descname">SWITCH_ID_A</code><em class="property"> = 'A'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.SWITCH_ID_A" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.SWITCH_ID_B">
+<code class="descname">SWITCH_ID_B</code><em class="property"> = 'B'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.SWITCH_ID_B" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.SWITCH_ID_MGMT">
+<code class="descname">SWITCH_ID_MGMT</code><em class="property"> = 'mgmt'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.SWITCH_ID_MGMT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.SWITCH_ID_NONE">
+<code class="descname">SWITCH_ID_NONE</code><em class="property"> = 'NONE'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.SWITCH_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.UPLINK_FAIL_ACTION_LINK_DOWN">
+<code class="descname">UPLINK_FAIL_ACTION_LINK_DOWN</code><em class="property"> = 'link-down'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.UPLINK_FAIL_ACTION_LINK_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.UPLINK_FAIL_ACTION_WARNING">
+<code class="descname">UPLINK_FAIL_ACTION_WARNING</code><em class="property"> = 'warning'</em><a class="headerlink" href="#ucscentralsdk.mometa.dcx.DcxVc.DcxVcConsts.UPLINK_FAIL_ACTION_WARNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.dcx">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.dcx" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.domain.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.domain package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.controller.html" class="btn btn-neutral" title="ucscentralsdk.mometa.controller package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

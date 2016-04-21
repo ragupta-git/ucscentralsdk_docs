@@ -1,0 +1,560 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.compute.ComputeBlade &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="../../../../index.html"/>
+        <link rel="up" title="Module code" href="../../../index.html"/> 
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ucscentralsdk.html">ucscentralsdk package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.compute.ComputeBlade</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for ucscentralsdk.mometa.compute.ComputeBlade</h1><div class="highlight"><pre>
+<span class="sd">&quot;&quot;&quot;This module contains the general information for ComputeBlade ManagedObject.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">...ucscentralmo</span> <span class="kn">import</span> <span class="n">ManagedObject</span>
+<span class="kn">from</span> <span class="nn">...ucscentralcoremeta</span> <span class="kn">import</span> <span class="n">UcsCentralVersion</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="p">,</span> <span class="n">MoMeta</span>
+<span class="kn">from</span> <span class="nn">...ucscentralmeta</span> <span class="kn">import</span> <span class="n">VersionMeta</span>
+
+
+<div class="viewcode-block" id="ComputeBladeConsts"><a class="viewcode-back" href="../../../../ucscentralsdk.mometa.compute.html#ucscentralsdk.mometa.compute.ComputeBlade.ComputeBladeConsts">[docs]</a><span class="k">class</span> <span class="nc">ComputeBladeConsts</span><span class="p">():</span>
+    <span class="n">ADMIN_POWER_ADMIN_DOWN</span> <span class="o">=</span> <span class="s">&quot;admin-down&quot;</span>
+    <span class="n">ADMIN_POWER_ADMIN_UP</span> <span class="o">=</span> <span class="s">&quot;admin-up&quot;</span>
+    <span class="n">ADMIN_POWER_BMC_RESET_IMMEDIATE</span> <span class="o">=</span> <span class="s">&quot;bmc-reset-immediate&quot;</span>
+    <span class="n">ADMIN_POWER_BMC_RESET_WAIT</span> <span class="o">=</span> <span class="s">&quot;bmc-reset-wait&quot;</span>
+    <span class="n">ADMIN_POWER_CMOS_RESET_IMMEDIATE</span> <span class="o">=</span> <span class="s">&quot;cmos-reset-immediate&quot;</span>
+    <span class="n">ADMIN_POWER_CYCLE_IMMEDIATE</span> <span class="o">=</span> <span class="s">&quot;cycle-immediate&quot;</span>
+    <span class="n">ADMIN_POWER_CYCLE_WAIT</span> <span class="o">=</span> <span class="s">&quot;cycle-wait&quot;</span>
+    <span class="n">ADMIN_POWER_DIAGNOSTIC_INTERRUPT</span> <span class="o">=</span> <span class="s">&quot;diagnostic-interrupt&quot;</span>
+    <span class="n">ADMIN_POWER_HARD_RESET_IMMEDIATE</span> <span class="o">=</span> <span class="s">&quot;hard-reset-immediate&quot;</span>
+    <span class="n">ADMIN_POWER_HARD_RESET_WAIT</span> <span class="o">=</span> <span class="s">&quot;hard-reset-wait&quot;</span>
+    <span class="n">ADMIN_POWER_IPMI_RESET</span> <span class="o">=</span> <span class="s">&quot;ipmi-reset&quot;</span>
+    <span class="n">ADMIN_POWER_KVM_RESET</span> <span class="o">=</span> <span class="s">&quot;kvm-reset&quot;</span>
+    <span class="n">ADMIN_POWER_POLICY</span> <span class="o">=</span> <span class="s">&quot;policy&quot;</span>
+    <span class="n">ADMIN_STATE_IN_MAINTENANCE</span> <span class="o">=</span> <span class="s">&quot;in-maintenance&quot;</span>
+    <span class="n">ADMIN_STATE_IN_SERVICE</span> <span class="o">=</span> <span class="s">&quot;in-service&quot;</span>
+    <span class="n">ADMIN_STATE_OUT_OF_SERVICE</span> <span class="o">=</span> <span class="s">&quot;out-of-service&quot;</span>
+    <span class="n">ASSOCIATION_ASSOCIATED</span> <span class="o">=</span> <span class="s">&quot;associated&quot;</span>
+    <span class="n">ASSOCIATION_ESTABLISHING</span> <span class="o">=</span> <span class="s">&quot;establishing&quot;</span>
+    <span class="n">ASSOCIATION_FAILED</span> <span class="o">=</span> <span class="s">&quot;failed&quot;</span>
+    <span class="n">ASSOCIATION_NONE</span> <span class="o">=</span> <span class="s">&quot;none&quot;</span>
+    <span class="n">ASSOCIATION_REMOVING</span> <span class="o">=</span> <span class="s">&quot;removing&quot;</span>
+    <span class="n">ASSOCIATION_THROTTLED</span> <span class="o">=</span> <span class="s">&quot;throttled&quot;</span>
+    <span class="n">AVAILABILITY_AVAILABLE</span> <span class="o">=</span> <span class="s">&quot;available&quot;</span>
+    <span class="n">AVAILABILITY_UNAVAILABLE</span> <span class="o">=</span> <span class="s">&quot;unavailable&quot;</span>
+    <span class="n">CHASSIS_ID_N_A</span> <span class="o">=</span> <span class="s">&quot;N/A&quot;</span>
+    <span class="n">CHECK_POINT_DEEP_CHECKPOINT</span> <span class="o">=</span> <span class="s">&quot;deep-checkpoint&quot;</span>
+    <span class="n">CHECK_POINT_DISCOVERED</span> <span class="o">=</span> <span class="s">&quot;discovered&quot;</span>
+    <span class="n">CHECK_POINT_REMOVING</span> <span class="o">=</span> <span class="s">&quot;removing&quot;</span>
+    <span class="n">CHECK_POINT_SHALLOW_CHECKPOINT</span> <span class="o">=</span> <span class="s">&quot;shallow-checkpoint&quot;</span>
+    <span class="n">CHECK_POINT_UNKNOWN</span> <span class="o">=</span> <span class="s">&quot;unknown&quot;</span>
+    <span class="n">DISCOVERY_COMPLETE</span> <span class="o">=</span> <span class="s">&quot;complete&quot;</span>
+    <span class="n">DISCOVERY_DIAGNOSTICS_COMPLETE</span> <span class="o">=</span> <span class="s">&quot;diagnostics-complete&quot;</span>
+    <span class="n">DISCOVERY_DIAGNOSTICS_FAILED</span> <span class="o">=</span> <span class="s">&quot;diagnostics-failed&quot;</span>
+    <span class="n">DISCOVERY_DIAGNOSTICS_IN_PROGRESS</span> <span class="o">=</span> <span class="s">&quot;diagnostics-in-progress&quot;</span>
+    <span class="n">DISCOVERY_EFIDIAGNOSTICS_IN_PROGRESS</span> <span class="o">=</span> <span class="s">&quot;efidiagnostics-in-progress&quot;</span>
+    <span class="n">DISCOVERY_FAILED</span> <span class="o">=</span> <span class="s">&quot;failed&quot;</span>
+    <span class="n">DISCOVERY_FRU_IDENTITY_INDETERMINATE</span> <span class="o">=</span> <span class="s">&quot;fru-identity-indeterminate&quot;</span>
+    <span class="n">DISCOVERY_FRU_NOT_READY</span> <span class="o">=</span> <span class="s">&quot;fru-not-ready&quot;</span>
+    <span class="n">DISCOVERY_FRU_STATE_INDETERMINATE</span> <span class="o">=</span> <span class="s">&quot;fru-state-indeterminate&quot;</span>
+    <span class="n">DISCOVERY_ILLEGAL_FRU</span> <span class="o">=</span> <span class="s">&quot;illegal-fru&quot;</span>
+    <span class="n">DISCOVERY_IN_PROGRESS</span> <span class="o">=</span> <span class="s">&quot;in-progress&quot;</span>
+    <span class="n">DISCOVERY_INSUFFICIENTLY_EQUIPPED</span> <span class="o">=</span> <span class="s">&quot;insufficiently-equipped&quot;</span>
+    <span class="n">DISCOVERY_INVALID_ADAPTOR_IOCARD</span> <span class="o">=</span> <span class="s">&quot;invalid-adaptor-iocard&quot;</span>
+    <span class="n">DISCOVERY_MALFORMED_FRU_INFO</span> <span class="o">=</span> <span class="s">&quot;malformed-fru-info&quot;</span>
+    <span class="n">DISCOVERY_RETRY</span> <span class="o">=</span> <span class="s">&quot;retry&quot;</span>
+    <span class="n">DISCOVERY_THROTTLED</span> <span class="o">=</span> <span class="s">&quot;throttled&quot;</span>
+    <span class="n">DISCOVERY_UNDISCOVERED</span> <span class="o">=</span> <span class="s">&quot;undiscovered&quot;</span>
+    <span class="n">DISCOVERY_USER_ACKNOWLEDGED</span> <span class="o">=</span> <span class="s">&quot;user-acknowledged&quot;</span>
+    <span class="n">DISCOVERY_WAITING_FOR_MGMT_ACK</span> <span class="o">=</span> <span class="s">&quot;waiting-for-mgmt-ack&quot;</span>
+    <span class="n">DISCOVERY_WAITING_FOR_USER_ACK</span> <span class="o">=</span> <span class="s">&quot;waiting-for-user-ack&quot;</span>
+    <span class="n">INT_ID_NONE</span> <span class="o">=</span> <span class="s">&quot;none&quot;</span>
+    <span class="n">LC_DECOMMISSION</span> <span class="o">=</span> <span class="s">&quot;decommission&quot;</span>
+    <span class="n">LC_DISCOVERED</span> <span class="o">=</span> <span class="s">&quot;discovered&quot;</span>
+    <span class="n">LC_MIGRATE</span> <span class="o">=</span> <span class="s">&quot;migrate&quot;</span>
+    <span class="n">LC_REDISCOVER</span> <span class="o">=</span> <span class="s">&quot;rediscover&quot;</span>
+    <span class="n">LC_REMOVE</span> <span class="o">=</span> <span class="s">&quot;remove&quot;</span>
+    <span class="n">LC_RESET_TO_FACTORY</span> <span class="o">=</span> <span class="s">&quot;resetToFactory&quot;</span>
+    <span class="n">LC_UNDISCOVERED</span> <span class="o">=</span> <span class="s">&quot;undiscovered&quot;</span>
+    <span class="n">MANAGING_INST_A</span> <span class="o">=</span> <span class="s">&quot;A&quot;</span>
+    <span class="n">MANAGING_INST_B</span> <span class="o">=</span> <span class="s">&quot;B&quot;</span>
+    <span class="n">MANAGING_INST_NONE</span> <span class="o">=</span> <span class="s">&quot;NONE&quot;</span>
+    <span class="n">MANAGING_INST_MGMT</span> <span class="o">=</span> <span class="s">&quot;mgmt&quot;</span>
+    <span class="n">MEMORY_SPEED_NOT_APPLICABLE</span> <span class="o">=</span> <span class="s">&quot;not-applicable&quot;</span>
+    <span class="n">MEMORY_SPEED_UNSPECIFIED</span> <span class="o">=</span> <span class="s">&quot;unspecified&quot;</span>
+    <span class="n">MFG_TIME_NOT_APPLICABLE</span> <span class="o">=</span> <span class="s">&quot;not-applicable&quot;</span>
+    <span class="n">OPER_POWER_DEGRADED</span> <span class="o">=</span> <span class="s">&quot;degraded&quot;</span>
+    <span class="n">OPER_POWER_ERROR</span> <span class="o">=</span> <span class="s">&quot;error&quot;</span>
+    <span class="n">OPER_POWER_FAILED</span> <span class="o">=</span> <span class="s">&quot;failed&quot;</span>
+    <span class="n">OPER_POWER_NOT_SUPPORTED</span> <span class="o">=</span> <span class="s">&quot;not-supported&quot;</span>
+    <span class="n">OPER_POWER_OFF</span> <span class="o">=</span> <span class="s">&quot;off&quot;</span>
+    <span class="n">OPER_POWER_OFFDUTY</span> <span class="o">=</span> <span class="s">&quot;offduty&quot;</span>
+    <span class="n">OPER_POWER_OFFLINE</span> <span class="o">=</span> <span class="s">&quot;offline&quot;</span>
+    <span class="n">OPER_POWER_OK</span> <span class="o">=</span> <span class="s">&quot;ok&quot;</span>
+    <span class="n">OPER_POWER_ON</span> <span class="o">=</span> <span class="s">&quot;on&quot;</span>
+    <span class="n">OPER_POWER_ONLINE</span> <span class="o">=</span> <span class="s">&quot;online&quot;</span>
+    <span class="n">OPER_POWER_POWER_SAVE</span> <span class="o">=</span> <span class="s">&quot;power-save&quot;</span>
+    <span class="n">OPER_POWER_TEST</span> <span class="o">=</span> <span class="s">&quot;test&quot;</span>
+    <span class="n">OPER_POWER_UNKNOWN</span> <span class="o">=</span> <span class="s">&quot;unknown&quot;</span>
+    <span class="n">OPER_PWR_TRANS_SRC_SOFTWARE</span> <span class="o">=</span> <span class="s">&quot;software&quot;</span>
+    <span class="n">OPER_PWR_TRANS_SRC_SOFTWARE_MCSERVER</span> <span class="o">=</span> <span class="s">&quot;software_mcserver&quot;</span>
+    <span class="n">OPER_PWR_TRANS_SRC_UNKNOWN</span> <span class="o">=</span> <span class="s">&quot;unknown&quot;</span>
+    <span class="n">OPER_PWR_TRANS_SRC_USER_FP</span> <span class="o">=</span> <span class="s">&quot;user-fp&quot;</span>
+    <span class="n">OPER_PWR_TRANS_SRC_USER_UNKNOWN</span> <span class="o">=</span> <span class="s">&quot;user-unknown&quot;</span>
+    <span class="n">OPER_STATE_BIOS_RESTORE</span> <span class="o">=</span> <span class="s">&quot;bios-restore&quot;</span>
+    <span class="n">OPER_STATE_CMOS_RESET</span> <span class="o">=</span> <span class="s">&quot;cmos-reset&quot;</span>
+    <span class="n">OPER_STATE_COMPUTE_FAILED</span> <span class="o">=</span> <span class="s">&quot;compute-failed&quot;</span>
+    <span class="n">OPER_STATE_COMPUTE_MISMATCH</span> <span class="o">=</span> <span class="s">&quot;compute-mismatch&quot;</span>
+    <span class="n">OPER_STATE_CONFIG</span> <span class="o">=</span> <span class="s">&quot;config&quot;</span>
+    <span class="n">OPER_STATE_CONFIG_FAILURE</span> <span class="o">=</span> <span class="s">&quot;config-failure&quot;</span>
+    <span class="n">OPER_STATE_DECOMISSIONING</span> <span class="o">=</span> <span class="s">&quot;decomissioning&quot;</span>
+    <span class="n">OPER_STATE_DEGRADED</span> <span class="o">=</span> <span class="s">&quot;degraded&quot;</span>
+    <span class="n">OPER_STATE_DIAGNOSTICS</span> <span class="o">=</span> <span class="s">&quot;diagnostics&quot;</span>
+    <span class="n">OPER_STATE_DIAGNOSTICS_FAILED</span> <span class="o">=</span> <span class="s">&quot;diagnostics-failed&quot;</span>
+    <span class="n">OPER_STATE_DISABLED</span> <span class="o">=</span> <span class="s">&quot;disabled&quot;</span>
+    <span class="n">OPER_STATE_DISCOVERY</span> <span class="o">=</span> <span class="s">&quot;discovery&quot;</span>
+    <span class="n">OPER_STATE_DISCOVERY_FAILED</span> <span class="o">=</span> <span class="s">&quot;discovery-failed&quot;</span>
+    <span class="n">OPER_STATE_INACCESSIBLE</span> <span class="o">=</span> <span class="s">&quot;inaccessible&quot;</span>
+    <span class="n">OPER_STATE_INDETERMINATE</span> <span class="o">=</span> <span class="s">&quot;indeterminate&quot;</span>
+    <span class="n">OPER_STATE_INOPERABLE</span> <span class="o">=</span> <span class="s">&quot;inoperable&quot;</span>
+    <span class="n">OPER_STATE_MAINTENANCE</span> <span class="o">=</span> <span class="s">&quot;maintenance&quot;</span>
+    <span class="n">OPER_STATE_MAINTENANCE_FAILED</span> <span class="o">=</span> <span class="s">&quot;maintenance-failed&quot;</span>
+    <span class="n">OPER_STATE_OK</span> <span class="o">=</span> <span class="s">&quot;ok&quot;</span>
+    <span class="n">OPER_STATE_PENDING_REASSOCIATION</span> <span class="o">=</span> <span class="s">&quot;pending-reassociation&quot;</span>
+    <span class="n">OPER_STATE_PENDING_REBOOT</span> <span class="o">=</span> <span class="s">&quot;pending-reboot&quot;</span>
+    <span class="n">OPER_STATE_POWER_OFF</span> <span class="o">=</span> <span class="s">&quot;power-off&quot;</span>
+    <span class="n">OPER_STATE_POWER_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;power-problem&quot;</span>
+    <span class="n">OPER_STATE_REMOVED</span> <span class="o">=</span> <span class="s">&quot;removed&quot;</span>
+    <span class="n">OPER_STATE_RESTART</span> <span class="o">=</span> <span class="s">&quot;restart&quot;</span>
+    <span class="n">OPER_STATE_TEST</span> <span class="o">=</span> <span class="s">&quot;test&quot;</span>
+    <span class="n">OPER_STATE_TEST_FAILED</span> <span class="o">=</span> <span class="s">&quot;test-failed&quot;</span>
+    <span class="n">OPER_STATE_THERMAL_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;thermal-problem&quot;</span>
+    <span class="n">OPER_STATE_UNASSOCIATED</span> <span class="o">=</span> <span class="s">&quot;unassociated&quot;</span>
+    <span class="n">OPER_STATE_UNCONFIG</span> <span class="o">=</span> <span class="s">&quot;unconfig&quot;</span>
+    <span class="n">OPER_STATE_UNCONFIG_FAILED</span> <span class="o">=</span> <span class="s">&quot;unconfig-failed&quot;</span>
+    <span class="n">OPER_STATE_VOLTAGE_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;voltage-problem&quot;</span>
+    <span class="n">OPERABILITY_ACCESSIBILITY_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;accessibility-problem&quot;</span>
+    <span class="n">OPERABILITY_AUTO_UPGRADE</span> <span class="o">=</span> <span class="s">&quot;auto-upgrade&quot;</span>
+    <span class="n">OPERABILITY_BIOS_POST_TIMEOUT</span> <span class="o">=</span> <span class="s">&quot;bios-post-timeout&quot;</span>
+    <span class="n">OPERABILITY_CHASSIS_LIMIT_EXCEEDED</span> <span class="o">=</span> <span class="s">&quot;chassis-limit-exceeded&quot;</span>
+    <span class="n">OPERABILITY_CONFIG</span> <span class="o">=</span> <span class="s">&quot;config&quot;</span>
+    <span class="n">OPERABILITY_DECOMISSIONING</span> <span class="o">=</span> <span class="s">&quot;decomissioning&quot;</span>
+    <span class="n">OPERABILITY_DEGRADED</span> <span class="o">=</span> <span class="s">&quot;degraded&quot;</span>
+    <span class="n">OPERABILITY_DISABLED</span> <span class="o">=</span> <span class="s">&quot;disabled&quot;</span>
+    <span class="n">OPERABILITY_DISCOVERY</span> <span class="o">=</span> <span class="s">&quot;discovery&quot;</span>
+    <span class="n">OPERABILITY_DISCOVERY_FAILED</span> <span class="o">=</span> <span class="s">&quot;discovery-failed&quot;</span>
+    <span class="n">OPERABILITY_EQUIPMENT_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;equipment-problem&quot;</span>
+    <span class="n">OPERABILITY_FABRIC_CONN_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;fabric-conn-problem&quot;</span>
+    <span class="n">OPERABILITY_FABRIC_UNSUPPORTED_CONN</span> <span class="o">=</span> <span class="s">&quot;fabric-unsupported-conn&quot;</span>
+    <span class="n">OPERABILITY_IDENTIFY</span> <span class="o">=</span> <span class="s">&quot;identify&quot;</span>
+    <span class="n">OPERABILITY_IDENTITY_UNESTABLISHABLE</span> <span class="o">=</span> <span class="s">&quot;identity-unestablishable&quot;</span>
+    <span class="n">OPERABILITY_INOPERABLE</span> <span class="o">=</span> <span class="s">&quot;inoperable&quot;</span>
+    <span class="n">OPERABILITY_MALFORMED_FRU</span> <span class="o">=</span> <span class="s">&quot;malformed-fru&quot;</span>
+    <span class="n">OPERABILITY_NOT_SUPPORTED</span> <span class="o">=</span> <span class="s">&quot;not-supported&quot;</span>
+    <span class="n">OPERABILITY_OPERABLE</span> <span class="o">=</span> <span class="s">&quot;operable&quot;</span>
+    <span class="n">OPERABILITY_PEER_COMM_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;peer-comm-problem&quot;</span>
+    <span class="n">OPERABILITY_PERFORMANCE_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;performance-problem&quot;</span>
+    <span class="n">OPERABILITY_POST_FAILURE</span> <span class="o">=</span> <span class="s">&quot;post-failure&quot;</span>
+    <span class="n">OPERABILITY_POWER_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;power-problem&quot;</span>
+    <span class="n">OPERABILITY_POWERED_OFF</span> <span class="o">=</span> <span class="s">&quot;powered-off&quot;</span>
+    <span class="n">OPERABILITY_REMOVED</span> <span class="o">=</span> <span class="s">&quot;removed&quot;</span>
+    <span class="n">OPERABILITY_THERMAL_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;thermal-problem&quot;</span>
+    <span class="n">OPERABILITY_UNKNOWN</span> <span class="o">=</span> <span class="s">&quot;unknown&quot;</span>
+    <span class="n">OPERABILITY_UPGRADE_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;upgrade-problem&quot;</span>
+    <span class="n">OPERABILITY_VOLTAGE_PROBLEM</span> <span class="o">=</span> <span class="s">&quot;voltage-problem&quot;</span>
+    <span class="n">POLICY_OWNER_LOCAL</span> <span class="o">=</span> <span class="s">&quot;local&quot;</span>
+    <span class="n">POLICY_OWNER_PENDING_POLICY</span> <span class="o">=</span> <span class="s">&quot;pending-policy&quot;</span>
+    <span class="n">POLICY_OWNER_POLICY</span> <span class="o">=</span> <span class="s">&quot;policy&quot;</span>
+    <span class="n">POLICY_OWNER_UNSPECIFIED</span> <span class="o">=</span> <span class="s">&quot;unspecified&quot;</span>
+    <span class="n">PRESENCE_EMPTY</span> <span class="o">=</span> <span class="s">&quot;empty&quot;</span>
+    <span class="n">PRESENCE_EQUIPPED</span> <span class="o">=</span> <span class="s">&quot;equipped&quot;</span>
+    <span class="n">PRESENCE_EQUIPPED_IDENTITY_UNESTABLISHABLE</span> <span class="o">=</span> <span class="s">&quot;equipped-identity-unestablishable&quot;</span>
+    <span class="n">PRESENCE_EQUIPPED_NOT_PRIMARY</span> <span class="o">=</span> <span class="s">&quot;equipped-not-primary&quot;</span>
+    <span class="n">PRESENCE_EQUIPPED_SLAVE</span> <span class="o">=</span> <span class="s">&quot;equipped-slave&quot;</span>
+    <span class="n">PRESENCE_EQUIPPED_UNSUPPORTED</span> <span class="o">=</span> <span class="s">&quot;equipped-unsupported&quot;</span>
+    <span class="n">PRESENCE_EQUIPPED_WITH_MALFORMED_FRU</span> <span class="o">=</span> <span class="s">&quot;equipped-with-malformed-fru&quot;</span>
+    <span class="n">PRESENCE_INACCESSIBLE</span> <span class="o">=</span> <span class="s">&quot;inaccessible&quot;</span>
+    <span class="n">PRESENCE_MISMATCH</span> <span class="o">=</span> <span class="s">&quot;mismatch&quot;</span>
+    <span class="n">PRESENCE_MISMATCH_IDENTITY_UNESTABLISHABLE</span> <span class="o">=</span> <span class="s">&quot;mismatch-identity-unestablishable&quot;</span>
+    <span class="n">PRESENCE_MISMATCH_SLAVE</span> <span class="o">=</span> <span class="s">&quot;mismatch-slave&quot;</span>
+    <span class="n">PRESENCE_MISSING</span> <span class="o">=</span> <span class="s">&quot;missing&quot;</span>
+    <span class="n">PRESENCE_MISSING_SLAVE</span> <span class="o">=</span> <span class="s">&quot;missing-slave&quot;</span>
+    <span class="n">PRESENCE_UNAUTHORIZED</span> <span class="o">=</span> <span class="s">&quot;unauthorized&quot;</span>
+    <span class="n">PRESENCE_UNKNOWN</span> <span class="o">=</span> <span class="s">&quot;unknown&quot;</span>
+    <span class="n">SCALED_MODE_NONE</span> <span class="o">=</span> <span class="s">&quot;none&quot;</span>
+    <span class="n">SCALED_MODE_SCALED</span> <span class="o">=</span> <span class="s">&quot;scaled&quot;</span>
+    <span class="n">SCALED_MODE_SINGLE</span> <span class="o">=</span> <span class="s">&quot;single&quot;</span></div>
+
+
+<div class="viewcode-block" id="ComputeBlade"><a class="viewcode-back" href="../../../../ucscentralsdk.mometa.compute.html#ucscentralsdk.mometa.compute.ComputeBlade.ComputeBlade">[docs]</a><span class="k">class</span> <span class="nc">ComputeBlade</span><span class="p">(</span><span class="n">ManagedObject</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This is ComputeBlade class.&quot;&quot;&quot;</span>
+
+    <span class="n">consts</span> <span class="o">=</span> <span class="n">ComputeBladeConsts</span><span class="p">()</span>
+    <span class="n">naming_props</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s">u&#39;slotId&#39;</span><span class="p">])</span>
+
+    <span class="n">mo_meta</span> <span class="o">=</span> <span class="n">MoMeta</span><span class="p">(</span><span class="s">&quot;ComputeBlade&quot;</span><span class="p">,</span> <span class="s">&quot;computeBlade&quot;</span><span class="p">,</span> <span class="s">&quot;blade-[slot_id]&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="s">&quot;InputOutput&quot;</span><span class="p">,</span> <span class="mh">0x3ff</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[</span><span class="s">&quot;admin&quot;</span><span class="p">,</span> <span class="s">&quot;pn-equipment&quot;</span><span class="p">,</span> <span class="s">&quot;pn-maintenance&quot;</span><span class="p">,</span> <span class="s">&quot;pn-policy&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s">u&#39;equipmentChassis&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s">u&#39;adaptorUnit&#39;</span><span class="p">,</span> <span class="s">u&#39;biosUnit&#39;</span><span class="p">,</span> <span class="s">u&#39;computeBoard&#39;</span><span class="p">,</span> <span class="s">u&#39;computeBoardConnector&#39;</span><span class="p">,</span> <span class="s">u&#39;computeBoardController&#39;</span><span class="p">,</span> <span class="s">u&#39;computeExtBoard&#39;</span><span class="p">,</span> <span class="s">u&#39;computePhysicalOperation&#39;</span><span class="p">,</span> <span class="s">u&#39;computePoolable&#39;</span><span class="p">,</span> <span class="s">u&#39;equipmentBeaconLed&#39;</span><span class="p">,</span> <span class="s">u&#39;equipmentHealthLed&#39;</span><span class="p">,</span> <span class="s">u&#39;equipmentIndicatorLed&#39;</span><span class="p">,</span> <span class="s">u&#39;equipmentLocatorLed&#39;</span><span class="p">,</span> <span class="s">u&#39;faultInst&#39;</span><span class="p">,</span> <span class="s">u&#39;firmwareStatus&#39;</span><span class="p">,</span> <span class="s">u&#39;lsbootDef&#39;</span><span class="p">,</span> <span class="s">u&#39;memoryRuntime&#39;</span><span class="p">,</span> <span class="s">u&#39;mgmtController&#39;</span><span class="p">,</span> <span class="s">u&#39;osInstance&#39;</span><span class="p">,</span> <span class="s">u&#39;processorRuntime&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s">&quot;Get&quot;</span><span class="p">])</span>
+
+    <span class="n">prop_meta</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s">&quot;admin_power&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;admin_power&quot;</span><span class="p">,</span> <span class="s">&quot;adminPower&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_WRITE</span><span class="p">,</span> <span class="mh">0x2</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;admin-down&quot;</span><span class="p">,</span> <span class="s">&quot;admin-up&quot;</span><span class="p">,</span> <span class="s">&quot;bmc-reset-immediate&quot;</span><span class="p">,</span> <span class="s">&quot;bmc-reset-wait&quot;</span><span class="p">,</span> <span class="s">&quot;cmos-reset-immediate&quot;</span><span class="p">,</span> <span class="s">&quot;cycle-immediate&quot;</span><span class="p">,</span> <span class="s">&quot;cycle-wait&quot;</span><span class="p">,</span> <span class="s">&quot;diagnostic-interrupt&quot;</span><span class="p">,</span> <span class="s">&quot;hard-reset-immediate&quot;</span><span class="p">,</span> <span class="s">&quot;hard-reset-wait&quot;</span><span class="p">,</span> <span class="s">&quot;ipmi-reset&quot;</span><span class="p">,</span> <span class="s">&quot;kvm-reset&quot;</span><span class="p">,</span> <span class="s">&quot;policy&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;admin_state&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;admin_state&quot;</span><span class="p">,</span> <span class="s">&quot;adminState&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;in-maintenance&quot;</span><span class="p">,</span> <span class="s">&quot;in-service&quot;</span><span class="p">,</span> <span class="s">&quot;out-of-service&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;assigned_to_dn&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;assigned_to_dn&quot;</span><span class="p">,</span> <span class="s">&quot;assignedToDn&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;association&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;association&quot;</span><span class="p">,</span> <span class="s">&quot;association&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;associated&quot;</span><span class="p">,</span> <span class="s">&quot;establishing&quot;</span><span class="p">,</span> <span class="s">&quot;failed&quot;</span><span class="p">,</span> <span class="s">&quot;none&quot;</span><span class="p">,</span> <span class="s">&quot;removing&quot;</span><span class="p">,</span> <span class="s">&quot;throttled&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;availability&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;availability&quot;</span><span class="p">,</span> <span class="s">&quot;availability&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;available&quot;</span><span class="p">,</span> <span class="s">&quot;unavailable&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;available_memory&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;available_memory&quot;</span><span class="p">,</span> <span class="s">&quot;availableMemory&quot;</span><span class="p">,</span> <span class="s">&quot;uint&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;chassis_id&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;chassis_id&quot;</span><span class="p">,</span> <span class="s">&quot;chassisId&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;N/A&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s">&quot;0-255&quot;</span><span class="p">]),</span> 
+        <span class="s">&quot;check_point&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;check_point&quot;</span><span class="p">,</span> <span class="s">&quot;checkPoint&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;deep-checkpoint&quot;</span><span class="p">,</span> <span class="s">&quot;discovered&quot;</span><span class="p">,</span> <span class="s">&quot;removing&quot;</span><span class="p">,</span> <span class="s">&quot;shallow-checkpoint&quot;</span><span class="p">,</span> <span class="s">&quot;unknown&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;child_action&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;child_action&quot;</span><span class="p">,</span> <span class="s">&quot;childAction&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;((deleteAll|ignore|deleteNonPresent),){0,2}(deleteAll|ignore|deleteNonPresent){0,1}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;conn_path&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;conn_path&quot;</span><span class="p">,</span> <span class="s">&quot;connPath&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;((defaultValue|unknown|A|B),){0,3}(defaultValue|unknown|A|B){0,1}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;conn_status&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;conn_status&quot;</span><span class="p">,</span> <span class="s">&quot;connStatus&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;((defaultValue|unknown|A|B),){0,3}(defaultValue|unknown|A|B){0,1}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;descr&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;descr&quot;</span><span class="p">,</span> <span class="s">&quot;descr&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_WRITE</span><span class="p">,</span> <span class="mh">0x4</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;[ !#$%&amp;\(\)\*\+,\-\./:;\?@\[\]_\{\|\}~a-zA-Z0-9]{0,256}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;discovery&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;discovery&quot;</span><span class="p">,</span> <span class="s">&quot;discovery&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;complete&quot;</span><span class="p">,</span> <span class="s">&quot;diagnostics-complete&quot;</span><span class="p">,</span> <span class="s">&quot;diagnostics-failed&quot;</span><span class="p">,</span> <span class="s">&quot;diagnostics-in-progress&quot;</span><span class="p">,</span> <span class="s">&quot;efidiagnostics-in-progress&quot;</span><span class="p">,</span> <span class="s">&quot;failed&quot;</span><span class="p">,</span> <span class="s">&quot;fru-identity-indeterminate&quot;</span><span class="p">,</span> <span class="s">&quot;fru-not-ready&quot;</span><span class="p">,</span> <span class="s">&quot;fru-state-indeterminate&quot;</span><span class="p">,</span> <span class="s">&quot;illegal-fru&quot;</span><span class="p">,</span> <span class="s">&quot;in-progress&quot;</span><span class="p">,</span> <span class="s">&quot;insufficiently-equipped&quot;</span><span class="p">,</span> <span class="s">&quot;invalid-adaptor-iocard&quot;</span><span class="p">,</span> <span class="s">&quot;malformed-fru-info&quot;</span><span class="p">,</span> <span class="s">&quot;retry&quot;</span><span class="p">,</span> <span class="s">&quot;throttled&quot;</span><span class="p">,</span> <span class="s">&quot;undiscovered&quot;</span><span class="p">,</span> <span class="s">&quot;user-acknowledged&quot;</span><span class="p">,</span> <span class="s">&quot;waiting-for-mgmt-ack&quot;</span><span class="p">,</span> <span class="s">&quot;waiting-for-user-ack&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;dn&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;dn&quot;</span><span class="p">,</span> <span class="s">&quot;dn&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="mh">0x8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;flt_aggr&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;flt_aggr&quot;</span><span class="p">,</span> <span class="s">&quot;fltAggr&quot;</span><span class="p">,</span> <span class="s">&quot;ulong&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;int_id&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;int_id&quot;</span><span class="p">,</span> <span class="s">&quot;intId&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;none&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s">&quot;0-4294967295&quot;</span><span class="p">]),</span> 
+        <span class="s">&quot;lc&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;lc&quot;</span><span class="p">,</span> <span class="s">&quot;lc&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_WRITE</span><span class="p">,</span> <span class="mh">0x10</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;decommission&quot;</span><span class="p">,</span> <span class="s">&quot;discovered&quot;</span><span class="p">,</span> <span class="s">&quot;migrate&quot;</span><span class="p">,</span> <span class="s">&quot;rediscover&quot;</span><span class="p">,</span> <span class="s">&quot;remove&quot;</span><span class="p">,</span> <span class="s">&quot;resetToFactory&quot;</span><span class="p">,</span> <span class="s">&quot;undiscovered&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;lc_ts&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;lc_ts&quot;</span><span class="p">,</span> <span class="s">&quot;lcTs&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;([0-9]){4}-([0-9]){2}-([0-9]){2}T([0-9]){2}:([0-9]){2}:([0-9]){2}((\.([0-9]){3})){0,1}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;local_id&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;local_id&quot;</span><span class="p">,</span> <span class="s">&quot;localId&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;low_voltage_memory&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;low_voltage_memory&quot;</span><span class="p">,</span> <span class="s">&quot;lowVoltageMemory&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;ls_dn&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;ls_dn&quot;</span><span class="p">,</span> <span class="s">&quot;lsDn&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;managing_inst&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;managing_inst&quot;</span><span class="p">,</span> <span class="s">&quot;managingInst&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;A&quot;</span><span class="p">,</span> <span class="s">&quot;B&quot;</span><span class="p">,</span> <span class="s">&quot;NONE&quot;</span><span class="p">,</span> <span class="s">&quot;mgmt&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;memory_speed&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;memory_speed&quot;</span><span class="p">,</span> <span class="s">&quot;memorySpeed&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;not-applicable&quot;</span><span class="p">,</span> <span class="s">&quot;unspecified&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s">&quot;0-4294967295&quot;</span><span class="p">]),</span> 
+        <span class="s">&quot;mfg_time&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;mfg_time&quot;</span><span class="p">,</span> <span class="s">&quot;mfgTime&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;([0-9]){4}-([0-9]){2}-([0-9]){2}T([0-9]){2}:([0-9]){2}:([0-9]){2}((\.([0-9]){3})){0,1}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;not-applicable&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;model&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;model&quot;</span><span class="p">,</span> <span class="s">&quot;model&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">510</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;name&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span> <span class="s">&quot;name&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_WRITE</span><span class="p">,</span> <span class="mh">0x20</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;[\-\.:_a-zA-Z0-9]{0,16}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of40_g_adaptors_with_old_fw&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of40_g_adaptors_with_old_fw&quot;</span><span class="p">,</span> <span class="s">&quot;numOf40GAdaptorsWithOldFw&quot;</span><span class="p">,</span> <span class="s">&quot;byte&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version141a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of40_g_adaptors_with_unknown_fw&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of40_g_adaptors_with_unknown_fw&quot;</span><span class="p">,</span> <span class="s">&quot;numOf40GAdaptorsWithUnknownFw&quot;</span><span class="p">,</span> <span class="s">&quot;byte&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version141a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of_adaptors&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of_adaptors&quot;</span><span class="p">,</span> <span class="s">&quot;numOfAdaptors&quot;</span><span class="p">,</span> <span class="s">&quot;byte&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of_cores&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of_cores&quot;</span><span class="p">,</span> <span class="s">&quot;numOfCores&quot;</span><span class="p">,</span> <span class="s">&quot;ushort&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of_cores_enabled&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of_cores_enabled&quot;</span><span class="p">,</span> <span class="s">&quot;numOfCoresEnabled&quot;</span><span class="p">,</span> <span class="s">&quot;ushort&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of_cpus&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of_cpus&quot;</span><span class="p">,</span> <span class="s">&quot;numOfCpus&quot;</span><span class="p">,</span> <span class="s">&quot;byte&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of_eth_host_ifs&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of_eth_host_ifs&quot;</span><span class="p">,</span> <span class="s">&quot;numOfEthHostIfs&quot;</span><span class="p">,</span> <span class="s">&quot;ushort&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of_fc_host_ifs&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of_fc_host_ifs&quot;</span><span class="p">,</span> <span class="s">&quot;numOfFcHostIfs&quot;</span><span class="p">,</span> <span class="s">&quot;ushort&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;num_of_threads&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;num_of_threads&quot;</span><span class="p">,</span> <span class="s">&quot;numOfThreads&quot;</span><span class="p">,</span> <span class="s">&quot;ushort&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;oper_power&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;oper_power&quot;</span><span class="p">,</span> <span class="s">&quot;operPower&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;degraded&quot;</span><span class="p">,</span> <span class="s">&quot;error&quot;</span><span class="p">,</span> <span class="s">&quot;failed&quot;</span><span class="p">,</span> <span class="s">&quot;not-supported&quot;</span><span class="p">,</span> <span class="s">&quot;off&quot;</span><span class="p">,</span> <span class="s">&quot;offduty&quot;</span><span class="p">,</span> <span class="s">&quot;offline&quot;</span><span class="p">,</span> <span class="s">&quot;ok&quot;</span><span class="p">,</span> <span class="s">&quot;on&quot;</span><span class="p">,</span> <span class="s">&quot;online&quot;</span><span class="p">,</span> <span class="s">&quot;power-save&quot;</span><span class="p">,</span> <span class="s">&quot;test&quot;</span><span class="p">,</span> <span class="s">&quot;unknown&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;oper_pwr_trans_src&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;oper_pwr_trans_src&quot;</span><span class="p">,</span> <span class="s">&quot;operPwrTransSrc&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version131a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;software&quot;</span><span class="p">,</span> <span class="s">&quot;software_mcserver&quot;</span><span class="p">,</span> <span class="s">&quot;unknown&quot;</span><span class="p">,</span> <span class="s">&quot;user-fp&quot;</span><span class="p">,</span> <span class="s">&quot;user-unknown&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;oper_qualifier&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;oper_qualifier&quot;</span><span class="p">,</span> <span class="s">&quot;operQualifier&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;((defaultValue|not-applicable|cpu-voltage|adaptor-voltage|hba-voltage|compute-post-failure|memory-power|nic-power|memory-inoperable|nic-inoperable|compute-power|power-inoperable|compute-thermal|cpu-perf|adaptor-perf|hba-perf|cpu-thermal|adaptor-thermal|hba-thermal|compute-inoperable|memory-voltage|removed|nic-voltage|network-misconfig|cpu-power|adaptor-power|hba-power|compute-voltage|cpu-inoperable|adaptor-inoperable|hba-inoperable|config|memory-perf|nic-perf|adaptor-mismatch|memory-thermal|nic-thermal|mismatch|compute-perf),){0,38}(defaultValue|not-applicable|cpu-voltage|adaptor-voltage|hba-voltage|compute-post-failure|memory-power|nic-power|memory-inoperable|nic-inoperable|compute-power|power-inoperable|compute-thermal|cpu-perf|adaptor-perf|hba-perf|cpu-thermal|adaptor-thermal|hba-thermal|compute-inoperable|memory-voltage|removed|nic-voltage|network-misconfig|cpu-power|adaptor-power|hba-power|compute-voltage|cpu-inoperable|adaptor-inoperable|hba-inoperable|config|memory-perf|nic-perf|adaptor-mismatch|memory-thermal|nic-thermal|mismatch|compute-perf){0,1}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;oper_state&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;oper_state&quot;</span><span class="p">,</span> <span class="s">&quot;operState&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;bios-restore&quot;</span><span class="p">,</span> <span class="s">&quot;cmos-reset&quot;</span><span class="p">,</span> <span class="s">&quot;compute-failed&quot;</span><span class="p">,</span> <span class="s">&quot;compute-mismatch&quot;</span><span class="p">,</span> <span class="s">&quot;config&quot;</span><span class="p">,</span> <span class="s">&quot;config-failure&quot;</span><span class="p">,</span> <span class="s">&quot;decomissioning&quot;</span><span class="p">,</span> <span class="s">&quot;degraded&quot;</span><span class="p">,</span> <span class="s">&quot;diagnostics&quot;</span><span class="p">,</span> <span class="s">&quot;diagnostics-failed&quot;</span><span class="p">,</span> <span class="s">&quot;disabled&quot;</span><span class="p">,</span> <span class="s">&quot;discovery&quot;</span><span class="p">,</span> <span class="s">&quot;discovery-failed&quot;</span><span class="p">,</span> <span class="s">&quot;inaccessible&quot;</span><span class="p">,</span> <span class="s">&quot;indeterminate&quot;</span><span class="p">,</span> <span class="s">&quot;inoperable&quot;</span><span class="p">,</span> <span class="s">&quot;maintenance&quot;</span><span class="p">,</span> <span class="s">&quot;maintenance-failed&quot;</span><span class="p">,</span> <span class="s">&quot;ok&quot;</span><span class="p">,</span> <span class="s">&quot;pending-reassociation&quot;</span><span class="p">,</span> <span class="s">&quot;pending-reboot&quot;</span><span class="p">,</span> <span class="s">&quot;power-off&quot;</span><span class="p">,</span> <span class="s">&quot;power-problem&quot;</span><span class="p">,</span> <span class="s">&quot;removed&quot;</span><span class="p">,</span> <span class="s">&quot;restart&quot;</span><span class="p">,</span> <span class="s">&quot;test&quot;</span><span class="p">,</span> <span class="s">&quot;test-failed&quot;</span><span class="p">,</span> <span class="s">&quot;thermal-problem&quot;</span><span class="p">,</span> <span class="s">&quot;unassociated&quot;</span><span class="p">,</span> <span class="s">&quot;unconfig&quot;</span><span class="p">,</span> <span class="s">&quot;unconfig-failed&quot;</span><span class="p">,</span> <span class="s">&quot;voltage-problem&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;operability&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;operability&quot;</span><span class="p">,</span> <span class="s">&quot;operability&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;accessibility-problem&quot;</span><span class="p">,</span> <span class="s">&quot;auto-upgrade&quot;</span><span class="p">,</span> <span class="s">&quot;bios-post-timeout&quot;</span><span class="p">,</span> <span class="s">&quot;chassis-limit-exceeded&quot;</span><span class="p">,</span> <span class="s">&quot;config&quot;</span><span class="p">,</span> <span class="s">&quot;decomissioning&quot;</span><span class="p">,</span> <span class="s">&quot;degraded&quot;</span><span class="p">,</span> <span class="s">&quot;disabled&quot;</span><span class="p">,</span> <span class="s">&quot;discovery&quot;</span><span class="p">,</span> <span class="s">&quot;discovery-failed&quot;</span><span class="p">,</span> <span class="s">&quot;equipment-problem&quot;</span><span class="p">,</span> <span class="s">&quot;fabric-conn-problem&quot;</span><span class="p">,</span> <span class="s">&quot;fabric-unsupported-conn&quot;</span><span class="p">,</span> <span class="s">&quot;identify&quot;</span><span class="p">,</span> <span class="s">&quot;identity-unestablishable&quot;</span><span class="p">,</span> <span class="s">&quot;inoperable&quot;</span><span class="p">,</span> <span class="s">&quot;malformed-fru&quot;</span><span class="p">,</span> <span class="s">&quot;not-supported&quot;</span><span class="p">,</span> <span class="s">&quot;operable&quot;</span><span class="p">,</span> <span class="s">&quot;peer-comm-problem&quot;</span><span class="p">,</span> <span class="s">&quot;performance-problem&quot;</span><span class="p">,</span> <span class="s">&quot;post-failure&quot;</span><span class="p">,</span> <span class="s">&quot;power-problem&quot;</span><span class="p">,</span> <span class="s">&quot;powered-off&quot;</span><span class="p">,</span> <span class="s">&quot;removed&quot;</span><span class="p">,</span> <span class="s">&quot;thermal-problem&quot;</span><span class="p">,</span> <span class="s">&quot;unknown&quot;</span><span class="p">,</span> <span class="s">&quot;upgrade-problem&quot;</span><span class="p">,</span> <span class="s">&quot;voltage-problem&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;original_uuid&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;original_uuid&quot;</span><span class="p">,</span> <span class="s">&quot;originalUuid&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;(([0-9a-fA-F]){8}\-([0-9a-fA-F]){4}\-([0-9a-fA-F]){4}\-([0-9a-fA-F]){4}\-([0-9a-fA-F]){12})|0&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;part_number&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;part_number&quot;</span><span class="p">,</span> <span class="s">&quot;partNumber&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">510</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;policy_level&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;policy_level&quot;</span><span class="p">,</span> <span class="s">&quot;policyLevel&quot;</span><span class="p">,</span> <span class="s">&quot;uint&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;policy_owner&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;policy_owner&quot;</span><span class="p">,</span> <span class="s">&quot;policyOwner&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;local&quot;</span><span class="p">,</span> <span class="s">&quot;pending-policy&quot;</span><span class="p">,</span> <span class="s">&quot;policy&quot;</span><span class="p">,</span> <span class="s">&quot;unspecified&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;presence&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;presence&quot;</span><span class="p">,</span> <span class="s">&quot;presence&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;empty&quot;</span><span class="p">,</span> <span class="s">&quot;equipped&quot;</span><span class="p">,</span> <span class="s">&quot;equipped-identity-unestablishable&quot;</span><span class="p">,</span> <span class="s">&quot;equipped-not-primary&quot;</span><span class="p">,</span> <span class="s">&quot;equipped-slave&quot;</span><span class="p">,</span> <span class="s">&quot;equipped-unsupported&quot;</span><span class="p">,</span> <span class="s">&quot;equipped-with-malformed-fru&quot;</span><span class="p">,</span> <span class="s">&quot;inaccessible&quot;</span><span class="p">,</span> <span class="s">&quot;mismatch&quot;</span><span class="p">,</span> <span class="s">&quot;mismatch-identity-unestablishable&quot;</span><span class="p">,</span> <span class="s">&quot;mismatch-slave&quot;</span><span class="p">,</span> <span class="s">&quot;missing&quot;</span><span class="p">,</span> <span class="s">&quot;missing-slave&quot;</span><span class="p">,</span> <span class="s">&quot;unauthorized&quot;</span><span class="p">,</span> <span class="s">&quot;unknown&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;revision&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;revision&quot;</span><span class="p">,</span> <span class="s">&quot;revision&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">510</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;rn&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;rn&quot;</span><span class="p">,</span> <span class="s">&quot;rn&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="mh">0x40</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;scaled_mode&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;scaled_mode&quot;</span><span class="p">,</span> <span class="s">&quot;scaledMode&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version112a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;none&quot;</span><span class="p">,</span> <span class="s">&quot;scaled&quot;</span><span class="p">,</span> <span class="s">&quot;single&quot;</span><span class="p">],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;serial&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;serial&quot;</span><span class="p">,</span> <span class="s">&quot;serial&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">510</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;server_id&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;server_id&quot;</span><span class="p">,</span> <span class="s">&quot;serverId&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">510</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;slot_id&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;slot_id&quot;</span><span class="p">,</span> <span class="s">&quot;slotId&quot;</span><span class="p">,</span> <span class="s">&quot;uint&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">NAMING</span><span class="p">,</span> <span class="mh">0x80</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[</span><span class="s">&quot;1-8&quot;</span><span class="p">]),</span> 
+        <span class="s">&quot;status&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;status&quot;</span><span class="p">,</span> <span class="s">&quot;status&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version101a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_WRITE</span><span class="p">,</span> <span class="mh">0x100</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;((removed|created|modified|deleted),){0,3}(removed|created|modified|deleted){0,1}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;total_memory&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;total_memory&quot;</span><span class="p">,</span> <span class="s">&quot;totalMemory&quot;</span><span class="p">,</span> <span class="s">&quot;uint&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;usr_lbl&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;usr_lbl&quot;</span><span class="p">,</span> <span class="s">&quot;usrLbl&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_WRITE</span><span class="p">,</span> <span class="mh">0x200</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;[ !#$%&amp;\(\)\*\+,\-\./:;\?@\[\]_\{\|\}~a-zA-Z0-9]{0,32}&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;uuid&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;uuid&quot;</span><span class="p">,</span> <span class="s">&quot;uuid&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">r&quot;&quot;&quot;(([0-9a-fA-F]){8}\-([0-9a-fA-F]){4}\-([0-9a-fA-F]){4}\-([0-9a-fA-F]){4}\-([0-9a-fA-F]){12})|0&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;vendor&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;vendor&quot;</span><span class="p">,</span> <span class="s">&quot;vendor&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">510</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+        <span class="s">&quot;vid&quot;</span><span class="p">:</span> <span class="n">MoPropertyMeta</span><span class="p">(</span><span class="s">&quot;vid&quot;</span><span class="p">,</span> <span class="s">&quot;vid&quot;</span><span class="p">,</span> <span class="s">&quot;string&quot;</span><span class="p">,</span> <span class="n">VersionMeta</span><span class="o">.</span><span class="n">Version111a</span><span class="p">,</span> <span class="n">MoPropertyMeta</span><span class="o">.</span><span class="n">READ_ONLY</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">510</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">[]),</span> 
+    <span class="p">}</span>
+
+    <span class="n">prop_map</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s">&quot;adminPower&quot;</span><span class="p">:</span> <span class="s">&quot;admin_power&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;adminState&quot;</span><span class="p">:</span> <span class="s">&quot;admin_state&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;assignedToDn&quot;</span><span class="p">:</span> <span class="s">&quot;assigned_to_dn&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;association&quot;</span><span class="p">:</span> <span class="s">&quot;association&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;availability&quot;</span><span class="p">:</span> <span class="s">&quot;availability&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;availableMemory&quot;</span><span class="p">:</span> <span class="s">&quot;available_memory&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;chassisId&quot;</span><span class="p">:</span> <span class="s">&quot;chassis_id&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;checkPoint&quot;</span><span class="p">:</span> <span class="s">&quot;check_point&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;childAction&quot;</span><span class="p">:</span> <span class="s">&quot;child_action&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;connPath&quot;</span><span class="p">:</span> <span class="s">&quot;conn_path&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;connStatus&quot;</span><span class="p">:</span> <span class="s">&quot;conn_status&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;descr&quot;</span><span class="p">:</span> <span class="s">&quot;descr&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;discovery&quot;</span><span class="p">:</span> <span class="s">&quot;discovery&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;dn&quot;</span><span class="p">:</span> <span class="s">&quot;dn&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;fltAggr&quot;</span><span class="p">:</span> <span class="s">&quot;flt_aggr&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;intId&quot;</span><span class="p">:</span> <span class="s">&quot;int_id&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;lc&quot;</span><span class="p">:</span> <span class="s">&quot;lc&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;lcTs&quot;</span><span class="p">:</span> <span class="s">&quot;lc_ts&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;localId&quot;</span><span class="p">:</span> <span class="s">&quot;local_id&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;lowVoltageMemory&quot;</span><span class="p">:</span> <span class="s">&quot;low_voltage_memory&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;lsDn&quot;</span><span class="p">:</span> <span class="s">&quot;ls_dn&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;managingInst&quot;</span><span class="p">:</span> <span class="s">&quot;managing_inst&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;memorySpeed&quot;</span><span class="p">:</span> <span class="s">&quot;memory_speed&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;mfgTime&quot;</span><span class="p">:</span> <span class="s">&quot;mfg_time&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;model&quot;</span><span class="p">:</span> <span class="s">&quot;model&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;name&quot;</span><span class="p">:</span> <span class="s">&quot;name&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOf40GAdaptorsWithOldFw&quot;</span><span class="p">:</span> <span class="s">&quot;num_of40_g_adaptors_with_old_fw&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOf40GAdaptorsWithUnknownFw&quot;</span><span class="p">:</span> <span class="s">&quot;num_of40_g_adaptors_with_unknown_fw&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOfAdaptors&quot;</span><span class="p">:</span> <span class="s">&quot;num_of_adaptors&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOfCores&quot;</span><span class="p">:</span> <span class="s">&quot;num_of_cores&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOfCoresEnabled&quot;</span><span class="p">:</span> <span class="s">&quot;num_of_cores_enabled&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOfCpus&quot;</span><span class="p">:</span> <span class="s">&quot;num_of_cpus&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOfEthHostIfs&quot;</span><span class="p">:</span> <span class="s">&quot;num_of_eth_host_ifs&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOfFcHostIfs&quot;</span><span class="p">:</span> <span class="s">&quot;num_of_fc_host_ifs&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;numOfThreads&quot;</span><span class="p">:</span> <span class="s">&quot;num_of_threads&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;operPower&quot;</span><span class="p">:</span> <span class="s">&quot;oper_power&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;operPwrTransSrc&quot;</span><span class="p">:</span> <span class="s">&quot;oper_pwr_trans_src&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;operQualifier&quot;</span><span class="p">:</span> <span class="s">&quot;oper_qualifier&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;operState&quot;</span><span class="p">:</span> <span class="s">&quot;oper_state&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;operability&quot;</span><span class="p">:</span> <span class="s">&quot;operability&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;originalUuid&quot;</span><span class="p">:</span> <span class="s">&quot;original_uuid&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;partNumber&quot;</span><span class="p">:</span> <span class="s">&quot;part_number&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;policyLevel&quot;</span><span class="p">:</span> <span class="s">&quot;policy_level&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;policyOwner&quot;</span><span class="p">:</span> <span class="s">&quot;policy_owner&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;presence&quot;</span><span class="p">:</span> <span class="s">&quot;presence&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;revision&quot;</span><span class="p">:</span> <span class="s">&quot;revision&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;rn&quot;</span><span class="p">:</span> <span class="s">&quot;rn&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;scaledMode&quot;</span><span class="p">:</span> <span class="s">&quot;scaled_mode&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;serial&quot;</span><span class="p">:</span> <span class="s">&quot;serial&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;serverId&quot;</span><span class="p">:</span> <span class="s">&quot;server_id&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;slotId&quot;</span><span class="p">:</span> <span class="s">&quot;slot_id&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;status&quot;</span><span class="p">:</span> <span class="s">&quot;status&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;totalMemory&quot;</span><span class="p">:</span> <span class="s">&quot;total_memory&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;usrLbl&quot;</span><span class="p">:</span> <span class="s">&quot;usr_lbl&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;uuid&quot;</span><span class="p">:</span> <span class="s">&quot;uuid&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;vendor&quot;</span><span class="p">:</span> <span class="s">&quot;vendor&quot;</span><span class="p">,</span> 
+        <span class="s">&quot;vid&quot;</span><span class="p">:</span> <span class="s">&quot;vid&quot;</span><span class="p">,</span> 
+    <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent_mo_or_dn</span><span class="p">,</span> <span class="n">slot_id</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dirty_mask</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">slot_id</span> <span class="o">=</span> <span class="n">slot_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">admin_power</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">admin_state</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assigned_to_dn</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">association</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">availability</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">available_memory</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chassis_id</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">check_point</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">child_action</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">conn_path</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">conn_status</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">descr</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">discovery</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flt_aggr</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">int_id</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lc</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lc_ts</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">local_id</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">low_voltage_memory</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ls_dn</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">managing_inst</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">memory_speed</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mfg_time</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of40_g_adaptors_with_old_fw</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of40_g_adaptors_with_unknown_fw</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of_adaptors</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of_cores</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of_cores_enabled</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of_cpus</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of_eth_host_ifs</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of_fc_host_ifs</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_of_threads</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">oper_power</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">oper_pwr_trans_src</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">oper_qualifier</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">oper_state</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">operability</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">original_uuid</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">part_number</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">policy_level</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">policy_owner</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">presence</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">revision</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scaled_mode</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">serial</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">server_id</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_memory</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">usr_lbl</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uuid</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vendor</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vid</span> <span class="o">=</span> <span class="bp">None</span>
+
+        <span class="n">ManagedObject</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s">&quot;ComputeBlade&quot;</span><span class="p">,</span> <span class="n">parent_mo_or_dn</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

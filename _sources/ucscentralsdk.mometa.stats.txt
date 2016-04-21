@@ -1,0 +1,182 @@
+ucscentralsdk.mometa.stats package
+==================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.stats.StatsChartContainer module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsChartContainer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsCollectionPolicy module
+-------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsCollectionPolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsCustomChart module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsCustomChart
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsCustomEp module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsCustomEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsDbMigrationStatus module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsDbMigrationStatus
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsDbSummaryMeta module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsDbSummaryMeta
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsHolder module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsHolder
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsInventoryMeta module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsInventoryMeta
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsPasadenaCollectionPolicy module
+---------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsPasadenaCollectionPolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsStandardChart module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsStandardChart
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsStandardEp module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsStandardEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsStatsQuery module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsStatsQuery
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsStatsQueryHolder module
+-------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsStatsQueryHolder
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsThr32Definition module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsThr32Definition
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsThr32Value module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsThr32Value
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsThr64Definition module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsThr64Definition
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsThr64Value module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsThr64Value
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsThrFloatDefinition module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsThrFloatDefinition
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsThrFloatValue module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsThrFloatValue
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsThresholdClass module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsThresholdClass
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.stats.StatsThresholdPolicy module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.stats.StatsThresholdPolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.stats
+    :members:
+    :undoc-members:
+    :show-inheritance:

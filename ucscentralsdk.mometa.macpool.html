@@ -1,0 +1,666 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ucscentralsdk.mometa.macpool package &mdash; ucscentralsdk 0.9.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ucscentralsdk 0.9.0.0 documentation" href="index.html"/>
+        <link rel="up" title="ucscentralsdk.mometa package" href="ucscentralsdk.mometa.html"/>
+        <link rel="next" title="ucscentralsdk.mometa.memory package" href="ucscentralsdk.mometa.memory.html"/>
+        <link rel="prev" title="ucscentralsdk.mometa.lstorage package" href="ucscentralsdk.mometa.lstorage.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ucscentralsdk
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ucscentralsdk.html">ucscentralsdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ucscentralsdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ucscentralsdk.methodmeta.html">ucscentralsdk.methodmeta package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="ucscentralsdk.mometa.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucscentralsdk.mometa.html#module-ucscentralsdk.mometa">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralbasetype">ucscentralsdk.ucscentralbasetype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralconstants">ucscentralsdk.ucscentralconstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcore">ucscentralsdk.ucscentralcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoremeta">ucscentralsdk.ucscentralcoremeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralcoreutils">ucscentralsdk.ucscentralcoreutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraldriver">ucscentralsdk.ucscentraldriver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentraleventhandler">ucscentralsdk.ucscentraleventhandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralexception">ucscentralsdk.ucscentralexception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfilter">ucscentralsdk.ucscentralfilter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralfiltertype">ucscentralsdk.ucscentralfiltertype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralgenutils">ucscentralsdk.ucscentralgenutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralhandle">ucscentralsdk.ucscentralhandle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmeta">ucscentralsdk.ucscentralmeta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethod">ucscentralsdk.ucscentralmethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmethodfactory">ucscentralsdk.ucscentralmethodfactory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralmo">ucscentralsdk.ucscentralmo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralsession">ucscentralsdk.ucscentralsession module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk.ucscentralxmlcodec">ucscentralsdk.ucscentralxmlcodec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ucscentralsdk.html#module-ucscentralsdk">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html#id1">0.9.4.0 (2016-04-21)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ucscentralsdk</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.html">ucscentralsdk package</a> &raquo;</li>
+      
+          <li><a href="ucscentralsdk.mometa.html">ucscentralsdk.mometa package</a> &raquo;</li>
+      
+    <li>ucscentralsdk.mometa.macpool package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ucscentralsdk.mometa.macpool.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ucscentralsdk-mometa-macpool-package">
+<h1>ucscentralsdk.mometa.macpool package<a class="headerlink" href="#ucscentralsdk-mometa-macpool-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.macpool.MacpoolAddr">
+<span id="ucscentralsdk-mometa-macpool-macpooladdr-module"></span><h2>ucscentralsdk.mometa.macpool.MacpoolAddr module<a class="headerlink" href="#module-ucscentralsdk.mometa.macpool.MacpoolAddr" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for MacpoolAddr ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolAddr.</code><code class="descname">MacpoolAddr</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolAddr.html#MacpoolAddr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is MacpoolAddr class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'globalPoolCnt': 'global_pool_cnt', 'generation': 'generation', 'epPoolCnt': 'ep_pool_cnt', 'id': 'id', 'childAction': 'child_action', 'fltAggr': 'flt_aggr', 'sysCnt': 'sys_cnt', 'domainCnt': 'domain_cnt', 'consCnt': 'cons_cnt', 'scope': 'scope', 'rn': 'rn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c8f5190&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2deff3d0&gt;, 'generation': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf271dd250&gt;, 'flt_aggr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf271ddcd0&gt;, 'ep_pool_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c8f5c50&gt;, 'global_pool_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf271dd6d0&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf271dd310&gt;, 'domain_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c8f52d0&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1fe19110&gt;, 'sys_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2deffe10&gt;, 'cons_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c8f5310&gt;, 'scope': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2deffb50&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf271dd710&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddr.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolAddr.</code><code class="descname">MacpoolAddrConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolAddr.html#MacpoolAddrConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.CONS_CNT_ASSIGNED_TO_SINGLE">
+<code class="descname">CONS_CNT_ASSIGNED_TO_SINGLE</code><em class="property"> = 'assigned-to-single'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.CONS_CNT_ASSIGNED_TO_SINGLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.CONS_CNT_AVAILABLE">
+<code class="descname">CONS_CNT_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.CONS_CNT_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.DOMAIN_CNT_DEFINED_BY_SINGLE">
+<code class="descname">DOMAIN_CNT_DEFINED_BY_SINGLE</code><em class="property"> = 'defined-by-single'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.DOMAIN_CNT_DEFINED_BY_SINGLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.DOMAIN_CNT_UNDEFINED">
+<code class="descname">DOMAIN_CNT_UNDEFINED</code><em class="property"> = 'undefined'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.DOMAIN_CNT_UNDEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.EP_POOL_CNT_NOT_DEFINED_IN_POOL">
+<code class="descname">EP_POOL_CNT_NOT_DEFINED_IN_POOL</code><em class="property"> = 'not-defined-in-pool'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.EP_POOL_CNT_NOT_DEFINED_IN_POOL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.GLOBAL_POOL_CNT_NOT_DEFINED_IN_POOL">
+<code class="descname">GLOBAL_POOL_CNT_NOT_DEFINED_IN_POOL</code><em class="property"> = 'not-defined-in-pool'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.GLOBAL_POOL_CNT_NOT_DEFINED_IN_POOL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.SCOPE_PRIVATE">
+<code class="descname">SCOPE_PRIVATE</code><em class="property"> = 'private'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.SCOPE_PRIVATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.SCOPE_PUBLIC">
+<code class="descname">SCOPE_PUBLIC</code><em class="property"> = 'public'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.SCOPE_PUBLIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.SYS_CNT_DEFINED_BY_SINGLE">
+<code class="descname">SYS_CNT_DEFINED_BY_SINGLE</code><em class="property"> = 'defined-by-single'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.SYS_CNT_DEFINED_BY_SINGLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.SYS_CNT_UNDEFINED">
+<code class="descname">SYS_CNT_UNDEFINED</code><em class="property"> = 'undefined'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolAddr.MacpoolAddrConsts.SYS_CNT_UNDEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.macpool.MacpoolBlock">
+<span id="ucscentralsdk-mometa-macpool-macpoolblock-module"></span><h2>ucscentralsdk.mometa.macpool.MacpoolBlock module<a class="headerlink" href="#module-ucscentralsdk.mometa.macpool.MacpoolBlock" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for MacpoolBlock ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolBlock.</code><code class="descname">MacpoolBlock</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>r_from</em>, <em>to</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolBlock.html#MacpoolBlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is MacpoolBlock class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'to', u'from'])</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'qualifier': 'qualifier', 'assigned': 'assigned', 'size': 'size', 'from': 'r_from', 'to': 'to', 'configScope': 'config_scope', 'scope': 'scope', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c3c2f10&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2ceed4d0&gt;, 'qualifier': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37e52450&gt;, 'r_from': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2cceff90&gt;, 'assigned': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf31ae1b10&gt;, 'size': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2ceed110&gt;, 'config_scope': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c3c2a10&gt;, 'to': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2ceed050&gt;, 'scope': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37e52410&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf37e52590&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2c3c2590&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlock.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolBlock.</code><code class="descname">MacpoolBlockConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolBlock.html#MacpoolBlockConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts.CONFIG_SCOPE_PRIVATE">
+<code class="descname">CONFIG_SCOPE_PRIVATE</code><em class="property"> = 'private'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts.CONFIG_SCOPE_PRIVATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts.CONFIG_SCOPE_PUBLIC">
+<code class="descname">CONFIG_SCOPE_PUBLIC</code><em class="property"> = 'public'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts.CONFIG_SCOPE_PUBLIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts.SCOPE_PRIVATE">
+<code class="descname">SCOPE_PRIVATE</code><em class="property"> = 'private'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts.SCOPE_PRIVATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts.SCOPE_PUBLIC">
+<code class="descname">SCOPE_PUBLIC</code><em class="property"> = 'public'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolBlock.MacpoolBlockConsts.SCOPE_PUBLIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.macpool.MacpoolFormat">
+<span id="ucscentralsdk-mometa-macpool-macpoolformat-module"></span><h2>ucscentralsdk.mometa.macpool.MacpoolFormat module<a class="headerlink" href="#module-ucscentralsdk.mometa.macpool.MacpoolFormat" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for MacpoolFormat ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolFormat.</code><code class="descname">MacpoolFormat</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>format</em>, <em>mask</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolFormat.html#MacpoolFormat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is MacpoolFormat class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'mask', u'format'])</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'format': 'format', 'mask': 'mask', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c5e8990&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c5e8ed0&gt;, 'format': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c5e8e50&gt;, 'mask': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c5e8710&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c5e8a90&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1c5e8d50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormat.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolFormat.</code><code class="descname">MacpoolFormatConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolFormat.html#MacpoolFormatConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FX">
+<code class="descname">MASK_FF_FF_FF_FF_FF_FX</code><em class="property"> = 'FF-FF-FF-FF-FF-Fx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FF_FF_FX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FF_FF_XX">
+<code class="descname">MASK_FF_FF_FF_FF_FF_XX</code><em class="property"> = 'FF-FF-FF-FF-FF-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FF_FF_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FF_FX_XX">
+<code class="descname">MASK_FF_FF_FF_FF_FX_XX</code><em class="property"> = 'FF-FF-FF-FF-Fx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FF_FX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FF_XX_XX">
+<code class="descname">MASK_FF_FF_FF_FF_XX_XX</code><em class="property"> = 'FF-FF-FF-FF-xx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FF_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FX_XX_XX">
+<code class="descname">MASK_FF_FF_FF_FX_XX_XX</code><em class="property"> = 'FF-FF-FF-Fx-xx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_FX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_XX_XX_XX">
+<code class="descname">MASK_FF_FF_FF_XX_XX_XX</code><em class="property"> = 'FF-FF-FF-xx-xx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FF_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FX_XX_XX_XX">
+<code class="descname">MASK_FF_FF_FX_XX_XX_XX</code><em class="property"> = 'FF-FF-Fx-xx-xx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_FX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_XX_XX_XX_XX">
+<code class="descname">MASK_FF_FF_XX_XX_XX_XX</code><em class="property"> = 'FF-FF-xx-xx-xx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FF_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FX_XX_XX_XX_XX">
+<code class="descname">MASK_FF_FX_XX_XX_XX_XX</code><em class="property"> = 'FF-Fx-xx-xx-xx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_FX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_XX_XX_XX_XX_XX">
+<code class="descname">MASK_FF_XX_XX_XX_XX_XX</code><em class="property"> = 'FF-xx-xx-xx-xx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FF_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FX_XX_XX_XX_XX_XX">
+<code class="descname">MASK_FX_XX_XX_XX_XX_XX</code><em class="property"> = 'Fx-xx-xx-xx-xx-xx'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolFormat.MacpoolFormatConsts.MASK_FX_XX_XX_XX_XX_XX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.macpool.MacpoolPool">
+<span id="ucscentralsdk-mometa-macpool-macpoolpool-module"></span><h2>ucscentralsdk.mometa.macpool.MacpoolPool module<a class="headerlink" href="#module-ucscentralsdk.mometa.macpool.MacpoolPool" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for MacpoolPool ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolPool.</code><code class="descname">MacpoolPool</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolPool.html#MacpoolPool"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is MacpoolPool class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'name'])</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'policyLevel': 'policy_level', 'policyOwner': 'policy_owner', 'assigned': 'assigned', 'poolType': 'pool_type', 'intId': 'int_id', 'childAction': 'child_action', 'name': 'name', 'descr': 'descr', 'fltAggr': 'flt_aggr', 'rn': 'rn', 'size': 'size'}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130550&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130e50&gt;, 'flt_aggr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130fd0&gt;, 'assigned': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130a10&gt;, 'int_id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130c10&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e1302d0&gt;, 'name': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130950&gt;, 'descr': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130b90&gt;, 'pool_type': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130c50&gt;, 'policy_owner': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130090&gt;, 'policy_level': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130190&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130990&gt;, 'size': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf2e130790&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPool.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolPool.</code><code class="descname">MacpoolPoolConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolPool.html#MacpoolPoolConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.INT_ID_NONE">
+<code class="descname">INT_ID_NONE</code><em class="property"> = 'none'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.INT_ID_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POLICY_OWNER_LOCAL">
+<code class="descname">POLICY_OWNER_LOCAL</code><em class="property"> = 'local'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POLICY_OWNER_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POLICY_OWNER_PENDING_POLICY">
+<code class="descname">POLICY_OWNER_PENDING_POLICY</code><em class="property"> = 'pending-policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POLICY_OWNER_PENDING_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POLICY_OWNER_POLICY">
+<code class="descname">POLICY_OWNER_POLICY</code><em class="property"> = 'policy'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POLICY_OWNER_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POLICY_OWNER_UNSPECIFIED">
+<code class="descname">POLICY_OWNER_UNSPECIFIED</code><em class="property"> = 'unspecified'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POLICY_OWNER_UNSPECIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POOL_TYPE_NON_QUALIFER">
+<code class="descname">POOL_TYPE_NON_QUALIFER</code><em class="property"> = 'non-qualifer'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POOL_TYPE_NON_QUALIFER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POOL_TYPE_QUALIFER">
+<code class="descname">POOL_TYPE_QUALIFER</code><em class="property"> = 'qualifer'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPool.MacpoolPoolConsts.POOL_TYPE_QUALIFER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.macpool.MacpoolPooled">
+<span id="ucscentralsdk-mometa-macpool-macpoolpooled-module"></span><h2>ucscentralsdk.mometa.macpool.MacpoolPooled module<a class="headerlink" href="#module-ucscentralsdk.mometa.macpool.MacpoolPooled" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for MacpoolPooled ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolPooled.</code><code class="descname">MacpoolPooled</code><span class="sig-paren">(</span><em>parent_mo_or_dn</em>, <em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolPooled.html#MacpoolPooled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is MacpoolPooled class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooledConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([u'id'])</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'id': 'id', 'prevAssignedToDn': 'prev_assigned_to_dn', 'childAction': 'child_action', 'poolableDn': 'poolable_dn', 'blockDn': 'block_dn', 'consCnt': 'cons_cnt', 'rn': 'rn', 'idReleasedTime': 'id_released_time', 'assignedToDn': 'assigned_to_dn'}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9b550&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf22f92a10&gt;, 'block_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9b390&gt;, 'assigned_to_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9b990&gt;, 'id': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9bd90&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9ba90&gt;, 'poolable_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9b250&gt;, 'cons_cnt': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9bdd0&gt;, 'prev_assigned_to_dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9b710&gt;, 'id_released_time': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9b210&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf1bc9bb90&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooled.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooledConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolPooled.</code><code class="descname">MacpoolPooledConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolPooled.html#MacpoolPooledConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooledConsts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooledConsts.CONS_CNT_ASSIGNED_TO_SINGLE">
+<code class="descname">CONS_CNT_ASSIGNED_TO_SINGLE</code><em class="property"> = 'assigned-to-single'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooledConsts.CONS_CNT_ASSIGNED_TO_SINGLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooledConsts.CONS_CNT_AVAILABLE">
+<code class="descname">CONS_CNT_AVAILABLE</code><em class="property"> = 'available'</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolPooled.MacpoolPooledConsts.CONS_CNT_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.macpool.MacpoolUniverse">
+<span id="ucscentralsdk-mometa-macpool-macpooluniverse-module"></span><h2>ucscentralsdk.mometa.macpool.MacpoolUniverse module<a class="headerlink" href="#module-ucscentralsdk.mometa.macpool.MacpoolUniverse" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the general information for MacpoolUniverse ManagedObject.</p>
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolUniverse.</code><code class="descname">MacpoolUniverse</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolUniverse.html#MacpoolUniverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ucscentralsdk.html#ucscentralsdk.ucscentralmo.ManagedObject" title="ucscentralsdk.ucscentralmo.ManagedObject"><code class="xref py py-class docutils literal"><span class="pre">ucscentralsdk.ucscentralmo.ManagedObject</span></code></a></p>
+<p>This is MacpoolUniverse class.</p>
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.consts">
+<code class="descname">consts</code><em class="property"> = &lt;ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverseConsts instance&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.consts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.mo_meta">
+<code class="descname">mo_meta</code><em class="property"> = &lt;ucscentralsdk.ucscentralcoremeta.MoMeta object&gt;</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.mo_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.naming_props">
+<code class="descname">naming_props</code><em class="property"> = set([])</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.naming_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.prop_map">
+<code class="descname">prop_map</code><em class="property"> = {'dn': 'dn', 'status': 'status', 'rn': 'rn', 'childAction': 'child_action'}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.prop_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.prop_meta">
+<code class="descname">prop_meta</code><em class="property"> = {'dn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3594d990&gt;, 'status': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3594dc90&gt;, 'rn': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3594d590&gt;, 'child_action': &lt;ucscentralsdk.ucscentralcoremeta.MoPropertyMeta object at 0x2abf3594da50&gt;}</em><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverse.prop_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverseConsts">
+<em class="property">class </em><code class="descclassname">ucscentralsdk.mometa.macpool.MacpoolUniverse.</code><code class="descname">MacpoolUniverseConsts</code><a class="reference internal" href="_modules/ucscentralsdk/mometa/macpool/MacpoolUniverse.html#MacpoolUniverseConsts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ucscentralsdk.mometa.macpool.MacpoolUniverse.MacpoolUniverseConsts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ucscentralsdk.mometa.macpool">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ucscentralsdk.mometa.macpool" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ucscentralsdk.mometa.memory.html" class="btn btn-neutral float-right" title="ucscentralsdk.mometa.memory package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ucscentralsdk.mometa.lstorage.html" class="btn btn-neutral" title="ucscentralsdk.mometa.lstorage package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cisco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

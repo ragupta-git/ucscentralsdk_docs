@@ -1,0 +1,54 @@
+ucscentralsdk.mometa.feature package
+====================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.feature.FeatureCatalogEp module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.feature.FeatureCatalogEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.feature.FeatureEnvDef module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.feature.FeatureEnvDef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.feature.FeatureNetworkDef module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.feature.FeatureNetworkDef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.feature.FeatureServerDef module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.feature.FeatureServerDef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.feature.FeatureStorageDef module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.feature.FeatureStorageDef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.feature
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,38 @@
+ucscentralsdk.mometa.clitest package
+====================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.clitest.ClitestTypeTest module
+---------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.clitest.ClitestTypeTest
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.clitest.ClitestTypeTest2 module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.clitest.ClitestTypeTest2
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.clitest.ClitestTypeTestChild module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.clitest.ClitestTypeTestChild
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.clitest
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,70 @@
+ucscentralsdk.mometa.event package
+==================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.event.EventApplication module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.event.EventApplication
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.event.EventEpCtrl module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.event.EventEpCtrl
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.event.EventHolder module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.event.EventHolder
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.event.EventInst module
+-------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.event.EventInst
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.event.EventLog module
+------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.event.EventLog
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.event.EventPolicy module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.event.EventPolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.event.EventRecord module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.event.EventRecord
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.event
+    :members:
+    :undoc-members:
+    :show-inheritance:

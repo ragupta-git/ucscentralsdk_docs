@@ -1,0 +1,62 @@
+ucscentralsdk.mometa.sw package
+===============================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.sw.SwCardEnvStats module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.sw.SwCardEnvStats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.sw.SwCardEnvStatsHist module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.sw.SwCardEnvStatsHist
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.sw.SwEnvStats module
+-----------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.sw.SwEnvStats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.sw.SwEnvStatsHist module
+---------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.sw.SwEnvStatsHist
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.sw.SwSystemStats module
+--------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.sw.SwSystemStats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.sw.SwSystemStatsHist module
+------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.sw.SwSystemStatsHist
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.sw
+    :members:
+    :undoc-members:
+    :show-inheritance:

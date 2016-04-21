@@ -1,0 +1,630 @@
+ucscentralsdk.mometa.storage package
+====================================
+
+Submodules
+----------
+
+ucscentralsdk.mometa.storage.StorageArray module
+------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageArray
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageAuthKey module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageAuthKey
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageBlade module
+------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageBlade
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageCloud module
+------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageCloud
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageClusterIdUniverse module
+------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageClusterIdUniverse
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageComputeBladeOperation module
+----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageComputeBladeOperation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageConnectionDef module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageConnectionDef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageConnectionPolicy module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageConnectionPolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageController module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageController
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageControllerOperation module
+--------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageControllerOperation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageCtrlStorageStats module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageCtrlStorageStats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageCtrlStorageStatsHist module
+---------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageCtrlStorageStatsHist
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageDiskEp module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageDiskEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageDiskGroup module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageDiskGroup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageEnclosure module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageEnclosure
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageEpUser module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageEpUser
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageEthLif module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageEthLif
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageEtherIf module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageEtherIf
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageFcIf module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageFcIf
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageFcTargetEp module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageFcTargetEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageFcTargetIf module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageFcTargetIf
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageFlexFlashCard module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageFlexFlashCard
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageFlexFlashController module
+--------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageFlexFlashController
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageFlexFlashDrive module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageFlexFlashDrive
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageFlexFlashVirtualDrive module
+----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageFlexFlashVirtualDrive
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageIScsiInitiatorEp module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageIScsiInitiatorEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageIScsiTargetIf module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageIScsiTargetIf
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageIniGroup module
+---------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageIniGroup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageInitiator module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageInitiator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageInitiatorRef module
+-------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageInitiatorRef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageIpV4PooledAddr module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageIpV4PooledAddr
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageIpV4StaticAddr module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageIpV4StaticAddr
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageItem module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageItem
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLocalDisk module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLocalDisk
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLocalDiskConfigDef module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLocalDiskConfigDef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLocalDiskConfigPolicy module
+----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLocalDiskConfigPolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLocalDiskEp module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLocalDiskEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLocalDiskOperation module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLocalDiskOperation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLocalDiskPartition module
+-------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLocalDiskPartition
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLocalLun module
+---------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLocalLun
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLunCounters module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLunCounters
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLunDisk module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLunDisk
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLunMaskGroup module
+-------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLunMaskGroup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLunReplica module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLunReplica
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLunResourceSelectionLog module
+------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLunResourceSelectionLog
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageLunSnapshot module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageLunSnapshot
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageMeta module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageMeta
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageMezzFlashLife module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageMezzFlashLife
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageNodeEp module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageNodeEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageOperation module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageOperation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StoragePartition module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StoragePartition
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageProcessor module
+----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageProcessor
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageProcessorEp module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageProcessorEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageProcessorRuntime module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageProcessorRuntime
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageQual module
+-----------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageQual
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageRaidBattery module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageRaidBattery
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageReplicationCtx module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageReplicationCtx
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageSasExpander module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageSasExpander
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageScsiDeviceDescriptor module
+---------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageScsiDeviceDescriptor
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageScsiLun module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageScsiLun
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageScsiLunCtx module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageScsiLunCtx
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageScsiLunInstRef module
+---------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageScsiLunInstRef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageScsiLunMask module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageScsiLunMask
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageScsiLunRef module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageScsiLunRef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageSnapshotCtx module
+------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageSnapshotCtx
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageStorageStats module
+-------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageStorageStats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageStorageStatsHist module
+-----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageStorageStatsHist
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageSystem module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageSystem
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageTransportableFlashModule module
+-------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageTransportableFlashModule
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageUsageCounters module
+--------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageUsageCounters
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageVDMemberEp module
+-----------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageVDMemberEp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageVirtualDrive module
+-------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageVirtualDrive
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageVirtualDriveOperation module
+----------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageVirtualDriveOperation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageVirtualDriveRef module
+----------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageVirtualDriveRef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageVirtualDriveRefOperation module
+-------------------------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageVirtualDriveRefOperation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageVolume module
+-------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageVolume
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+ucscentralsdk.mometa.storage.StorageVsanRef module
+--------------------------------------------------
+
+.. automodule:: ucscentralsdk.mometa.storage.StorageVsanRef
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: ucscentralsdk.mometa.storage
+    :members:
+    :undoc-members:
+    :show-inheritance:
